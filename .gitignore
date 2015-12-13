@@ -1,0 +1,11 @@
+# http://stackoverflow.com/a/987162/389755
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!*.xml
+
+# ...even if they are in subdirectories
+!*/
+
