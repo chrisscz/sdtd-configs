@@ -5,7 +5,10 @@
 # But not these files...
 !.gitignore
 !*.xml
+!*.md
 
 # ...even if they are in subdirectories
 !*/
+instances/*
+.idea
 
