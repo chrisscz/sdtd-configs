@@ -822,8 +822,6 @@
   <SoundDataNode name="player2stamina"> <AudioSource name="Sounds/AudioSource_Player"/>
     <AudioClip ClipName="Sounds/Player_Female/player2stamina1"/>
     <AudioClip ClipName="Sounds/Player_Female/player2stamina2"/>
-    <AudioClip ClipName="Sounds/Player_Female/player2stamina3"/>
-    <AudioClip ClipName="Sounds/Player_Female/player2stamina4"/>
     <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <!--               -->
@@ -864,7 +862,6 @@
     <AudioClip ClipName="Sounds/Player_Male/player1jump1"/>
     <AudioClip ClipName="Sounds/Player_Male/player1jump2"/>
     <AudioClip ClipName="Sounds/Player_Male/player1jump3"/>
-    <AudioClip ClipName="Sounds/Player_Male/player1jump4"/>
     <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
   
   <SoundDataNode name="player1landSoft"> <AudioSource name="Sounds/AudioSource_Player"/>
@@ -1454,7 +1451,7 @@
     <AudioClip ClipName="Sounds/Misc/placeblock3"/>
     <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
-  <SoundDataNode name="recipe_unlocked"> <AudioSource name="AudioSource_Notifications"/>
+  <SoundDataNode name="recipe_unlocked"> <AudioSource name="Sounds/AudioSource_Notifications"/>
     <AudioClip ClipName="Sounds/Misc/recipe_unlocked"/>
     <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
@@ -2100,11 +2097,11 @@
   <!--               -->
   <!--               -->
 
-  <SoundDataNode name="close_supply_crate"> <AudioSource name="Sounds/AudioSource_Distant"/>
+  <SoundDataNode name="close_supply_crate"> <AudioSource name="Sounds/AudioSource_UseAction"/>
     <AudioClip ClipName="Sounds/SupplyDrops/close_supply_crate"/>
     <LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
-  <SoundDataNode name="open_supply_crate"> <AudioSource name="Sounds/AudioSource_Distant"/>
+  <SoundDataNode name="open_supply_crate"> <AudioSource name="Sounds/AudioSource_UseAction"/>
     <AudioClip ClipName="Sounds/SupplyDrops/open_supply_crate"/>
     <LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
@@ -2118,7 +2115,7 @@
     <AudioClip ClipName="Sounds/SupplyDrops/Parachute_Opens3"/>
     <LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
-  <SoundDataNode name="Supply_Crate_Land"> <AudioSource name="Sounds/AudioSource_Distant"/>
+  <SoundDataNode name="Supply_Crate_Land"> <AudioSource name="Sounds/AudioSource_Impact"/>
     <AudioClip ClipName="Sounds/SupplyDrops/Supply_Crate_Land1"/>
     <AudioClip ClipName="Sounds/SupplyDrops/Supply_Crate_Land2"/>
     <AudioClip ClipName="Sounds/SupplyDrops/Supply_Crate_Land3"/>

@@ -948,7 +948,8 @@
     </recipe>
 	
     <recipe name="stone" count="1" scrapable="False" >
-        <ingredient name="rockSmall" count="10"/>
+        <ingredient name="rockSmall" count="45"/>
+		<ingredient name="ironFragment" count="5"/>
     </recipe>	
 
     <recipe name="sand" count="1" scrapable="False" >

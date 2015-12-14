@@ -481,7 +481,7 @@
       <property name="stepsound" value="wood" />
       <property name="stability_glue" value="24" />
       <property name="Mass" type="int" value="4" />
-	  <property name="MaxDamage" value="250" />
+	  <property name="MaxDamage" value="200" />
    </material>
 
    <material id="wood_weak">
@@ -491,7 +491,7 @@
       <property name="stepsound" value="wood" />
       <property name="stability_glue" value="24" />
       <property name="Mass" type="int" value="4" />
-	  <property name="MaxDamage" value="125" />
+	  <property name="MaxDamage" value="100" />
    </material>
    <material id="wood_ladders">
       <property name="damage_category" value="wood" />

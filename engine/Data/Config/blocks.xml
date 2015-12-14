@@ -6289,6 +6289,9 @@
       <property name="UpgradeHitCount" value="4" />
     </property>
     <property name="DowngradeBlock" value="scrapIronWall" />
+	<property class="RepairItems">
+		<property name="scrapIron" value="10" />
+	</property>		
     <property name="Group" value="Building" />
   </block>
   <block id="737" name="bookcase">

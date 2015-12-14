@@ -12,7 +12,7 @@
         <hold_type id="6" newmodel="false" ray_cast="0" holster=".28" unholster="0.2" />           <!-- 6 mp5 -->
         <hold_type id="7" newmodel="false" ray_cast="0" holster=".28" unholster="0.2" />           <!-- 7 blocks and venison? -->
         <hold_type id="8" newmodel="false" ray_cast="0" holster=".28" unholster="0.2" />           <!-- 8 not used -->
-        <hold_type id="9" newmodel="false" ray_cast="0.4" holster=".28" unholster="1.0" />         <!-- 9 hand zombie -->
+        <hold_type id="9" newmodel="false" ray_cast="0.4" ray_cast_moving="0.86" holster=".28" unholster="1.0" />         <!-- 9 hand zombie -->
         <hold_type id="10" newmodel="false" ray_cast="0" holster=".28" unholster="1.0" />          <!-- 10 rocket launcher -->
         <hold_type id="11" newmodel="false" ray_cast="0" holster=".28" unholster="1.0" />          <!-- 11 sniper rifle -->
         <hold_type id="12" newmodel="false" ray_cast="0.46" holster=".28" unholster="0.2" />       <!--12  torch  -->

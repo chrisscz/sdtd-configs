@@ -161,7 +161,7 @@
 		<modify id="0" stat="speedmodifier" setValue="0.90"/>
 	</buff>
 	
-	<buff id="InstantSickDrunk" duration="1" buffif="beers greater 0" mutex="SickDrunk,AlcoholPoisoning" requires="Hangover" actions="setvar(beers, 9)" name_key="InstantSickDrunk" type="staminadown"/>xxx
+	<buff id="InstantSickDrunk" duration="1" buffif="beers greater 0" mutex="SickDrunk,AlcoholPoisoning" requires="Hangover" actions="setvar(beers, 9)" name_key="InstantSickDrunk" type="staminadown"/>
 
 	<buff id="SickDrunk" mutex="AlcoholPoisoning" buffif="beers greater 8" debuffif="beers less 1" actions="increment(@wellness, -0.5, 100t, 0, 0);debuff(Drunk);debuff(Hangover)" ondebuff="Hangover" name_key="sickDrunk" type="staminadown" description_key="sickDrunkDesc" tooltip_key="sickDrunkTooltip" icon="ui_game_symbol_dysentery">
 		<modify id="0" stat="stamina" amount="-1" rate="1"/>
@@ -188,7 +188,7 @@
 		<modify id="1" stat="coretemp" modifyValue="10"/>
 	</buff>
 	
-	<buff id="yuccaJuiceCooling" duration="180" name_key="yuccaJuiceCooling" type="staminaup" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" icon="ui_game_symbol_coffee" stack="extend">
+	<buff id="yuccaJuiceCooling" duration="180" name_key="yuccaJuiceCooling" type="staminaup" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" icon="ui_game_symbol_tea" stack="extend">
 		<modify id="1" stat="coretemp" modifyValue="-10"/>
 	</buff>	
 	

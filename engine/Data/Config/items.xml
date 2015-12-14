@@ -197,7 +197,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         </property>
         <property class="Attributes">
             <property name="EntityDamage" value="8,14" />
-            <property name="BlockDamage" value="8,14" />
+            <property name="BlockDamage" value="3,12" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="3,1" />               
         </property>         
@@ -215,7 +215,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Extends" value="clubWood" />
         <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Refined" />
 		<property name="Material" value="metal" />
-		<property name="RepairTools" value="forgedIron" />
+		<property name="RepairTools" value="scrapIron" />
 		<property name="Degradation" value="150" param1="true" />
 		<property name="FuelValue" value="16" />
         <property name="Weight" value="10" />
@@ -224,7 +224,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		</property>
         <property class="Attributes">
             <property name="EntityDamage" value="9,16" />
-            <property name="BlockDamage" value="9,16" />
+            <property name="BlockDamage" value="3,13" />
         </property>   		
 		<property name="CritChance" value=".2" />
         <property name="Group" value="Ammo/Weapons" />
@@ -258,7 +258,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         </property>
         <property class="Attributes">
             <property name="EntityDamage" value="12,30" />
-            <property name="BlockDamage" value="12,30" />
+            <property name="BlockDamage" value="3,13" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="2,1" />              
         </property>          
@@ -298,7 +298,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         </property>
         <property class="Attributes">
             <property name="EntityDamage" value="10,22" />
-            <property name="BlockDamage" value="10,22" />
+            <property name="BlockDamage" value="3,13" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="2,1" />              
         </property>          
@@ -346,7 +346,6 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="RepairTools" value="forgedIron" />
         <property name="Degradation" value="500" param1="true" />
         <property name="FuelValue" value="16" />
-        <property name="Weight" value="48" />
         <property name="SoundDestroy" value="wooddestroy1" />
         <property class="Action0">
             <!-- AttackAction -->
@@ -469,7 +468,6 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Degradation" value="500" param1="true" />
         <property name="SoundDestroy" value="wooddestroy1" />
         <property name="FuelValue" value="24" />
-        <property name="Weight" value="64" />
         <property class="Action0">
             <!-- AttackAction -->
             <property name="Class" value="Melee" />
@@ -705,7 +703,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Group" value="Tools/Traps,Basics" />
         <property class="Attributes">
             <property name="EntityDamage" value="4,10" />
-            <property name="BlockDamage" value="3,30" />
+            <property name="BlockDamage" value="4,30" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="2,1" />
 			<property name="DismembermentBaseChance" value="0,0"/>
@@ -1550,7 +1548,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="DamageBlock" value="20" />
             <property name="Sound_start" value="swoosh" />
             <property name="Buff" value="bleeding,infection,stunned" />
-            <property name="Buff_chance" value="0.05,0.05,0.1" />
+            <property name="Buff_chance" value="0.04,0.04,0.5" />
             <property name="DamageBonus.glass" value="25" />
         </property>
     </item>
@@ -1572,7 +1570,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="DamageBlock" value="50" />
             <property name="Sound_start" value="swoosh" />
             <property name="Buff" value="bleeding,infection,stunned" />
-            <property name="Buff_chance" value="0.2,0.2,0.5" />
+            <property name="Buff_chance" value="0.2,0.2,0.4" />
             <property name="DamageBonus.glass" value="25" />
         </property>
         <property class="Action1">
@@ -1613,7 +1611,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="DamageBlock" value="20" />
             <property name="Sound_start" value="swoosh" />
             <property name="Buff" value="sprainedLeg,infection" />
-            <property name="Buff_chance" value="0.2,0.1" />
+            <property name="Buff_chance" value="0.2,0.025" />
             <property name="DamageBonus.glass" value="25" />
         </property>
     </item>
@@ -3718,6 +3716,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="HoldType" value="7" />
         <property name="Weight" value="5" />
         <property name="Group" value="Resources" />
+		<property name="RepairTime" value="0.5" />
+        <property name="RepairAmount" value="50" />
     </item>
     <item id="348" name="scrapLead">
         <property name="Meshfile" value="Items/Crafting/scrap_lead" />
@@ -4189,6 +4189,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="FuelValue" value="4" />
         <property name="Degradation" value="250" param1="true" />
 		<property name="Encumbrance" value="0.1"/>
+		<property name="ActionSkillGroup" value="Heavy Armor"/>
+		<property name="CraftingSkillGroup" value="Armor Smithing"/>		
         <property class="Attributes">
   			<property name="ConcussiveProtection" value="0.3, 0.8" /> 
  			<property name="PunctureProtection" value="0.3, 0.7" />
@@ -4319,6 +4321,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="FuelValue" value="16" />
         <property name="Degradation" value="100" param1="true" />
 		<property name="Encumbrance" value="0.01"/>
+		<property name="ActionSkillGroup" value="Light Armor"/>
+		<property name="CraftingSkillGroup" value="Leatherworking"/>
         <property class="Attributes">
   			<property name="ConcussiveProtection" value="0.2, 0.4" /> 
   			<property name="PunctureProtection" value="0.1, 0.3" />
@@ -7166,7 +7170,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Degradation" value="250" param1="false" />
         <property name="DegradationBreaksAfter" value="false" />
         <property name="SoundJammed" value="Weapons/weapon_jam" />
-        
+        <property name="ActionSkillGroup" value="Shotguns"/>
+		<property name="CraftingSkillGroup" value="Gun Smithing"/>
         <property class="Action0">
             <!-- AttackAction -->
             <property name="Class" value="Ranged" />

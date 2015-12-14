@@ -231,18 +231,18 @@
 		<property name="HeadDismemberBaseChance" value="0"/>
 		<property name="HeadDismemberBonusChance" value="0.07"/>
 		<property name="HeadDismemberThreshold" value="0.25"/>
-		<property name="LowerLegDismemberThreshold" value="1.4"/>
+		<property name="LowerLegDismemberThreshold" value="0.5"/>
 		<property name="LowerLegDismemberBaseChance" value="0"/>
-		<property name="LowerLegDismemberBonusChance" value="0.5"/>
-		<property name="UpperLegDismemberThreshold" value="1.4"/>
+		<property name="LowerLegDismemberBonusChance" value="0.07"/>
+		<property name="UpperLegDismemberThreshold" value="0.5"/>
 		<property name="UpperLegDismemberBaseChance" value="0"/>
-		<property name="UpperLegDismemberBonusChance" value="0.5"/>
-		<property name="LowerArmDismemberThreshold" value="1.4"/>
+		<property name="UpperLegDismemberBonusChance" value="0.07"/>
+		<property name="LowerArmDismemberThreshold" value="0.5"/>
 		<property name="LowerArmDismemberBaseChance" value="0"/>
-		<property name="LowerArmDismemberBonusChance" value="0.5"/>
-		<property name="UpperArmDismemberThreshold" value="1.4"/>
+		<property name="LowerArmDismemberBonusChance" value="0.07"/>
+		<property name="UpperArmDismemberThreshold" value="0.5"/>
 		<property name="UpperArmDismemberBaseChance" value="0"/>
-		<property name="UpperArmDismemberBonusChance" value="0.5"/>
+		<property name="UpperArmDismemberBonusChance" value="0.07"/>
 		<property name="LegCrawlerThreshold" value="0"/>
 		<property name="LegCrippleThreshold" value="0.5"/>
 		<property name="KnockdownProneDamageThreshold" value="0.5"/>

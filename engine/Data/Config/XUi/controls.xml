@@ -200,7 +200,8 @@
 	</recipe_stack>
 	
 	<category_icon>
-		<rect depth="1" size="43,43" style="press" on_hover="true" controller="CategoryEntry" selected_color="[selectedColor]" normal_color="[iconColor]" sound="[paging_click]">
+		<rect depth="1" size="43,43" style="press" on_hover="true" controller="CategoryEntry" selected_color="[selectedColor]" normal_color="[iconColor]" sound="[paging_click]" 
+			tooltip="{CategoryDisplayName|once}" >
 			<sprite name="categoryIcon" depth="1" size="28,28" pos="3, 0" sprite="{CategoryIcon|once}" color="{CategoryStateColor}" foregroundlayer="true"/>
 		</rect>
 	</category_icon>
