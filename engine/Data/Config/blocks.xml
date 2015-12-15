@@ -3071,6 +3071,9 @@
     <property name="Place" value="Torch" />
     <drop event="Destroy" name="scrapIron" count="1,2" prob="1" />   
     <property name="Group" value="Building" />
+	<property class="RepairItems">
+		<property name="forgedIron" value="3" />
+	</property>		
   </block>
   
 <!-- 390 free -->  
@@ -6552,6 +6555,9 @@
     <property name="Texture" value="83" />
     <property name="Place" value="Torch" />
     <property name="FuelValue" value="32" />
+	<property class="RepairItems">
+		<property name="wood" value="3" />
+	</property>		
     <property name="Group" value="Building" />
   </block>
   <block id="789" name="wedgeWoodWhiteShinglesAsphalt">
@@ -9863,7 +9869,7 @@
   </block>  
   
   <block id="1245" name="supplyCrateShotgunMessiah">
-    <property name="Material" value="wood+wood" />
+    <property name="Material" value="wood" />
     <property name="Texture" value="423" />
     <drop event="Destroy" count="0" />
     <property name="DowngradeBlock" value="lootCrateShotgunMessiah" />
@@ -10597,7 +10603,7 @@
   </block> 
   
   <block id="1330" name="supplyCrateWorkingStiffs">
-    <property name="Material" value="wood+wood" />
+    <property name="Material" value="wood" />
     <property name="Texture" value="423" />
     <drop event="Destroy" count="0" />
     <property name="DowngradeBlock" value="lootCrateWorkingStiffs" />

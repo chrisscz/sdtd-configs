@@ -323,6 +323,12 @@
 	<AudioClip ClipName="Sounds/Buffs/buff_hot_female3"/>
     <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> 
   </SoundDataNode>
+	
+	<SoundDataNode name="ItemNeedsRepair"> <AudioSource name="Sounds/AudioSource_Player"/>
+		<AudioClip ClipName="Sounds/Misc/missingitemtorepair"/>
+		<MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> 
+  </SoundDataNode>
+	
   <!--               -->
   <!--               -->
   <!-- Placed Sounds -->

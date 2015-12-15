@@ -681,7 +681,7 @@
     </recipe>
 
     <recipe name="ladderMetal" count="3" scrapable="False" >
-        <ingredient name="shortMetalPipe" count="10"/>
+        <ingredient name="forgedIron" count="10"/>
     </recipe>
 
     <recipe name="leather" count="2" scrapable="False" >
@@ -927,13 +927,21 @@
 		<ingredient name="unit_iron" count="50"/>
     </recipe>	
 	
-    <recipe name="rocket" count="1" scrapable="False" >
+    <recipe name="rocket" count="1" scrapable="False" >xxx
         <ingredient name="rocketCasing" count="1"/>
 		<ingredient name="rocketTip" count="1"/>
 		<ingredient name="gunPowder" count="50"/>
 		<ingredient name="ductTape" count="3"/>
-    </recipe>		
-	
+    </recipe>
+
+    <recipe name="rocketLauncher" count="1" scrapable="True" craft_area="assembly">
+        <ingredient name="flashlight02" count="0"/>
+        <ingredient name="rocketLauncherBarrel" count="1"/>
+        <ingredient name="rocketLauncherReceiver" count="1"/>
+        <ingredient name="rocketLauncherParts" count="1"/>
+        <ingredient name="rocketLauncherStock" count="1"/>
+    </recipe>	
+
     <recipe name="rocketTip" count="1" scrapable="False" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
         <ingredient name="unit_clay" count="30"/>
 		<ingredient name="unit_lead" count="50"/>

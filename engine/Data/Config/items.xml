@@ -344,7 +344,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="HoldType" value="17" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="forgedIron" />
-        <property name="Degradation" value="500" param1="true" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />		
         <property name="FuelValue" value="16" />
         <property name="SoundDestroy" value="wooddestroy1" />
         <property class="Action0">
@@ -356,16 +357,17 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Block_range" value="4" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="5" />
-            <property name="DamageBonus.wood" value="2" />
+            <property name="DamageBonus.wood" value="1" />
             <property name="DamageBonus.head" value="2" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.stone" value=".25" />
             <property name="DamageBonus.metal" value=".25" />
+			<property name="DamageBonus.earth" value=".25" />
 			<property name="ToolCategory.Butcher" value="0.75" />
         </property>
         <property class="Attributes">
             <property name="EntityDamage" value="6,15" />
-            <property name="BlockDamage" value="6,45" />				
+            <property name="BlockDamage" value="20,60" />				
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="2,1" />
 			<property name="DismembermentBaseChance" value="0.1,0.3"/>
@@ -377,11 +379,12 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="21" name="pickaxeIron">
         <property name="Meshfile" value="Items/Tools/pickaxe_iron" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
         <property name="Material" value="metal" />
         <property name="HoldType" value="32" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="forgedIron" />
-        <property name="Degradation" value="500" param1="true" />
         <property name="SoundDestroy" value="metaldestroy1" />
         <property name="FuelValue" value="16" />
         <property class="Action0">
@@ -395,7 +398,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Stamina_usage" value="4" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="2" />
-            <property name="DamageBonus.wood" value=".3" />
+            <property name="DamageBonus.wood" value=".25" />
+			<property name="DamageBonus.earth" value=".25" />
         </property>
         <property name="Group" value="Tools/Traps" />
         <property class="Attributes">
@@ -418,7 +422,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="HoldType" value="33" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="forgedIron" />
-        <property name="Degradation" value="200" param1="true" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />		
         <property name="SoundDestroy" value="metaldestroy1" />
         <property name="FuelValue" value="16" />
         <property name="Weight" value="72" />
@@ -465,7 +470,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="HoldType" value="18" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="forgedIron" />
-        <property name="Degradation" value="500" param1="true" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
         <property name="SoundDestroy" value="wooddestroy1" />
         <property name="FuelValue" value="24" />
         <property class="Action0">
@@ -477,13 +483,15 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Block_range" value="4" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="8" />
-            <property name="DamageBonus.earth" value="15" />
+            <property name="DamageBonus.earth" value="2" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="4" />
+			<property name="DamageBonus.wood" value=".25" />
+			<property name="DamageBonus.metal" value=".25" />
         </property>
             <property class="Attributes">
             <property name="EntityDamage" value="8,24" />
-            <property name="BlockDamage" value="8,24" />
+            <property name="BlockDamage" value="20,60" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="3,1" />
 			<property name="DismembermentBaseChance" value="0.1,0.3"/>
@@ -498,13 +506,14 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="ActionSkillGroup" value="Mining Tools"/>
 		<property name="CraftingSkillGroup" value="Tool Smithing"/>
     </item>
-    <item id="24" name="hoe">
+    <item id="24" name="hoe">xxx
         <property name="Meshfile" value="Items/Tools/hoe_iron" />
         <property name="Material" value="metal" />
         <property name="HoldType" value="4" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="forgedIron" />
-        <property name="Degradation" value="300" param1="true" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
         <property name="SoundDestroy" value="wooddestroy1" />
         <property name="FuelValue" value="24" />
         <property name="Weight" value="32" />
@@ -534,6 +543,9 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Fertileblock" value="fertileFarmland" />
             <property name="Adjacentblock" value="dirt" />
         </property>
+        <property class="Attributes">
+  			<property name="DegradationMax" value="100,600" />
+ 		</property>  		
         <property name="Group" value="Tools/Traps" />
         <property class="Preview">
             <property name="Zoom" value="0" />
@@ -686,8 +698,9 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Stamina_usage" value="3" />
             <property name="DamageBonus.head" value="5" />
             <property name="DamageBonus.glass" value="25" />
-            <property name="DamageBonus.wood" value="2" />
-			<property name="DamageBonus.metal" value="0.5" />
+            <property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.metal" value="0.25" />
+			<property name="DamageBonus.earth" value="0.25" />
 			<property name="ActionExp" value="1" />
         </property>
         <property class="Action1">
@@ -703,7 +716,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Group" value="Tools/Traps,Basics" />
         <property class="Attributes">
             <property name="EntityDamage" value="4,10" />
-            <property name="BlockDamage" value="4,30" />
+            <property name="BlockDamage" value="10,30" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="2,1" />
 			<property name="DismembermentBaseChance" value="0,0"/>
@@ -951,13 +964,15 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="DamageBlock" value="1" />
             <property name="Sound_start" value="swoosh" />
             <property name="Stamina_usage" value="8" />
-            <property name="DamageBonus.earth" value="8" />
+            <property name="DamageBonus.earth" value="2" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="4" />
+			<property name="DamageBonus.wood" value=".25" />
+			<property name="DamageBonus.metal" value=".25" />
         </property>
         <property class="Attributes">
             <property name="EntityDamage" value="4,12" />
-            <property name="BlockDamage" value="4,12" />
+            <property name="BlockDamage" value="10,30" />
 			<property name="DegradationMax" value="60,600" />
 			<property name="DegradationRate" value="1,1" />
         </property>          
@@ -1658,7 +1673,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="CraftingIngredientExp" value="10" />
 		<property name="CraftingIngredientTime" value="10" />	
 		<property name="RepairTime" value="0.5" />
-        <property name="RepairAmount" value="50" />
+        <property name="RepairAmount" value="100" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="10" />
@@ -2829,6 +2844,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="RepairTools" value="wood" />
         <property name="Degradation" value="250" param1="true" />
         <property name="FuelValue" value="40" />
+		<property name="ActionSkillGroup" value="Archery"/>
+		<property name="CraftingSkillGroup" value="Weapon Smithing"/>		
         <property class="Action0">
             <!-- AttackAction -->
             <property name="Class" value="Launcher" />
@@ -4798,6 +4815,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         </property>
     </item>
     <item id="404" name="shades">
+		<property name="Insulation" value="-5"/>
+		<property name="Waterproof" value="0"/>
         <property name="Meshfile" value="Items/Clothing/Head/shadesPrefab" />
         <property name="Material" value="cloth" />
         <property name="HoldType" value="7" />
@@ -5674,10 +5693,11 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="DescriptionKey" value="clothClothesGroupDesc"/>
 		<property name="Insulation" value="3"/>
 		<property name="Waterproof" value="0.1"/>
-        <property name="Meshfile" value="Items/Clothing/Head/prefabCowboyhat" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="cloth" />
         <property name="Weight" value="5" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="cloth" />
         <property name="EquipSlot" value="Head" />
@@ -7468,8 +7488,9 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="HoldType" value="4" />
         <property name="Stacknumber" value="1" />
         <property name="RepairTools" value="forgedIron" />
-        <property name="Degradation" value="500" param1="true" />
         <property name="SoundDestroy" value="metaldestroy1" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />		
         <property name="FuelValue" value="16" />
         <property class="Action0">
             <!-- AttackAction -->
@@ -7484,7 +7505,8 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Stamina_usage" value="5" />
             <property name="DamageBonus.glass" value="25" />
             <property name="DamageBonus.head" value="4" />
-            <property name="DamageBonus.wood" value=".3" />
+            <property name="DamageBonus.wood" value=".25" />
+			<property name="DamageBonus.earth" value=".25" />
 			<property name="ToolCategory.MyCatStone" value="0.5" />
         </property>
         <property name="Group" value="Tools/Traps" />

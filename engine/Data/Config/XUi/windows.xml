@@ -107,8 +107,6 @@
 		<sprite style="compass.window.background.border"/>
 		<sprite style="compass.window.background"/>
 		
-		<sprite style="compass.window.icon.compass" pos="10,-5" />
-		<sprite style="compass.window.icon.compass" pos="357,-5" />
 		<sprite style="compass.window.compass.background">
 		
 			
@@ -116,6 +114,9 @@
 		<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" >
 				
 		</texture>
+		<sprite pos="200,-60" sprite="" color="255,255,255,255" globalopacitymod="1.8">
+			<label depth="2" width="300" height="28" text="Day: {Day|always}  Time: {Time|always}" font_size="24" pivot="center" effect="outline" upper_case="true" justify="center"/>
+		</sprite>
 	</window>
 	
 	<window name="windowCraftingList"  width="397" height="767" controller="CraftingListInfo" panel="Left" anchor_side="topright">
@@ -872,7 +873,7 @@
 				</panel>
 			</rect>
 			
-			<grid name="waypointList" rows="8" cols="1" pos="6,-95" width="248" height="368" cell_width="390" cell_height="46" controller="MapWaypointList" repeat_content="true" arrangement="vertical" >
+			<grid name="waypointList" rows="8" cols="1" pos="6,-95" width="248" height="368" cell_width="390" cell_height="46" controller="MapWaypointList" repeat_content="true" arrangement="vertical" normal_color="[iconColor]" disabled_color="[iconColor]" >
 				<waypoint_entry name="0" />
 			</grid>
 		</rect>
@@ -912,7 +913,7 @@
 		</rect>
 		
 		<rect name="content" depth="0" pos="0,-43" height="239">
-			<grid name="invitesList" rows="4" cols="1" pos="6,-52" width="248" height="206" cell_width="248" cell_height="46" controller="MapInvitesList" repeat_content="true" arrangement="vertical">
+			<grid name="invitesList" rows="4" cols="1" pos="6,-52" width="248" height="206" cell_width="248" cell_height="46" controller="MapInvitesList" repeat_content="true" arrangement="vertical" normal_color="[iconColor]" disabled_color="[iconColor]">
 				<invites_entry name="0"/>
 			</grid>
 		</rect>
@@ -1305,7 +1306,7 @@
 				</rect>
 			</rect>
 			
-			<grid name="skills" rows="14" cols="1" pos="6,-95" cell_width="734" cell_height="46" controller="SkillList" repeat_content="true" arrangement="vertical" on_scroll="true" >
+			<grid name="skills" rows="14" cols="1" pos="6,-95" cell_width="734" cell_height="46" controller="SkillList" repeat_content="true" arrangement="vertical" >
 				<skill_entry name="0"/>
 			</grid>
 		</panel>
