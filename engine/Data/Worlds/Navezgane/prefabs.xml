@@ -626,7 +626,7 @@
     <decoration type="model" name="sawmill_01_snow" position="1123, 80, 1043" rotation="0" />
     <decoration type="model" name="sign_stop" position="1175, 81, 1220" rotation="3" />
     <decoration type="model" name="sign_speed_25" position="1167, 81, 1187" rotation="3" />
-    <decoration type="model" name="army_camp_01_snow" position="731, 79, 1047" rotation="3" />
+    <decoration type="model" name="army_camp_03" position="731, 79, 1047" rotation="3" />
     <decoration type="model" name="sign_speed_45" position="808, 81, 1103" rotation="2" />
     <decoration type="model" name="sign_speed_45" position="907, 81, 1103" rotation="2" />
     <decoration type="model" name="sign_speed_45" position="840, 81, 1112" rotation="0" />
@@ -635,10 +635,10 @@
     <decoration type="model" name="campsite_04" position="-335, 76, 1200" rotation="3" />
     <decoration type="model" name="business_red_brick_06" position="-993, 75, 1393" rotation="1" />
     <decoration type="model" name="street_light_02" position="-992, 76, 1410" rotation="3" />
-    <decoration type="model" name="army_camp_01_grass" position="-1361, 79, 985" rotation="1" />
+    <decoration type="model" name="army_camp_02" position="-1361, 79, 985" rotation="1" />
     <decoration type="model" name="player_start1" position="-1321, 76, 1409" rotation="1" />
     <decoration type="model" name="campsite_03" position="1356, 61, -144" rotation="0" />
-    <decoration type="model" name="army_camp_01_burnt" position="959, 69, -496" rotation="0" />
+    <decoration type="model" name="army_camp_01" position="959, 69, -496" rotation="0" />
     <decoration type="model" name="campsite_04" position="1156, 61, -1399" rotation="1" />
     <decoration type="model" name="player_start2" position="1180, 61, -1225" rotation="1" />
     <decoration type="model" name="player_start3" position="-591, 61, -523" rotation="3" />

@@ -506,7 +506,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="ActionSkillGroup" value="Mining Tools"/>
 		<property name="CraftingSkillGroup" value="Tool Smithing"/>
     </item>
-    <item id="24" name="hoe">xxx
+    <item id="24" name="hoe">
         <property name="Meshfile" value="Items/Tools/hoe_iron" />
         <property name="Material" value="metal" />
         <property name="HoldType" value="4" />
@@ -1520,8 +1520,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Gain_food" value="0" />
             <property name="Gain_water" value="15" />
             <property name="Gain_sickness" value="15" />
-            <property name="Condition_raycast_block" value="826" />
-            <property name="Condition_raycast_block" value="1472" />
+            <property name="Condition_raycast_block" value="826,1472"/>
             <property name="Sound_start" value="UseActions/player_drinking" />
             <property name="Buff" value="dysentery" />
             <property name="Buff_chance" value="0.5" />
@@ -3968,9 +3967,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     <item id="367" name="huntingRifleBarrel">
 		<property name="DescriptionKey" value="huntingRiflePartsGroupDesc"/>
         <property name="PartType" value="Barrel" />
-        <property name="Meshfile" value="Items/Crafting/huntingRifle_barrel" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
         <property name="Degradation" value="100" param1="true" />
         <property name="Weight" value="10" />
@@ -3989,9 +3989,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     <item id="369" name="huntingRifleStock">
 		<property name="DescriptionKey" value="huntingRiflePartsGroupDesc"/>
         <property name="PartType" value="Stock" />
-        <property name="Meshfile" value="Items/Crafting/huntingRifle_stock" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="wood" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
         <property name="Degradation" value="100" param1="true" />       
         <property name="FuelValue" value="60" />
@@ -4009,9 +4010,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     <item id="370" name="huntingRifleReceiver">
 		<property name="DescriptionKey" value="huntingRiflePartsGroupDesc"/>
         <property name="PartType" value="Receiver" />
-        <property name="Meshfile" value="Items/Crafting/huntingRifle_bolt" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
         <property name="Degradation" value="100" param1="true" />
         <property name="Weight" value="10" />
@@ -4059,7 +4061,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="374" name="leatherBoots">
 		<property name="DescriptionKey" value="leatherClothesGroupDesc"/>
-		<property name="Insulation" value="5"/>
+		<property name="Insulation" value="4"/>
 		<property name="Waterproof" value="0.2"/>
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -4095,7 +4097,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="375" name="leatherPants">
 		<property name="DescriptionKey" value="leatherClothesGroupDesc"/>
-		<property name="Insulation" value="5"/>
+		<property name="Insulation" value="4"/>
 		<property name="Waterproof" value="0.2"/>
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -4128,7 +4130,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="376" name="leatherJacket">
 		<property name="DescriptionKey" value="leatherClothesGroupDesc"/>
-		<property name="Insulation" value="5"/>
+		<property name="Insulation" value="4"/>
 		<property name="Waterproof" value="0.2"/>
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -4161,7 +4163,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="377" name="leatherHood">
 		<property name="DescriptionKey" value="leatherClothesGroupDesc"/>
-		<property name="Insulation" value="5"/>
+		<property name="Insulation" value="4"/>
 		<property name="Waterproof" value="0.2"/>
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -4326,7 +4328,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="382" name="leatherGloves">
 		<property name="DescriptionKey" value="leatherClothesGroupDesc"/>
-		<property name="Insulation" value="5"/>
+		<property name="Insulation" value="4"/>
 		<property name="Waterproof" value="0.2"/>
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -4537,7 +4539,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="392" name="ballCap">
 		<property name="DescriptionKey" value="clothClothesGroupDesc"/>
-		<property name="Insulation" value="5"/>
+		<property name="Insulation" value="-7"/>
 		<property name="Waterproof" value="0.1"/>	
         <property name="Meshfile" value="Items/Clothing/Head/prefabBallcap" />
         <property name="Material" value="cloth" />
@@ -4739,9 +4741,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     <item id="400" name="44MagnumCylinder">
 		<property name="DescriptionKey" value="44MagnumPartsGroupDesc"/>
         <property name="PartType" value="Receiver" />
-        <property name="Meshfile" value="Items/Crafting/44Magnum_cylinder" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
         <property name="Degradation" value="100" param1="false" />
         <property name="DegradationBreaksAfter" value="false" />
@@ -4759,9 +4762,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     <item id="401" name="44MagnumFrame">
 		<property name="DescriptionKey" value="44MagnumPartsGroupDesc"/>
         <property name="PartType" value="Barrel" />
-        <property name="Meshfile" value="Items/Crafting/44Magnum_frame" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
         <property name="Degradation" value="100" param1="false" />
         <property name="DegradationBreaksAfter" value="false" />
@@ -4780,9 +4784,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     <item id="402" name="44MagnumGrip">
 		<property name="DescriptionKey" value="44MagnumPartsGroupDesc"/>
         <property name="PartType" value="Stock" />
-        <property name="Meshfile" value="Items/Crafting/44Magnum_grip" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
         <property name="Degradation" value="100" param1="false" />
         <property name="DegradationBreaksAfter" value="false" />
@@ -4800,9 +4805,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     <item id="403" name="44MagnumParts">
 		<property name="DescriptionKey" value="44MagnumPartsGroupDesc"/>
         <property name="PartType" value="Pump" />
-        <property name="Meshfile" value="Items/Crafting/44Magnum_parts" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
         <property name="Degradation" value="100" param1="false" />
         <property name="DegradationBreaksAfter" value="false" />
@@ -4847,7 +4853,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="405" name="bandana">
 		<property name="DescriptionKey" value="bandanaClothesGroupDesc"/>
-		<property name="Insulation" value="3"/>
+		<property name="Insulation" value="-5"/>
 		<property name="Waterproof" value="0.1"/>
         <property name="Meshfile" value="Items/Clothing/Head/bandana" />
         <property name="Material" value="cloth" />
@@ -6059,7 +6065,6 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Material" value="metal" />
         <property name="HoldType" value="16" />
         <property name="Stacknumber" value="1000" />
-        <property name="Weight" value="5" />
         <property class="Action1">
             <!-- UseAction -->
             <property name="Class" value="Projectile" />
@@ -7051,10 +7056,11 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="732" name="smallEngine">
 		<property name="PartType" value="Receiver" />
-        <property name="Meshfile" value="Items/Tools/smallEngine" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="VehicleSlotType" value="engine" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="7" />
+        <property name="HoldType" value="45" />
         <property name="Weight" value="250" />
         <property name="Group" value="Resources" />
 		<property name="RepairTools" value="repairKit" />
@@ -7075,9 +7081,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="733" name="augerBlade">
 		<property name="PartType" value="Barrel" />
-        <property name="Meshfile" value="Items/Tools/auger_blade" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="18" />
+        <property name="HoldType" value="45" />
         <property name="Weight" value="100" />
         <property name="Group" value="Resources" />
         <property class="Attributes">
@@ -7090,9 +7097,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="734" name="handlebars">
 		<property name="PartType" value="Pump" />
-        <property name="Meshfile" value="Items/Tools/handlebars" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="7" />
+        <property name="HoldType" value="45" />
         <property name="Weight" value="50" />
         <property name="Group" value="Resources" /> 
         <property class="Attributes">
@@ -7616,9 +7624,10 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     <item id="758" name="minibikeHandlebars">
 		<property name="DescriptionKey" value="minibikePartsGroupDesc"/>
 		<property name="VehicleSlotType" value="handlebars"/>
-        <property name="Meshfile" value="Items/Tools/handlebars" />
+        <property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
-        <property name="HoldType" value="7" />
+        <property name="HoldType" value="45" />
         <property name="Weight" value="50" />
         <property name="Group" value="Resources" />
 		<property name="RepairTools" value="repairKit" />
@@ -9527,5 +9536,46 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Rot" value="10,-45,0" />
         </property>
     </item>	
+	
+    <item id="847" name="plantFiberHat">
+		<property name="Insulation" value="-10"/>
+		<property name="Waterproof" value="0.15"/>
+        <property name="Meshfile" value="Items/Clothing/Head/prefabCowboyhat" />
+        <property name="Material" value="cloth" />
+        <property name="Weight" value="5" />
+        <property name="HoldType" value="7" />
+        <property name="Stacknumber" value="1" />
+        <property name="RepairTools" value="leather" />
+        <property name="EquipSlot" value="Head" />
+        <property name="FuelValue" value="16" />
+        <property name="Degradation" value="100" param1="true" />
+        <property name="CustomIcon" value="cowboyHat" />
+        <property name="CustomIconTint" value="e3cea4" />	
+		<property name="ActionSkillGroup" value="Clothing"/>
+		<property name="CraftingSkillGroup" value="Tailoring"/>		
+        <property class="Attributes">	
+			 <property name="ConcussiveProtection" value="0.01, 0.1" /> 
+  			<property name="PunctureProtection" value="0.01, 0.1" /> 
+  			<property name="FireProtection" value="0.05, 0.2" />
+			<property name="RadiationProtection" value="0.15, 0.2" />
+  			<property name="DegradationMax" value="40,600" />
+ 		</property>        
+        
+        <property name="Group" value="Clothing" />
+        <property class="UMA">
+            <property name="Mesh" value="gear_cowboyhat" />
+            <property name="Overlay" value="gear_cowboyhat" />
+			<property name="OverlayTints" value="e3cea4" />			
+            <property name="Layer" value="2" />
+            <property name="UISlot" value="Headgear" />
+            <property name="ShowHair" value="true" />
+        </property>
+        <property class="Preview">
+            <property name="Zoom" value="28" />
+            <property name="Pos" value="0,-0.05" />
+            <property name="Rot" value="90,45,0" />
+        </property>
+
+    </item>		
     
 </items>

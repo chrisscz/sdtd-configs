@@ -35,17 +35,17 @@
 	<!-- Base temperature when you are wet. -->
 	<property name="BaseOutsideTempChangeWhenWet" value="0"/>
 	<!-- How much change you feel in the outside air temperature when wet and 100% windy. -->
-	<property name="WindyOutsideTempChangeWhenWet" value="-7"/>
+	<property name="WindyOutsideTempChangeWhenWet" value="-10"/>
 	<!-- How much change you feel in the outside air temperature when dry and 100% windy. -->
-	<property name="WindyOutsideTempChangeWhenDry" value="-5"/>
+	<property name="WindyOutsideTempChangeWhenDry" value="-3"/>
 	<!-- How much direct sunlight warms you. -->
 	<property name="OutsideTempChangeWhenInSun" value="10"/>
 	<!-- How much 100% cloud cover can affect how much the sun warms you. -->
 	<property name="OutsideTempChangeWhenInSunCloudScale" value="0.5"/>
 	<!-- How much the temp changes when you run. -->
-	<property name="OutsideTempShiftWhenRunning" value="10"/>
+	<property name="OutsideTempShiftWhenRunning" value="5"/>
 	<!-- How much the temp changes when you walk. -->
-	<property name="OutsideTempShiftWhenWalking" value="3"/>
+	<property name="OutsideTempShiftWhenWalking" value="2"/>
 	<!-- How much the temp changes when you are idle. -->
 	<property name="OutsideTempShiftWhenIdle" value="0"/>
 

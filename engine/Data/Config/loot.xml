@@ -1278,6 +1278,7 @@
   <lootcontainer id="59" count="0,5" size="4,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
 
     <item name="shamSandwich" count="1,5"/>
+	<item name="foodHoney" count="1,5"/>
     <item name="canHam" count="1,5"/>
     <item group="coldfood" />
     <item group="beverages" />

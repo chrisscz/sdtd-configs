@@ -374,13 +374,13 @@
     </recipe>
 
     <recipe name="cobblestoneFrame" count="1" scrapable="False" >
-        <ingredient name="wood" count="10"/>
-        <ingredient name="yuccaFibers" count="5"/>
+        <ingredient name="wood" count="5"/>
+        <ingredient name="yuccaFibers" count="1"/>
     </recipe>
 
     <recipe name="cobblestoneRampFrame" count="1" scrapable="False" >
-        <ingredient name="wood" count="10"/>
-        <ingredient name="yuccaFibers" count="5"/>
+        <ingredient name="wood" count="5"/>
+        <ingredient name="yuccaFibers" count="1"/>
     </recipe>
 
     <recipe name="cobblestones" count="1" scrapable="False" >
@@ -409,11 +409,11 @@
         <ingredient name="forgedIron" count="10"/>
     </recipe>
 
-    <recipe name="cornMeal" count="2" scrapable="False" >
-        <ingredient name="corn" count="2"/>
+    <recipe name="cornMeal" count="1" scrapable="False" >
+        <ingredient name="corn" count="1"/>
     </recipe>
 
-    <recipe name="cornSeed" count="4" scrapable="False" >
+    <recipe name="cornSeed" count="2" scrapable="False" >
         <ingredient name="corn" count="1"/>
     </recipe>
 
@@ -569,7 +569,7 @@
     </recipe>
 
     <recipe name="hayBale" count="1" scrapable="False" >
-        <ingredient name="yuccaFibers" count="4"/>
+        <ingredient name="yuccaFibers" count="10"/>
     </recipe>
 	
     <recipe name="animalHideBoots" count="1" scrapable="False" >
@@ -867,6 +867,14 @@
     <recipe name="plantFiberGloves" count="1" scrapable="False" >
         <ingredient name="yuccaFibers" count="5"/>
     </recipe>	
+	
+    <recipe name="plantFiberHat" count="1" scrapable="False" >
+        <ingredient name="yuccaFibers" count="5"/>
+    </recipe>	
+	
+    <recipe name="bandana" count="1" scrapable="False" >
+        <ingredient name="cloth" count="2"/>
+    </recipe>		
 
     <recipe name="poleBlockOldWood" count="4" scrapable="False" >
         <ingredient name="wood" count="3"/>
@@ -956,7 +964,7 @@
     </recipe>
 	
     <recipe name="stone" count="1" scrapable="False" >
-        <ingredient name="rockSmall" count="45"/>
+        <ingredient name="rockSmall" count="175"/>
 		<ingredient name="ironFragment" count="5"/>
     </recipe>	
 

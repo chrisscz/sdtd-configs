@@ -19,6 +19,7 @@
 			<path_radius value="7" />
 			
 			<hub_rule name="customHubTest"/>
+			<hub_rule name="customHubTest"/>
 			
 			<wilderness_rule name="wildernessDefault"/>
 		</cell_rule>
@@ -462,9 +463,9 @@
 		</prefab_rule>
 		
 		<prefab_rule name="militaryCamps">
-			<prefab name="army_camp_01_snow" />
-			<prefab name="army_camp_01_grass" />
-			<prefab name="army_camp_01_burnt" />
+			<prefab name="army_camp_01" />
+			<prefab name="army_camp_02" />
+			<prefab name="army_camp_03" />
 		</prefab_rule>
 		
 		<prefab_rule name="wildernessMisc">

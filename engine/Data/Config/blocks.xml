@@ -13,16 +13,10 @@
     <property name="Weight" value="100" />
     <property name="DropScale" value="2" />
     <property name="LPHardnessScale" value="2" />
-    <drop event="Harvest" name="rockSmall" count="30" />
+    <drop event="Harvest" name="rockSmall" count="125" />
 	<drop event="Harvest" name="ironFragment" count="5" />	
-    <drop event="Destroy" name="rockSmall" count="15" />
+    <drop event="Destroy" name="rockSmall" count="50" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" /> 
-	<!--
-	<property class="RepairItems">
-		<property name="wood" value="10" />
-		<property name="grass" value="5" />		
-	</property>
-	-->
   </block>
   <block id="2" name="grass">
     <property name="Material" value="dirt" />
@@ -3255,7 +3249,7 @@
     <property name="SiblingBlock" value="trapSpikesDamage05" />
     <property name="IsTerrainDecoration" value="true" />
     <!-- we need to know the first stage of the damage -->
-    <property name="CanPickup" value="true" />
+    <property name="CanPickup" value="false" />
     <property class="UpgradeBlock">
       <property name="ToBlock" value="trapSpikesDamage03" />
       <property name="Item" value="wood" />
@@ -4511,8 +4505,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
     <drop event="Destroy" name="pineSeed" count="1,2" prob=".5" />
   </block>
   <block id="564" name="MountainPine20m">
@@ -4528,8 +4522,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
     <drop event="Destroy" name="pineSeed" count="1,2" prob=".5" />
   </block>
   <block id="565" name="MountainPineDry">
@@ -4545,8 +4539,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
   </block>
   <block id="566" name="Birch10m">
     <property name="Class" value="ModelTree" />
@@ -4687,8 +4681,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
     <drop event="Destroy" name="mapleSeed" count="1,2" prob=".5" />
   </block>
   <block id="575" name="Maple17m">
@@ -4704,8 +4698,8 @@
     <property name="IsPlant" value="true" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
     <drop event="Destroy" name="mapleSeed" count="1,2" prob=".5" />
   </block>
   
@@ -4736,8 +4730,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />	
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />	
   </block>
   <block id="578" name="BurntPine02">
     <property name="Class" value="ModelTree" />
@@ -4752,8 +4746,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
   </block>
   <block id="579" name="BurntPine03">
     <property name="Class" value="ModelTree" />
@@ -4768,8 +4762,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="50" prob="4" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="4" />
   </block>
   <block id="580" name="BurntPine04">
     <property name="Class" value="ModelTree" />
@@ -4784,8 +4778,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
   </block>
   <block id="581" name="DeadTree01">
     <property name="Class" value="ModelTree" />
@@ -4871,8 +4865,8 @@
     <property name="IsPlant" value="true" />
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />    
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
   </block>
  
   <block id="588" name="Stump">
@@ -4899,8 +4893,8 @@
     <property name="IsPlant" value="true" />
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
-	<drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+	<drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
   </block>
   <block id="590" name="WinterPine03">
     <property name="Class" value="ModelTree" />
@@ -4914,8 +4908,8 @@
     <property name="IsPlant" value="true" />
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
-	<drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+	<drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
   </block>
   <block id="591" name="desertShrub">
     <property name="Class" value="Deadgrass" />
@@ -5679,7 +5673,7 @@
   </block>
   <block id="675" name="plantedMountainPine6m">
     <property name="Class" value="ModelTree" />
-    <property name="Material" value="wood" />
+    <property name="Material" value="treeWoodSmall" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
     <property name="Tag" value="TreeTrunk" />
@@ -5701,7 +5695,7 @@
   </block>
   <block id="676" name="plantedMountainPine8m">
     <property name="Class" value="ModelTree" />
-    <property name="Material" value="wood" />
+    <property name="Material" value="treeWoodSmall" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
     <property name="Tag" value="TreeTrunk" />
@@ -5724,7 +5718,7 @@
   </block>
   <block id="677" name="plantedMountainPine13m">
     <property name="Class" value="ModelTree" />
-    <property name="Material" value="wood+wood" />
+    <property name="Material" value="treeWoodMedium" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
     <property name="Tag" value="TreeTrunk" />
@@ -5747,7 +5741,7 @@
   </block>
   <block id="678" name="plantedMountainPine16m">
     <property name="Class" value="ModelTree" />
-    <property name="Material" value="wood+wood" />
+    <property name="Material" value="treeWoodMedium" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
     <property name="Tag" value="TreeTrunk" />
@@ -5770,7 +5764,7 @@
   </block>
   <block id="679" name="plantedMountainPine19m">
     <property name="Class" value="ModelTree" />
-    <property name="Material" value="wood+wood" />
+    <property name="Material" value="treeWoodLarge" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
     <property name="Tag" value="TreeTrunk" />
@@ -5787,8 +5781,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
     <drop event="Destroy" name="pineSeed" count="1,2" prob=".5" />
   </block>
   <block id="680" name="plantedMaple1m">
@@ -5815,7 +5809,7 @@
   </block>
   <block id="681" name="plantedMaple6m">
     <property name="Class" value="ModelTree" />
-    <property name="Material" value="wood" />
+    <property name="Material" value="treeWoodSmall" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
     <property name="Tag" value="TreeTrunk" />
@@ -5837,7 +5831,7 @@
   </block>
   <block id="682" name="plantedMaple13m">
     <property name="Class" value="ModelTree" />
-    <property name="Material" value="wood+wood" />
+    <property name="Material" value="treeWoodMedium" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
     <property name="Tag" value="TreeTrunk" />
@@ -5854,13 +5848,13 @@
       <property name="IsRandom" value="false" />
     </property>
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="25" />
-    <drop event="Destroy" name="wood" count="12" prob="1" />
+    <drop event="Harvest" name="wood" count="200" />
+    <drop event="Destroy" name="wood" count="100" prob="1" />
     <drop event="Destroy" name="mapleSeed" count="1,2" prob="1" />
   </block>
   <block id="683" name="plantedMaple15m">
     <property name="Class" value="ModelTree" />
-    <property name="Material" value="wood+wood" />
+    <property name="Material" value="treeWoodMedium" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
     <property name="Tag" value="TreeTrunk" />
@@ -6530,6 +6524,9 @@
       <property name="UpgradeHitCount" value="4" />
     </property>	
     <property name="DowngradeBlock" value="cobblestoneBroke01" />
+	<property class="RepairItems">
+		<property name="cobblestones" value="10" />
+	</property>		
     <drop event="Destroy" count="0" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />
     <property name="Group" value="Building" />
@@ -6827,7 +6824,7 @@
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />
     <drop event="Destroy" count="0" />
   </block> 
-  <block id="835" name="stairsSmallRichwood">xxx
+  <block id="835" name="stairsSmallRichwood">
     <property name="Material" value="wood" />
     <property name="Shape" value="New" />
     <property name="Model" value="StairsFilled" />
@@ -6836,6 +6833,9 @@
     <property name="FuelValue" value="48" />
     <drop event="Destroy" name="woodDebris" count="1" />
     <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
+	<property class="RepairItems">
+		<property name="wood" value="10" />
+	</property>		
   </block>
   <block id="836" name="stairsStone">
     <property name="Material" value="stone" />
@@ -9148,7 +9148,7 @@
 
   <block id="1183" name="lootCrateShamway">
     <property name="Class" value="Loot" />
-    <property name="Material" value="cardboard" />
+    <property name="Material" value="wood" />
     <property name="Texture" value="276,437,437,437,437,437" />
     <property name="LootList" value="59" />
     <drop event="Destroy" count="0" />
@@ -10130,7 +10130,7 @@
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestoneWallQuarter" />
       <property name="Item" value="cobblestones" />
-      <property name="ItemCount" value="10" />
+      <property name="ItemCount" value="4" />
       <property name="UpgradeHitCount" value="4" />
     </property>
     <property name="Group" value="Building" />
@@ -10226,7 +10226,7 @@
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestoneWallThreeQuarters" />
       <property name="Item" value="cobblestones" />
-      <property name="ItemCount" value="10" />
+      <property name="ItemCount" value="4" />
       <property name="UpgradeHitCount" value="4" />
     </property>      
     <drop event="Destroy" count="0" />
@@ -10243,7 +10243,7 @@
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestone" />
       <property name="Item" value="cobblestones" />
-      <property name="ItemCount" value="10" />
+      <property name="ItemCount" value="4" />
       <property name="UpgradeHitCount" value="4" />
     </property>      
     <drop event="Destroy" count="0" />
@@ -10261,7 +10261,7 @@
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestoneWallHalf" />
       <property name="Item" value="cobblestones" />
-      <property name="ItemCount" value="10" />
+      <property name="ItemCount" value="4" />
       <property name="UpgradeHitCount" value="4" />
     </property>
     <drop event="Destroy" count="0" />
@@ -10628,6 +10628,9 @@
       <property name="UpgradeHitCount" value="4" />
     </property>    
     <property name="DowngradeBlock" value="cobblestoneBroke02" />
+	<property class="RepairItems">
+		<property name="cobblestones" value="10" />
+	</property>		
     <drop event="Destroy" name="destroyedStone" count="1" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />   
   </block>
@@ -10642,6 +10645,9 @@
       <property name="ItemCount" value="10" />
       <property name="UpgradeHitCount" value="4" />
     </property>  
+	<property class="RepairItems">
+		<property name="cobblestones" value="10" />
+	</property>		
     <drop event="Destroy" name="destroyedStone" count="1" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />     
   </block>
@@ -10664,7 +10670,7 @@
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestoneRampQuarter" />
       <property name="Item" value="cobblestones" />
-      <property name="ItemCount" value="10" />
+      <property name="ItemCount" value="4" />
       <property name="UpgradeHitCount" value="4" />
     </property>
     <property name="Group" value="Building" />
@@ -10680,7 +10686,7 @@
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestoneRampHalf" />
       <property name="Item" value="cobblestones" />
-      <property name="ItemCount" value="10" />
+      <property name="ItemCount" value="4" />
       <property name="UpgradeHitCount" value="4" />
     </property>      
     <drop event="Destroy" name="destroyedStone" count="1" />
@@ -10698,7 +10704,7 @@
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestoneWedge" />
       <property name="Item" value="cobblestones" />
-      <property name="ItemCount" value="10" />
+      <property name="ItemCount" value="4" />
       <property name="UpgradeHitCount" value="4" />
     </property>      
     <drop event="Destroy" name="destroyedStone" count="1" />
@@ -11296,8 +11302,8 @@
     <property name="ParticleOnDeath" value="treeGib_burnt" />
 	<property name="ModelOffset" value="0,-1.2,0" />
     <!-- uses dummy texture id from opaque atlas -->
-    <drop event="Harvest" name="wood" count="200" />
-    <drop event="Destroy" name="wood" count="100" prob="1" />
+    <drop event="Harvest" name="wood" count="400" />
+    <drop event="Destroy" name="wood" count="200" prob="1" />
   </block>  
   
   <block id="1402" name="Azalea">
@@ -11309,6 +11315,7 @@
     <property name="Model" value="Entities/Trees/AzaleaPrefab" />
     <property name="IsTerrainDecoration" value="true" />
     <property name="Collide" value="melee" />
+	<property name="CanPickup" param1="wood" value="true" />
     <!-- uses dummy texture id from opaque atlas -->
     <drop event="Destroy" name="wood" count="1" prob="1" />
 	<!-- property name="FallOver" value="false" /-->
