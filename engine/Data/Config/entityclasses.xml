@@ -724,7 +724,8 @@
 		 <property name="Mesh"   value="Zombies/zombieDogPrefab" />
 		<property name="ModelType" value="Standard" />
         <property name="Parent" value="Enemies" />
-		<property name="RagdollEnabled" value="true" />		
+		<property name="RagdollEnabled" value="true" />	
+		<property name="SurfaceCategory" value="organic" />		
 		
         <property name="Prefab" value="Dog" />
 	    <property name="WalkType"  value="0" />

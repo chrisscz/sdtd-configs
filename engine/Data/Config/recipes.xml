@@ -266,7 +266,7 @@
     </recipe>
 
     <recipe name="brick" count="1" scrapable="False" craft_area="forge" material_based="true" >
-        <ingredient name="unit_clay" count="10"/>
+        <ingredient name="unit_clay" count="20"/>
     </recipe>
 
     <recipe name="brickDecayed" count="1" scrapable="False" >
@@ -275,7 +275,7 @@
     </recipe>
 
     <recipe name="brickPaver" count="1" scrapable="False" craft_area="forge" material_based="true" >
-        <ingredient name="unit_clay" count="10"/>
+        <ingredient name="unit_clay" count="20"/>
     </recipe>
 
     <recipe name="bucket" count="1" scrapable="False" >
@@ -322,7 +322,7 @@
     <recipe name="chainsaw" count="1" scrapable="False" craft_area="assembly">
         <ingredient name="handlebars" count="1"/>
         <ingredient name="smallEngine" count="1"/>
-        <ingredient name="augerParts" count="1"/>
+        <ingredient name="chainsawParts" count="1"/>
         <ingredient name="chainsawBlade" count="1"/>
     </recipe>	
 
@@ -389,7 +389,7 @@
     </recipe>
 
     <recipe name="concrete" count="1" scrapable="False" >
-        <ingredient name="concreteMix" count="1"/>
+        <ingredient name="concreteMix" count="5"/>
     </recipe>
 
     <recipe name="concreteMix" count="1" scrapable="False" >
@@ -452,8 +452,8 @@
     </recipe>
 
     <recipe name="emptyJar" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
-        <ingredient name="unit_glass" count="12"/>
-        <ingredient name="unit_clay" count="3"/>
+        <ingredient name="unit_glass" count="10"/>
+        <ingredient name="unit_clay" count="1"/>
     </recipe>
 
     <recipe name="explodingCrossbowBolt" count="1" scrapable="False" >
@@ -492,7 +492,7 @@
     </recipe>
 
     <recipe name="scrapStairs" count="1" scrapable="False" >
-        <ingredient name="scrapIron" count="4"/>
+        <ingredient name="scrapIron" count="5"/>
     </recipe>	
 
     <recipe name="flamingArrow" count="1" scrapable="False" >
@@ -532,8 +532,8 @@
     </recipe>
 
     <recipe name="glass" count="1" scrapable="False" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="100"/>
-        <ingredient name="unit_clay" count="10"/>
+		<ingredient name="unit_glass" count="10"/>
+        <ingredient name="unit_clay" count="1"/>
     </recipe>
 
     <recipe name="goldenrodSeed" count="4" scrapable="False" >
@@ -906,13 +906,39 @@
         <ingredient name="wood" count="4"/>
     </recipe>
 
-    <recipe name="rebarFrame" count="1" scrapable="False" >
-        <ingredient name="shortMetalPipe" count="10"/>
-    </recipe>
+    <recipe name="rebarFrame" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
+        <ingredient name="unit_clay" count="1"/>
+        <ingredient name="unit_iron" count="5"/>
+    </recipe>	
+	
+    <recipe name="scrapIron" count="1" scrapable="False" craft_area="forge" material_based="true" craft_time = "0.5" craft_exp_gain="0" >
+        <ingredient name="unit_iron" count="5"/>
+    </recipe>	
 
-    <recipe name="rebarRampFrame" count="1" scrapable="False" >
-        <ingredient name="shortMetalPipe" count="10"/>
-    </recipe>
+	<recipe name="scrapLead" count="1" scrapable="False" craft_area="forge" material_based="true" craft_time = "0.5" craft_exp_gain="0" >
+        <ingredient name="unit_lead" count="5"/>
+    </recipe>	
+	
+    <recipe name="scrapBrass" count="1" scrapable="False" craft_area="forge" material_based="true" craft_time = "0.5" craft_exp_gain="0" >
+        <ingredient name="unit_brass" count="5"/>
+    </recipe>		
+	
+    <recipe name="brokenGlass" count="1" scrapable="False" craft_area="forge" material_based="true" craft_time = "0.5" craft_exp_gain="0" >
+        <ingredient name="unit_glass" count="5"/>
+    </recipe>		
+	
+    <recipe name="clayLump" count="1" scrapable="False" craft_area="forge" material_based="true" craft_time = "0.5" craft_exp_gain="0" >
+        <ingredient name="unit_clay" count="5"/>
+    </recipe>	
+	
+    <recipe name="rockSmall" count="1" scrapable="False" craft_area="forge" material_based="true" craft_time = "0.5" craft_exp_gain="0" >
+        <ingredient name="unit_stone" count="5"/>
+    </recipe>	
+	
+    <recipe name="rebarRampFrame" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
+        <ingredient name="unit_clay" count="1"/>
+        <ingredient name="unit_iron" count="2"/>
+    </recipe>		
 
     <recipe name="redWoodPillar" count="1" scrapable="False" >
         <ingredient name="wood" count="10"/>
@@ -920,7 +946,7 @@
     </recipe>
 
     <recipe name="reinforcedMetalSiding" count="1" scrapable="False" >
-        <ingredient name="scrapIron" count="4"/>
+        <ingredient name="scrapIron" count="5"/>
     </recipe>
 
     <recipe name="repairKit" count="1" scrapable="False" >
@@ -935,7 +961,7 @@
 		<ingredient name="unit_iron" count="50"/>
     </recipe>	
 	
-    <recipe name="rocket" count="1" scrapable="False" >xxx
+    <recipe name="rocket" count="1" scrapable="False" >
         <ingredient name="rocketCasing" count="1"/>
 		<ingredient name="rocketTip" count="1"/>
 		<ingredient name="gunPowder" count="50"/>
@@ -1048,7 +1074,7 @@
     </recipe>
 
     <recipe name="scrapMetalWall" count="1" scrapable="False" >
-        <ingredient name="scrapIron" count="9"/>
+        <ingredient name="scrapIron" count="10"/>
     </recipe>
 
     <recipe name="sectionalArm" count="1" scrapable="False" >
@@ -1324,11 +1350,11 @@
     </recipe>
 
     <recipe name="woodenHatch1_v1" count="1" scrapable="False" >
-        <ingredient name="wood" count="4"/>
+        <ingredient name="wood" count="10"/>
     </recipe>
 
     <recipe name="woodenStairs" count="1" scrapable="False" >
-        <ingredient name="wood" count="4"/>
+        <ingredient name="wood" count="10"/>
     </recipe>
 
     <recipe name="woodFence" count="1" scrapable="False" >

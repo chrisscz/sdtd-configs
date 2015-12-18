@@ -85,13 +85,13 @@
 		<sprite style="paging.window.name.foreground"/>
 		<label style="paging.window.name"/>
 		
-		<sprite style="press, hover, paging.window.icon.crafting"/>
-		<sprite style="press, hover, paging.window.icon.character"/>
-		<sprite style="press, hover, paging.window.icon.map"/>		
+		<button style="press, hover, paging.window.icon.crafting"/>
+		<button style="press, hover, paging.window.icon.character"/>
+		<button style="press, hover, paging.window.icon.map"/>		
 		
-		<sprite style="press, hover, paging.window.icon.skills"/>
-		<sprite style="press, hover, paging.window.icon.players"/>
-		<sprite style="press, hover, paging.window.icon.creative"/>
+		<button style="press, hover, paging.window.icon.skills"/>
+		<button style="press, hover, paging.window.icon.players"/>
+		<button style="press, hover, paging.window.icon.creative"/>
 		
 	</window>
 	
@@ -130,7 +130,6 @@
 		</panel>
 		
 		<panel name="content" width="100%" height="658" depth="1" pos="3,-28" on_scroll="true" disableautobackground="true">
-			<sprite depth="1" name="background" color="[black]" type="sliced" pos="3,-3" width="397" height="647"/> 
 			
 			<rect depth="2" name="categorySelector" width="390" height="43" pos="6,-6">
 				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
@@ -143,7 +142,7 @@
 			<rect depth="3" name="searchControls" width="390" height="43" pos="6,-52">
 				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
 				<sprite color="[darkGrey]" type="sliced" />
-				<sprite depth="4" name="favorites" style="icon30px, press" pos="18,-22" sprite="server_favorite" pivot="center" sound="[paging_click]"/>
+				<button depth="4" name="favorites" style="icon30px, press" pos="18,-22" sprite="server_favorite" pivot="center" sound="[paging_click]" />
 				
 				<panel pos="104,0" width="200" disableautobackground="true">
 					<sprite depth="4" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
@@ -151,12 +150,12 @@
 				</panel>
 				
 				<panel pos="286,0" width="104" height="43" disableautobackground="true">
-					<sprite depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+					<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
 					<rect depth="4" pos="37,-7" >
 						<sprite name="background" style="icon30px" color="[black]" type="sliced" />
 						<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
 					</rect>
-					<sprite depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+					<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
 				</panel>
 			</rect>
 			
@@ -206,13 +205,13 @@
 	
 		<rect depth="2" name="searchControls" width="666" height="43" pos="6,-52">
 			
-			<sprite depth="4" name="all" style="icon30px, press" pos="22,-22" sprite="ui_game_symbol_shopping_cart" pivot="center" color="222, 206, 163, 255" tooltip="All" sound="[paging_click]"/>
-			<sprite depth="4" name="items" style="icon30px, press" pos="65,-22" sprite="ui_game_symbol_backpack" pivot="center" tooltip="Items" sound="[paging_click]"/>
-			<sprite depth="4" name="blocks" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_all_blocks" pivot="center" tooltip="Blocks" sound="[paging_click]"/>
+			<button depth="4" name="all" style="icon30px, press" pos="22,-22" sprite="ui_game_symbol_shopping_cart" pivot="center" tooltip="All" sound="[paging_click]" selected="true" />
+			<button depth="4" name="items" style="icon30px, press" pos="65,-22" sprite="ui_game_symbol_backpack" pivot="center" tooltip="Items" sound="[paging_click]" />
+			<button depth="4" name="blocks" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_all_blocks" pivot="center" tooltip="Blocks" sound="[paging_click]" />
 			
 			
-			<sprite depth="4" name="simplepickup" style="icon30px, press, hover" pos="222,-22" sprite="ui_game_symbol_hand" color="[mediumGrey]" pivot="center" tooltip="Simple Pickup" sound="[paging_click]"/>
-			<sprite depth="4" name="devblocks" style="icon30px, press, hover" pos="265,-22" sprite="ui_game_symbol_computer" color="[mediumGrey]" pivot="center" tooltip="Dev Blocks" sound="[paging_click]"/>
+			<button depth="4" name="simplepickup" style="icon30px, press, hover" pos="222,-22" sprite="ui_game_symbol_hand" defaultcolor="[mediumGrey]" pivot="center" tooltip="Simple Pickup" sound="[paging_click]" />
+			<button depth="4" name="devblocks" style="icon30px, press, hover" pos="265,-22" sprite="ui_game_symbol_computer" defaultcolor="[mediumGrey]" pivot="center" tooltip="Dev Blocks" sound="[paging_click]" />
 			
 			
 			<panel pos="380,0" width="200" disableautobackground="true">
@@ -221,12 +220,12 @@
 			</panel>
 			
 			<panel pos="555,0" width="104" height="43" disableautobackground="true">
-				<sprite depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+				<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
 				<rect depth="4" name="background" pos="37,-7">
 					<sprite name="background" style="icon30px" color="[black]" type="sliced" />
 					<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
 				</rect>
-				<sprite depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+				<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
 			</panel>
 		</rect>
 		
@@ -263,10 +262,10 @@
 				<rect depth="1" name="actions" width="147" height="225">
 					<sprite color="[mediumGrey]" type="sliced" height="43" />
 					<rect name="recipeCraftCountControl" width="120" height="210" pos="27,0" controller="RecipeCraftCount">
-						<sprite depth="2" name="countDown" style="icon30px, press" pos="-5,-20" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+						<button depth="2" name="countDown" style="icon30px, press" pos="-5,-20" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
 						<count_control_input name="count_input" depth="2" pos="10,-5" />
-						<sprite depth="2" name="countUp" style="icon30px, press" pos="59,-20" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
-						<sprite depth="2" name="countMax" style="icon30px, press" pos="91,-20" sprite="ui_game_symbol_arrow_max" pivot="center" sound="[paging_click]"/>
+						<button depth="2" name="countUp" style="icon30px, press" pos="59,-20" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+						<button depth="2" name="countMax" style="icon30px, press" pos="91,-20" sprite="ui_game_symbol_arrow_max" pivot="center" sound="[paging_click]"/>
 					</rect>
 				</rect>
 				<item_action_entry />
@@ -780,11 +779,11 @@
 			<rect depth="1" name="toolbar" width="712" height="43" pos="6,-6">
 				<sprite color="[lightGrey]" type="sliced" />
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="718" height="47" color="[black]" type="sliced" fillcenter="false" />	
-				<sprite depth="1" name="playerIcon" style="icon32px, press, hover" pos="4,-5" sprite="ui_game_symbol_map_player_arrow" tooltip="Center on Player" sound="[paging_click]"/>
+				<button depth="1" name="playerIcon" style="icon32px, press, hover" pos="4,-5" sprite="ui_game_symbol_map_player_arrow" tooltip="Center on Player" sound="[paging_click]"/>
 				<label depth="1" name="playerPosLat" pos="50,-14" width="50" height="28" text="110 S" font_size="20"/>
 				<label depth="1" name="playerPosLong" pos="104,-14" width="50" height="28" text="769 W" font_size="20"/>
 
-				<sprite depth="1" name="bedrollIcon" style="icon32px, press, hover" pos="200,-5" sprite="ui_game_symbol_map_bed" tooltip="Center on Sleeping Bag" sound="[paging_click]"/>
+				<button depth="1" name="bedrollIcon" style="icon32px, press, hover" pos="200,-5" sprite="ui_game_symbol_map_bed" tooltip="Center on Sleeping Bag" sound="[paging_click]"/>
 				<label depth="1" name="bedrollPosLat" pos="246,-14" width="50" height="28" text="300 N" font_size="20"/>
 				<label depth="1" name="bedrollPosLong" pos="300,-14" width="50" height="28" text="832 W" font_size="20"/>
 
@@ -792,7 +791,7 @@
 				<label depth="1" name="cursorPosLat" pos="434,-14" width="50" height="28" text="300 N" font_size="20"/>
 				<label depth="1" name="cursorPosLong" pos="484,-14" width="50" height="28" text="832 W" font_size="20"/>
 
-				<sprite depth="1" name="waypointIcon" style="icon32px, hover" on_press="true" pos="562,-5" sprite="ui_game_symbol_map_waypoint_remove" tooltip="Remove Quick Waypoint"/>
+				<button depth="1" name="waypointIcon" style="icon32px, hover" on_press="true" pos="562,-5" sprite="ui_game_symbol_map_waypoint_remove" tooltip="Remove Quick Waypoint"/>
 				<label depth="1" name="waypointDistance" pos="606,-14" width="102" height="28" text="0.2 KILOMETERS" font_size="20"/>				
 			</rect>
 			<panel name="mapView" depth="1" width="712" height="712" pos="6,-49" disableautobackground="true" on_drag="true" style="press, scroll, hover" sound="[craft_click]" > <!-- backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="0" -->
@@ -848,10 +847,10 @@
 			<rect depth="1" name="toolbar" width="248" height="43" pos="6,-6">
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="254" height="49" color="[black]" type="sliced" fillcenter="false" />
 				<sprite color="[mediumGrey]" type="sliced" width="250" height="44" pos="-1,0" />
-				<sprite depth="1" name="trackBtn" style="icon32px, press, hover" pos="14,-5" sprite="ui_game_symbol_compass" tooltip="Track Waypoint" sound="[paging_click]"/>
-				<sprite depth="1" name="showOnMapBtn" style="icon32px, press, hover" pos="72,-5" sprite="ui_game_symbol_map" tooltip="Show on Map" sound="[paging_click]"/>
-				<sprite depth="1" name="waypointRemoveBtn" style="icon32px, hover" on_press="true" pos="142,-5" sprite="ui_game_symbol_map_waypoint_remove" tooltip="Remove Waypoint" />
-				<sprite depth="1" name="inviteBtn" style="icon32px, press, hover" pos="200,-5" sprite="ui_game_symbol_players" tooltip="Share Waypoint" sound="[paging_click]"/>				
+				<button depth="1" name="trackBtn" style="icon32px, press, hover" pos="14,-5" sprite="ui_game_symbol_compass" tooltip="Track Waypoint" sound="[paging_click]"/>
+				<button depth="1" name="showOnMapBtn" style="icon32px, press, hover" pos="72,-5" sprite="ui_game_symbol_map" tooltip="Show on Map" sound="[paging_click]"/>
+				<button depth="1" name="waypointRemoveBtn" style="icon32px, hover" on_press="true" pos="142,-5" sprite="ui_game_symbol_map_waypoint_remove" tooltip="Remove Waypoint" />
+				<button depth="1" name="inviteBtn" style="icon32px, press, hover" pos="200,-5" sprite="ui_game_symbol_players" tooltip="Share Waypoint" sound="[paging_click]"/>				
 			</rect>
 			
 			<rect depth="3" name="searchControls" width="248" height="43" pos="6,-52">
@@ -864,12 +863,12 @@
 				</panel>
 				
 				<panel pos="148,0" width="104" height="43" disableautobackground="true">
-					<sprite depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+					<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
 					<rect depth="4" pos="37,-7">
 						<sprite name="background" style="icon30px" color="[black]" type="sliced" />
 						<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
 					</rect>
-					<sprite depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+					<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
 				</panel>
 			</rect>
 			
@@ -907,9 +906,9 @@
 		<rect depth="1" name="toolbar" width="248" height="43" pos="6,-49">
 			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="254" height="49" color="[black]" type="sliced" fillcenter="false" />
 			<sprite color="[mediumGrey]" type="sliced" width="250" height="44" pos="-1,0" />
-			<sprite depth="1" name="waypointSetBtn" style="icon32px, press, hover" pos="30,-5" sprite="ui_game_symbol_map_waypoint_set" tooltip="Save Waypoint" sound="[paging_click]"/>
-			<sprite depth="1" name="showOnMapBtn" style="icon32px, press, hover" pos="105,-5" sprite="ui_game_symbol_map" tooltip="Show on Map" sound="[paging_click]"/>
-			<sprite depth="1" name="waypointRemoveBtn" style="icon32px, hover" on_press="true" pos="180,-5" sprite="ui_game_symbol_map_waypoint_remove" tooltip="Remove Waypoint" />
+			<button depth="1" name="waypointSetBtn" style="icon32px, press, hover" pos="30,-5" sprite="ui_game_symbol_map_waypoint_set" tooltip="Save Waypoint" sound="[paging_click]"/>
+			<button depth="1" name="showOnMapBtn" style="icon32px, press, hover" pos="105,-5" sprite="ui_game_symbol_map" tooltip="Show on Map" sound="[paging_click]"/>
+			<button depth="1" name="waypointRemoveBtn" style="icon32px, hover" on_press="true" pos="180,-5" sprite="ui_game_symbol_map_waypoint_remove" tooltip="Remove Waypoint" />
 		</rect>
 		
 		<rect name="content" depth="0" pos="0,-43" height="239">
@@ -1029,12 +1028,12 @@
 			<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="1488" height="49" color="[black]" type="sliced" fillcenter="false" />
 			<sprite name="pagingControls" color="[mediumGrey]" type="sliced" />
 			<panel pos="1378,0" width="104" height="43" disableautobackground="true">
-				<sprite depth="4" name="pageDown" style="icon30px, press" pos="0,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+				<button depth="4" name="pageDown" style="icon30px, press" pos="0,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
 				<rect depth="4" pos="27,-7">
 					<sprite name="background" style="icon30px" color="[black]" type="sliced" />
 					<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
 				</rect>
-				<sprite depth="4" name="pageUp" style="icon30px, press" pos="82,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+				<button depth="4" name="pageUp" style="icon30px, press" pos="82,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
 			</panel>
 		</rect>
 	</window>
@@ -1258,12 +1257,12 @@
 				</panel>
 				
 				<panel depth="2" pos="620,0" width="104" height="43" disableautobackground="true" controller="Paging">
-					<sprite depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+					<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
 					<rect depth="4" pos="37,-7">
 						<sprite name="background" style="icon30px" color="[black]" type="sliced" />
 						<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="{PageNumber}" font_size="26" justify="center"/>
 					</rect>
-					<sprite depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+					<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
 				</panel>
 			</rect>
 			

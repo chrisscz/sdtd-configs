@@ -31,6 +31,7 @@
 		<style_entry name="iconColor" 						value="200,200,200" />
 		<style_entry name="labelColor" 						value="200,200,200" />
 		<style_entry name="selectedColor" 					value="222,206,163" />
+		<style_entry name="hoverColor"						value="250,255,163" />
 		
 		<!--NAMED SPRITES-->
 		<style_entry name="default_sprite" value="menu_empty"/>
@@ -97,6 +98,33 @@
 	
 	<style type="sprite" name="icon22px">
 		<style_entry name="color" value="[iconColor]"/>
+		<style_entry name="width" value="22"/>
+		<style_entry name="height" value="22"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<!--BUTTONS-->
+	<style type="button">
+		<style_entry name="atlas" value="UIAtlas"/>
+		<style_entry name="sprite" value="[default_sprite]"/>
+		<style_entry name="defaultcolor" value="[iconColor]"/>
+		<style_entry name="hovercolor" value="[hoverColor]" />
+		<style_entry name="selectedcolor" value="[selectedColor]" />
+	</style>
+	
+	<style type="button" name="icon32px">
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<style type="button" name="icon30px">
+		<style_entry name="width" value="30"/>
+		<style_entry name="height" value="30"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<style type="button" name="icon22px">
 		<style_entry name="width" value="22"/>
 		<style_entry name="height" value="22"/>
 		<style_entry name="foregroundlayer" value="true" />
@@ -253,7 +281,7 @@
 	</style>
 	
 	<!--PAGING WINDOW ICONS-->
-	<style name="paging.window.icon.crafting" type="sprite">
+	<style name="paging.window.icon.crafting" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
 		<style_entry name="pos" value="10,-5"/>
 		<style_entry name="depth" value="3"/>
@@ -261,12 +289,10 @@
 		<style_entry name="sprite" value="ui_game_symbol_hammer"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
-		<style_entry name="foregroundlayer" value="true" />
-		<style_entry name="color" value="[iconColor]"/>
 		<style_entry name="tooltip" value="CRAFTING" />
 	</style>
 	
-	<style name="paging.window.icon.character" type="sprite">
+	<style name="paging.window.icon.character" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
 		<style_entry name="pos" value="55,-5"/>
 		<style_entry name="depth" value="3"/>
@@ -274,12 +300,10 @@
 		<style_entry name="sprite" value="ui_game_symbol_character"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
-		<style_entry name="foregroundlayer" value="true" />
-		<style_entry name="color" value="[iconColor]"/>
 		<style_entry name="tooltip" value="CHARACTER" />
 	</style>
 	
-	<style name="paging.window.icon.map" type="sprite">
+	<style name="paging.window.icon.map" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
 		<style_entry name="pos" value="105,-5"/>
 		<style_entry name="depth" value="3"/>
@@ -287,12 +311,10 @@
 		<style_entry name="sprite" value="ui_game_symbol_map"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
-		<style_entry name="foregroundlayer" value="true" />
-		<style_entry name="color" value="[iconColor]"/>
 		<style_entry name="tooltip" value="MAP" />
 	</style>
 	
-	<style name="paging.window.icon.players" type="sprite">
+	<style name="paging.window.icon.players" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
 		<style_entry name="pos" value="410,-5"/>
 		<style_entry name="depth" value="3"/>
@@ -300,12 +322,10 @@
 		<style_entry name="sprite" value="ui_game_symbol_players"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
-		<style_entry name="foregroundlayer" value="true" />
-		<style_entry name="color" value="[iconColor]"/>
 		<style_entry name="tooltip" value="PLAYERS" />
 	</style>
 	
-	<style name="paging.window.icon.skills" type="sprite">
+	<style name="paging.window.icon.skills" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
 		<style_entry name="pos" value="360,-5"/>
 		<style_entry name="depth" value="3"/>
@@ -313,12 +333,10 @@
 		<style_entry name="sprite" value="ui_game_symbol_skills"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
-		<style_entry name="foregroundlayer" value="true" />
-		<style_entry name="color" value="[iconColor]"/>
 		<style_entry name="tooltip" value="SKILLS" />
 	</style>
 	
-	<style name="paging.window.icon.creative" type="sprite">
+	<style name="paging.window.icon.creative" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
 		<style_entry name="pos" value="460,-5"/>
 		<style_entry name="depth" value="3"/>
@@ -326,8 +344,6 @@
 		<style_entry name="sprite" value="ui_game_symbol_lightbulb"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
-		<style_entry name="foregroundlayer" value="true" />
-		<style_entry name="color" value="[iconColor]"/>
 		<style_entry name="tooltip" value="CREATIVE" />
 	</style>
 	

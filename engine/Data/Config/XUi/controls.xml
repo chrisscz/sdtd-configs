@@ -200,9 +200,8 @@
 	</recipe_stack>
 	
 	<category_icon>
-		<rect depth="1" size="43,43" style="press" on_hover="true" controller="CategoryEntry" selected_color="[selectedColor]" normal_color="[iconColor]" sound="[paging_click]" 
-			tooltip="{CategoryDisplayName|once}" >
-			<sprite name="categoryIcon" depth="1" size="28,28" pos="3, 0" sprite="{CategoryIcon|once}" color="{CategoryStateColor}" foregroundlayer="true"/>
+		<rect depth="1" size="43,43" controller="CategoryEntry" sound="[paging_click]" tooltip="{CategoryDisplayName|once}" >
+			<button name="categoryIcon" depth="1" size="28,28" pos="3, 0" sprite="{CategoryIcon|once}" />
 		</rect>
 	</category_icon>
 	
@@ -408,10 +407,12 @@
 	</radial_entry>
 	
 	<skill_entry>
-		<panel disableautobackground="true" depth="2" width="734" height="46" controller="SkillEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[lightGrey]" visible="{HasSkill}" sound="[recipe_click]">
+		<panel disableautobackground="true" depth="2" width="734" height="46" controller="SkillEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[lightGrey]" row_color="[darkGrey]" hover_color="[mediumGrey]" visible="{HasSkill}" sound="[recipe_click]">
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="738" height="48" color="[black]" type="sliced" fillcenter="false" />
-			<sprite depth="1" height="45" width="735" sprite="ui_game_select_row" visible="{IsHighlighted}"/>
-			<sprite depth="1" color="[darkGrey]" width="735"  height="45" type="sliced" visible="{IsNotHighlighted}"/>
+			<!-- <sprite depth="1" height="45" width="735" sprite="ui_game_select_row" visible="{IsHighlighted}"/>
+			<sprite depth="1" color="[darkGrey]" width="735"  height="45" type="sliced" visible="{IsNotHighlighted}"/> -->
+			
+			<sprite depth="1" color="{RowStateColor}" sprite="{RowStateSprite}" width="735"  height="45" type="sliced" />
 			
 			<sprite depth="2" sprite="{GroupIcon}" style="icon32px" pos="6, -6" color="{StatusColor}" foregroundlayer="true"/>
 			

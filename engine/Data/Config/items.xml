@@ -1419,7 +1419,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 			<property name="SupportHarvesting" value="true" />
         </property>
   			<property class="Parts">
-				<property name="Stock"    value="augerParts" />
+				<property name="Stock"    value="chainsawParts" />
 				<property name="Receiver" value="smallEngine" />
 				<property name="Pump"     value="handlebars" />
 				<property name="Barrel"   value="chainsawBlade" />
@@ -1672,7 +1672,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="CraftingIngredientExp" value="10" />
 		<property name="CraftingIngredientTime" value="10" />	
 		<property name="RepairTime" value="0.5" />
-        <property name="RepairAmount" value="100" />
+        <property name="RepairAmount" value="200" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="10" />
@@ -2757,7 +2757,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="HoldType" value="40" />
         <property name="Stacknumber" value="250" />
         <property name="RepairAmount" value="200" />
-        <property name="Weight" value="10" />
+        <property name="Weight" value="5" />
         <property class="Action0">
             <!-- AttackAction -->
             <property name="Class" value="ThrowAway" />
@@ -2909,7 +2909,9 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 			<property name="GetQualityFromWeapon" value="true" />
             <property name="EntityDamage" value="20,45" />
             <property name="BlockDamage" value="1,5" />
-        </property>          
+        </property>     
+		<property name="ActionSkillGroup" value="Archery"/>
+		<property name="CraftingSkillGroup" value="Weapon Smithing"/>		
         <property name="Group" value="Ammo/Weapons" />
     </item>
     <item id="268" name="foodHoney">
@@ -3783,9 +3785,9 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Degradation" value="250" param1="true" />
         <property name="RepairTools" value="forgedIron" />
 		<property name="Encumbrance" value="0.01" />
-        <property class="Armor">
-            <property name="Concussive" value="0.5" />
-            <property name="Puncture" value="0.3" />
+        <property class="Attributes">
+            <property name="ConcussiveProtection" value="0.3, 0.5" />
+            <property name="PunctureProtection" value="0.15, 0.3" />
         </property>
         <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
         <property name="Group" value="Clothing" />
@@ -3923,7 +3925,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Material" value="glass" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="250" />
-        <property name="Weight" value="15" />
+        <property name="Weight" value="5" />
         <property class="Action1">
             <!-- UseAction -->
             <property name="Class" value="Eat" />
@@ -5135,7 +5137,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="HoldType" value="45" />
         <property name="Stacknumber" value="50" />
         <property name="RepairTime" value="1" />
-        <property name="RepairAmount" value="40" />
+        <property name="RepairAmount" value="200" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -9052,11 +9054,12 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="30000" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="ResourceUnit" value="true" />
-		<property name="MeltTimePerUnit" value="1" />
+		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="UserHidden" value="true" />
+		<property name="CraftingIngredientTime" value="0.5" />
 	</item>
 	
 	<item id="824" name="unit_brass">'
@@ -9066,11 +9069,12 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="30000" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="ResourceUnit" value="true" />
-		<property name="MeltTimePerUnit" value="1" />
+		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="UserHidden" value="true" />
+		<property name="CraftingIngredientTime" value="0.5" />
 	</item>
 	
 	<item id="825" name="unit_lead">
@@ -9080,11 +9084,12 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Material" value="lead" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="30000" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="ResourceUnit" value="true" />
-		<property name="MeltTimePerUnit" value="1" />
+		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="UserHidden" value="true" />
+		<property name="CraftingIngredientTime" value="0.5" />
 	</item>
 	
 	<item id="826" name="unit_glass">
@@ -9094,11 +9099,12 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="30000" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="ResourceUnit" value="true" />
-		<property name="MeltTimePerUnit" value="1" />
+		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="UserHidden" value="true" />
+		<property name="CraftingIngredientTime" value="0.5" />
 	</item>
 	
 	<item id="827" name="unit_stone">
@@ -9108,11 +9114,12 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Material" value="stone" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="30000" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="ResourceUnit" value="true" />
-		<property name="MeltTimePerUnit" value="1" />
+		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="UserHidden" value="true" />
+		<property name="CraftingIngredientTime" value="0.5" />
 	</item>
 	
 	<item id="828" name="unit_clay">
@@ -9122,11 +9129,12 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Material" value="clay" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="30000" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="ResourceUnit" value="true" />
-		<property name="MeltTimePerUnit" value="1" />
+		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="UserHidden" value="true" />
+		<property name="CraftingIngredientTime" value="0.5" />
 	</item>
 	
 	
