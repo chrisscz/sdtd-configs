@@ -360,7 +360,7 @@
     <LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="torch_lp"> <AudioSource name="Sounds/AudioSource_Amb_XSmall"/>
-    <AudioClip ClipName="Sounds/Weapons/Melee/Torch/torch_lp"/>
+    <AudioClip ClipName="Sounds/Weapons/Melee/Torch/torch_lp" Loop="true"/>
     <LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name=".25" /> <NoiseScale name=".25" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="torch_swoosh"> <AudioSource name="Sounds/AudioSource_Interact"/>
@@ -569,7 +569,7 @@
   <SoundDataNode name="Pistol_Fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/>
     <Noise range="50" prio="1" time="1" heat_map_strength="0.3" heat_map_time="120" />
     <AudioClip ClipName="Sounds/Weapons/Ranged/Pistol/Pistol_Fire"/>
-    <LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.001" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="6" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.001" /> </SoundDataNode>
   
   <SoundDataNode name="pistol_reload"> <AudioSource name="Sounds/AudioSource_Interact"/>
     <AudioClip ClipName="Sounds/Weapons/Ranged/Pistol/pistol_reload"/>
@@ -2614,7 +2614,7 @@
     <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="10" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="zombiemale2pain"> <AudioSource name="Sounds/AudioSource_Creatures"/>
-    <AudioClip ClipName="Sounds/Enemies/Base_Zombie_Male2/asdfsdfsd"/>
+    <AudioClip ClipName="Sounds/Enemies/Base_Zombie_Male2/zombiemale2pain1"/>
     <AudioClip ClipName="Sounds/Enemies/Base_Zombie_Male2/zombiemale2pain2"/>
     <AudioClip ClipName="Sounds/Enemies/Base_Zombie_Male2/zombiemale2pain3"/>
     <AudioClip ClipName="Sounds/Enemies/Base_Zombie_Male2/zombiemale2pain4"/>

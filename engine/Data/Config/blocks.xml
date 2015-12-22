@@ -1934,6 +1934,9 @@
 	<property name="CanMobsSpawnOn" value="false" />
     <property name="DowngradeBlock" value="storageHealthInsecure" />
 	<property name="Group" value="Building" /> 
+	<property class="RepairItems">
+		<property name="wood" value="5" />	
+	</property>		
   </block>  
   
     <block id="269" name="storageHealthInsecure">
@@ -2101,7 +2104,7 @@
     <property name="CanPickup" value="true" />
   </block>
   <block id="290" name="camoNet">
-    <property name="Material" value="cloth" />
+    <property name="Material" value="clothStable" />
     <property name="Shape" value="CubeCutout" />
     <property name="Mesh" value="cutout" />
     <property name="Texture" value="360" />
@@ -2110,7 +2113,7 @@
     <drop event="Destroy" count="0" />
   </block>
   <block id="291" name="camoNetWedge">
-    <property name="Material" value="cloth" />
+    <property name="Material" value="clothStable" />
     <property name="Shape" value="Wedged" />
     <property name="Mesh" value="cutout" />
     <property name="Texture" value="360" />
@@ -2119,7 +2122,7 @@
     <drop event="Destroy" count="0" />
   </block>
   <block id="292" name="camoNetFullWedge">
-    <property name="Material" value="cloth" />
+    <property name="Material" value="clothStable" />
     <property name="Shape" value="WedgedCornerFull" />
     <property name="Mesh" value="cutout" />
     <property name="Texture" value="360" />
@@ -5338,6 +5341,9 @@
     <property name="Model" value="LootContainers/chest01" param1="main_mesh" />
     <property name="Place" value="TowardsPlacer" />
     <property name="LootList" value="10" />
+	<property class="RepairItems">
+		<property name="wood" value="10" />	
+	</property>		
     <drop event="Destroy" name="woodDebris" count="1" />
     <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />    
     <property name="LPHardnessScale" value="8" />
@@ -6207,7 +6213,7 @@
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />    
   </block>
   <block id="721" name="plateCenteredDrywall">
-    <property name="Material" value="cloth" />
+    <property name="Material" value="wood_weak" />
     <property name="Shape" value="Plate" />
     <property name="Texture" value="217" />
   </block>
@@ -9576,6 +9582,9 @@
     <property name="LootList" value="10" />
     <property name="Material" value="wood+wood" />
     <property name="Texture" value="418" />
+	<property class="RepairItems">
+		<property name="wood" value="10" />	
+	</property>		
     <drop event="Destroy" count="0" />
     <property name="DowngradeBlock" value="storageAmmoInsecure" />
     <property name="Group" value="Building" />      
@@ -9587,6 +9596,9 @@
     <property name="LootList" value="10" />
     <property name="Material" value="wood+wood" />
     <property name="Texture" value="419" />
+	<property class="RepairItems">
+		<property name="wood" value="10" />	
+	</property>		
     <drop event="Destroy" count="0" />
     <property name="DowngradeBlock" value="storageBuildingInsecure" />
     <property name="Group" value="Building" />      
@@ -9598,6 +9610,9 @@
     <property name="LootList" value="10" />
     <property name="Material" value="wood+wood" />
     <property name="Texture" value="420" />
+	<property class="RepairItems">
+		<property name="wood" value="10" />	
+	</property>		
     <drop event="Destroy" count="0" />
     <property name="DowngradeBlock" value="storageExplosivesInsecure" />
     <property name="Group" value="Building" />      
@@ -9609,6 +9624,9 @@
     <property name="LootList" value="10" />
     <property name="Material" value="wood+wood" />
     <property name="Texture" value="421" />
+	<property class="RepairItems">
+		<property name="wood" value="10" />	
+	</property>		
     <drop event="Destroy" count="0" />
     <property name="DowngradeBlock" value="storageFoodInsecure" />
     <property name="Group" value="Building" />      
@@ -9620,6 +9638,9 @@
     <property name="LootList" value="10" />
     <property name="Material" value="wood+wood" />
     <property name="Texture" value="422" />
+	<property class="RepairItems">
+		<property name="wood" value="10" />	
+	</property>		
     <drop event="Destroy" count="0" />
     <property name="DowngradeBlock" value="storageWeaponsInsecure" />
     <property name="Group" value="Building" />      

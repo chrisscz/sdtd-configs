@@ -356,7 +356,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
             <property name="Sphere" value="0.1" />
             <property name="Block_range" value="4" />
             <property name="Sound_start" value="swoosh" />
-            <property name="Stamina_usage" value="5" />
+            <property name="Stamina_usage" value="4" />
             <property name="DamageBonus.wood" value="1" />
             <property name="DamageBonus.head" value="2" />
             <property name="DamageBonus.glass" value="25" />
@@ -2613,6 +2613,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Weight" value="5" />
         <property name="HoldType" value="21" />
         <property name="Group" value="Resources" />
+		<property name="CraftingIngredientTime" value="0.5" />
         <property class="Preview">
             <property name="Zoom" value="28" />
             <property name="Pos" value="0,-0.05" />
@@ -2755,7 +2756,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Meshfile" value="Items/Crafting/rock_small" />
         <property name="Material" value="stone" />
         <property name="HoldType" value="40" />
-        <property name="Stacknumber" value="250" />
+        <property name="Stacknumber" value="1000" />
         <property name="RepairAmount" value="200" />
         <property name="Weight" value="5" />
         <property class="Action0">
@@ -2770,6 +2771,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="ThrowableDecoy" value="true" />
         <property name="DropScale" value="3" />
         <property name="Group" value="Resources" />
+		<property name="CraftingIngredientTime" value="0.5" />
         <property class="Preview">
             <property name="Zoom" value="28" />
             <property name="Pos" value="0,-0.05" />
@@ -3179,7 +3181,6 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Material" value="lead" />
         <property name="HoldType" value="45" />
         <property name="Stacknumber" value="250" />
-        <property name="Weight" value="5" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="28" />
@@ -3550,7 +3551,6 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Material" value="brass" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="500" />
-        <property name="Weight" value="5" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="18" />
@@ -3625,7 +3625,6 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Material" value="lead" />
         <property name="HoldType" value="45" />
         <property name="Stacknumber" value="500" />
-        <property name="Weight" value="5" />
         <property name="Group" value="Resources" />
         <property class="Preview">
             <property name="Zoom" value="18" />
@@ -5390,6 +5389,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="RepairAmount" value="10" />
 		<property name="LootExpValue" value="1" />
 		<property name="DescriptionKey" value="woodDesc"/>
+		<property name="CraftingIngredientTime" value="0.5" />
     </item>
     <item id="618" name="cobblestones">
         <property name="Meshfile" value="Items/Crafting/rock_small" />
@@ -6388,7 +6388,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
         <property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab" />
         <property name="Material" value="stone" />
         <property name="HoldType" value="34" />
-        <property name="Stacknumber" value="250" />
+        <property name="Stacknumber" value="1000" />
         <property name="Weight" value="28" />
         <property name="Group" value="Resources" />
         <property class="Preview">
@@ -9549,11 +9549,11 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="Insulation" value="-10"/>
 		<property name="Waterproof" value="0.15"/>
         <property name="Meshfile" value="Items/Clothing/Head/prefabCowboyhat" />
-        <property name="Material" value="cloth" />
+        <property name="Material" value="plants" />
         <property name="Weight" value="5" />
         <property name="HoldType" value="7" />
         <property name="Stacknumber" value="1" />
-        <property name="RepairTools" value="leather" />
+        <property name="RepairTools" value="yuccaFibers" />
         <property name="EquipSlot" value="Head" />
         <property name="FuelValue" value="16" />
         <property name="Degradation" value="100" param1="true" />
@@ -9562,7 +9562,7 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
 		<property name="ActionSkillGroup" value="Clothing"/>
 		<property name="CraftingSkillGroup" value="Tailoring"/>		
         <property class="Attributes">	
-			 <property name="ConcussiveProtection" value="0.01, 0.1" /> 
+  			<property name="ConcussiveProtection" value="0.01, 0.1" /> 
   			<property name="PunctureProtection" value="0.01, 0.1" /> 
   			<property name="FireProtection" value="0.05, 0.2" />
 			<property name="RadiationProtection" value="0.15, 0.2" />
