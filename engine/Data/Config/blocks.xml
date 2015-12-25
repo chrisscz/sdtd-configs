@@ -3322,8 +3322,8 @@
   
   <block id="418" name="trunkPineTip">
     <property name="Class" value="Damage" />
-    <property name="Damage" value="5" />
-	<property name="Damage_received" value="5" /> 
+    <property name="Damage" value="3" />
+	<property name="Damage_received" value="15" /> 
     <property name="Material" value="wood" />
     <property name="Shape" value="Cone" />
     <property name="Texture" value="21,21,116,116,116,116" />
@@ -4178,7 +4178,7 @@
     <property name="UpwardsCount" value="2" />
     <drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
   </block>
-  <block id="517" name="rebar">
+  <block id="517" name="rebar">xxx
     <property name="Material" value="metal_medium" />
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
@@ -6042,8 +6042,8 @@
   </block>
   <block id="703" name="reinforcedTrunkPineTip">
     <property name="Class" value="Damage" />
-    <property name="Damage" value="6" />
-	<property name="Damage_received" value="4" /> 
+    <property name="Damage" value="4" />
+	<property name="Damage_received" value="15" /> 
     <property name="Material" value="wood+wood" />
     <property name="Shape" value="Cone" />
     <property name="Texture" value="379" />  
@@ -6063,11 +6063,11 @@
   <block id="704" name="reinforcedMetalTrunkPineTip">
     <property name="Class" value="Damage" />
     <property name="Damage" value="7" />
-	<property name="Damage_received" value="3" /> 
+	<property name="Damage_received" value="15" /> 
     <property name="Material" value="metal" />
     <property name="Shape" value="Cone" />
     <property name="Texture" value="380" />
-    <property name="Damage" value="6" />
+    <property name="Damage" value="5" />
     <property name="IsTerrainDecoration" value="true" />
     <property class="UpgradeBlock">
       <property name="ToBlock" value="scrapIronSpike" />
@@ -6473,12 +6473,18 @@
     <property name="Shape" value="Eighth" />
     <property name="Texture" value="8" />
     <drop event="Destroy" count="0" />
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>		
   </block>
   <block id="774" name="quarterBlock">
     <property name="Material" value="stone" />
     <property name="Shape" value="Quarter" />
     <property name="Texture" value="8" />
     <drop event="Destroy" count="0" />
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>		
   </block>
   <block id="775" name="halfBlockConcrete">
     <property name="Material" value="stone" />
@@ -6486,15 +6492,20 @@
     <property name="Texture" value="8,8,8,8,8,8" />
     <drop event="Destroy" count="0" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>		
   </block>
   <block id="777" name="cornerWedgeConcrete">
     <property name="Material" value="concrete" />
     <property name="Shape" value="WedgedCorner" />
     <property name="Texture" value="8" />
-    <!-- Move, replace or remove with wood-->
     <property name="CanMobsSpawnOn" value="false" />
     <drop event="Destroy" count="0" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>		
   </block>
   <block id="778" name="pyramidConcrete">
     <property name="Material" value="stone" />
@@ -6503,6 +6514,9 @@
     <property name="CanMobsSpawnOn" value="false" />
     <drop event="Destroy" count="0" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>		
   </block>
   <block id="779" name="concreteBlock">
     <property name="Extends" value="concrete" />  
@@ -6522,12 +6536,18 @@
     <property name="FuelValue" value="9" />
     <drop event="Destroy" name="destroyedStone" count="0" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />    
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>			
   </block>
   <block id="783" name="plateBlock">
     <property name="Material" value="concrete" />
     <property name="Shape" value="Plate" />
     <property name="Texture" value="8" />
     <drop event="Destroy" count="0" />
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>			
   </block>
   <block id="784" name="panelingBurntStairs">
     <property name="Extends" value="woodenStairs" />
@@ -6736,6 +6756,9 @@
   <block id="819" name="bridgeConcrete">
 	<property name="Extends" value="concrete" />    
     <property name="Material" value="bridge_concrete" />
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>			
   </block>
   <block id="820" name="bridgeOldWood">
 	<property name="Extends" value="oldWood" />
@@ -6842,6 +6865,9 @@
     <property name="Place" value="TowardsPlacerInverted" />
     <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />
     <drop event="Destroy" count="0" />
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property>			
   </block> 
   <block id="835" name="stairsSmallRichwood">
     <property name="Material" value="wood" />
@@ -7574,9 +7600,8 @@
     <property name="Texture" value="10,10,299,299,299,299" />    
   </block>
   <block id="956" name="tileIndustrial">
-    <property name="Material" value="concrete" />
-    <property name="Texture" value="319" />
-    <drop event="Fall" name="destroyedStone" count="1" prob="1.0"  stick_chance=".75" />
+    <property name="Extends" value="concrete" />
+    <property name="Texture" value="319" />		
   </block>
   <block id="957" name="brickDecayedTan">
 	<property name="Extends" value="brick" />     
@@ -7977,7 +8002,7 @@
     <property name="Extends" value="woodRamp" />
     <property name="Texture" value="302,302,302,302,303,302" />
   </block>
-  <block id="1039" name="alspaltSlope">
+  <block id="1039" name="asphaltSlope">
 	<property name="Extends" value="concreteSlope" />   
     <property name="Material" value="concrete" />
     <property name="Shape" value="Wedged" />
@@ -8198,6 +8223,9 @@
       <property name="ItemCount" value="10" />
       <property name="UpgradeHitCount" value="4" />
     </property>    
+	<property class="RepairItems">
+		<property name="concreteMix" value="10" />
+	</property> 	
     <drop event="Destroy" count="0" prob="1" /> 
     <drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance=".75" />    
   </block>
@@ -8389,7 +8417,9 @@
   <block id="1103" name="cobblestoneWedgeBroke01">
     <property name="Material" value="stone" />
     <property name="Texture" value="432" />
-    <property name="Shape" value="Wedged" />
+    <property name="Shape" value="New" />
+	<property name="Mesh" value="opaque" />
+	<property name="Model" value="wedge" />
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestoneWedge" />
       <property name="Item" value="cobblestones" />
@@ -8404,7 +8434,9 @@
   <block id="1104" name="cobblestoneWedgeBroke02">
     <property name="Material" value="stone" />
     <property name="Texture" value="433" />
-    <property name="Shape" value="Wedged" />
+    <property name="Shape" value="New" />
+	<property name="Mesh" value="opaque" />
+	<property name="Model" value="wedge" />
     <property class="UpgradeBlock">
       <property name="ToBlock" value="cobblestoneWedgeBroke01" />
       <property name="Item" value="cobblestones" />
@@ -11746,8 +11778,8 @@
      
   <block id="1432" name="scrapIronSpike">
     <property name="Class" value="Damage" />
-    <property name="Damage" value="8" />
-	<property name="Damage_received" value="3" /> 
+    <property name="Damage" value="6" />
+	<property name="Damage_received" value="15" /> 
     <property name="Material" value="metal_medium" />
     <property name="Shape" value="Cone" />
     <property name="Texture" value="307" />
@@ -11770,8 +11802,8 @@
   
  <block id="1433" name="reinforcedScrapIronSpike">
     <property name="Class" value="Damage" />
-    <property name="Damage" value="9" />
-	<property name="Damage_received" value="2" /> 
+    <property name="Damage" value="7" />
+	<property name="Damage_received" value="25" /> 
     <property name="Material" value="metal_medium" />
     <property name="Shape" value="Cone" />
     <property name="Texture" value="352" />
@@ -12022,26 +12054,9 @@
   </block>
   
   <block id="1456" name="car03Red">
-    <property name="Material" value="metal" />
-	<property name="Class" value="Loot" />
-    <property name="LootList" value="19" />
-    <property name="Shape" value="ModelEntity" />
-    <property name="Texture" value="26" />
-    <property name="IsTerrainDecoration" value="true" />
-    <property name="Place" value="TowardsPlacer" />
+    <property name="Extends" value="car03Blue" />
     <property name="Model" value="Entities/Vehicles/car03_red_dmg0_Prefab" />
-    <property name="MultiBlockDim" value="2,2,6" />
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" />
-	<drop event="Harvest" name="leather" count="5" prob=".5"/>
-	<drop event="Harvest" name="scrapIron" count="4" prob="0.5" />
-    <drop event="Destroy" name="scrapIron" count="2" prob="1" />
-    <drop event="Fall" name="car03BlueDamage1" count="1" prob="1.0"  stick_chance="1" />  
 	<property name="DowngradeBlock" value="car03RedDamage1" />
-	<property name="BigDecorationRadius" value="5" />
-	<property name="CanDecorateOnSlopes" value="false" />
   </block>   
   
   <block id="1457" name="car03RedDamage1">
@@ -12066,26 +12081,9 @@
   </block>
   
   <block id="1458" name="car03Yellow">
-    <property name="Material" value="metal" />
-	<property name="Class" value="Loot" />
-    <property name="LootList" value="19" />
-    <property name="Shape" value="ModelEntity" />
-    <property name="Texture" value="26" />
-    <property name="IsTerrainDecoration" value="true" />
-    <property name="Place" value="TowardsPlacer" />
+    <property name="Extends" value="car03Blue" />
     <property name="Model" value="Entities/Vehicles/car03_yellow_dmg0_Prefab" />
-    <property name="MultiBlockDim" value="2,2,6" />
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" />
-	<drop event="Harvest" name="leather" count="5" prob=".5"/>
-	<drop event="Harvest" name="scrapIron" count="4" prob="0.5" />
-    <drop event="Destroy" name="scrapIron" count="2" prob="1" />
-    <drop event="Fall" name="car03BlueDamage1" count="1" prob="1.0"  stick_chance="1" /> 
 	<property name="DowngradeBlock" value="car03YellowDamage1" />
-	<property name="BigDecorationRadius" value="5" />
-	<property name="CanDecorateOnSlopes" value="false" />
   </block>   
   
   <block id="1459" name="car03YellowDamage1">
@@ -12110,26 +12108,9 @@
   </block>
  
   <block id="1460" name="car03White">
-    <property name="Material" value="metal" />
-	<property name="Class" value="Loot" />
-    <property name="LootList" value="19" />
-    <property name="Shape" value="ModelEntity" />
-    <property name="Texture" value="26" />
-    <property name="IsTerrainDecoration" value="true" />
-    <property name="Place" value="TowardsPlacer" />
+    <property name="Extends" value="car03Blue" />
     <property name="Model" value="Entities/Vehicles/car03_white_dmg0_Prefab" />
-    <property name="MultiBlockDim" value="2,2,6" />
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" />
-	<drop event="Harvest" name="leather" count="5" prob=".5"/>
-	<drop event="Harvest" name="scrapIron" count="4" prob="0.5" />
-    <drop event="Destroy" name="scrapIron" count="2" prob="1" />
-    <drop event="Fall" name="car03BlueDamage1" count="1" prob="1.0"  stick_chance="1" /> 
 	<property name="DowngradeBlock" value="car03WhiteDamage1" />
-	<property name="BigDecorationRadius" value="5" />
-	<property name="CanDecorateOnSlopes" value="false" />
   </block>   
   
   <block id="1461" name="car03WhiteDamage1">
@@ -12831,6 +12812,9 @@
       <property name="UpgradeHitCount" value="4" />
     </property>		
 	<property name="DowngradeBlock" value="poleBlockOldWood" />
+	<property class="RepairItems">
+		<property name="wood" value="10" />
+	</property>	
 	<property class="RepairItems">
 		<property name="wood" value="10" />
 	</property>		

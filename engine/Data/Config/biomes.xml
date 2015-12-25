@@ -394,12 +394,12 @@ Description of Options:
                 <decoration type="block" blockname="rockResource02" prob =".0001" rotatemax="3"/>
                 <decoration type="block" blockname="birdnest" prob ="0.002" />
                 <decoration type="block" blockname="DeadShrub" prob="0.01" rotatemax="7"/>     
-                <decoration type="block" blockname="MountainPine6m" prob="0.003" rotatemax="7"/>
-                <decoration type="block" blockname="MountainPine8m" prob="0.004" rotatemax="7"/>
-                <decoration type="block" blockname="MountainPine13m" prob="0.005" rotatemax="7"/>
-                <decoration type="block" blockname="MountainPine16m" prob="0.006" rotatemax="7"/>
-                <decoration type="block" blockname="MountainPine19m" prob="0.007" rotatemax="7"/>
-                <decoration type="block" blockname="MountainPineDry" prob="0.003" rotatemax="7"/>
+                <decoration type="block" blockname="MountainPine6m" prob="0.002" rotatemax="7"/>
+                <decoration type="block" blockname="MountainPine8m" prob="0.002" rotatemax="7"/>
+                <decoration type="block" blockname="MountainPine13m" prob="0.003" rotatemax="7"/>
+                <decoration type="block" blockname="MountainPine16m" prob="0.004" rotatemax="7"/>
+                <decoration type="block" blockname="MountainPine19m" prob="0.004" rotatemax="7"/>
+                <decoration type="block" blockname="MountainPineDry" prob="0.004" rotatemax="7"/>
                 <decoration type="block" blockname="MountainPine20m" prob="0.008" rotatemax="7"/>
                  <decoration type="block" blockname="tallGrassDiagonal" prob =".4" />
             </decorations>		
@@ -643,9 +643,8 @@ Description of Options:
 	  
           <layers>
                 <layer filluptorg="58" blockname="water" />
-				<layer depth="6" blockname="dirt" />
-                <layer depth="6" blockname="dirt" >
-					<resource blockname="clay" prob="0.5" />
+                <layer depth="6" blockname="sand" >
+					<resource blockname="clay" prob="0.15" />
 				</layer>
                 <layer depth="20" blockname="stone" > 	
             		<resource blockname="ironOre" cluster="1" prob="0.1" rwgGenerationType="all" />

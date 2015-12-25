@@ -3,7 +3,7 @@
 	<world ruleset="vanilla" />
 	
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="1200" cell_offset="0.8" generation_distance="10000">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.6" generation_distance="10000">
 			<cell_rule name="wastelandHub" position="0,0" prob="0.05"/>
 			
 			<cell_rule name="lowDensity" prob="1"/>
@@ -29,7 +29,9 @@
 			<path_material value="asphalt" /> 
 			<path_radius value="7" />
 			
-			<hub_rule name="citySmall" prob="0.1"/>
+			<!--<hub_rule name="ruralHub01" prob="0.5"/>
+			<hub_rule name="ruralHub02" prob="0.5"/> -->
+
 			<hub_rule name="ruralSmall" prob="0.5"/>
 			<hub_rule name="townSmall" prob="0.5"/>
 			
@@ -41,7 +43,9 @@
 			<path_material value="asphalt" /> 
 			<path_radius value="7" />
 			
-			<hub_rule name="citySmall" prob="0.1"/>
+			<!--<hub_rule name="ruralHub01" prob="0.5"/>
+			<hub_rule name="ruralHub02" prob="0.5"/>-->
+
 			<hub_rule name="ruralSmall" prob="0.5"/>
 			<hub_rule name="townSmall" prob="0.5"/>
 			
@@ -110,6 +114,20 @@
 			<prefab_rule name="none"/>
 		</hub_rule>
 		
+		<hub_rule name="ruralHub01"> 
+			<hub_type value="town"/>
+			<hub_layout name="ruralHub01"/>
+
+			<prefab_rule name="ruralSmall"/>
+		</hub_rule>
+		
+		<hub_rule name="ruralHub02"> 
+			<hub_type value="town"/>
+			<hub_layout name="ruralHub02"/>
+
+			<prefab_rule name="ruralLarge"/>
+		</hub_rule>
+		
 		<hub_rule name="customHubTest"> 
 			<hub_type value="town"/>
 			<hub_layout name="customHubTest"/>
@@ -132,8 +150,8 @@
 		<prefab_rule name="wastelandHub">
 			<prefab rule="cityBlocks" lot_type="CityBlock"/>
 			<prefab rule="cityBuildingsUncommon"/>
-			<prefab rule="cityBuildingsCommon" prob="2"/>
 			<prefab rule="cityBuildingsRare"/>
+			<prefab rule="cityBuildingsCommon"/>
 		</prefab_rule>
 		
 		<prefab_rule name="townLarge">
@@ -179,11 +197,23 @@
 		</prefab_rule>
 		
 		<prefab_rule name="cityBuildingsRare">
-			<prefab rule="gunStores" max_count="1"/>
-			<prefab rule="pharmacies" max_count="1"/>
-			<prefab rule="hardwareStores" max_count="1"/>
-			<prefab rule="bookStores" max_count="1"/>
-			<prefab rule="groceryStores" max_count="1"/>
+			<prefab rule="gunStores" max_count="2"/>
+			<prefab rule="pharmacies" max_count="2"/>
+			<prefab rule="hardwareStores" max_count="2"/>
+			<prefab rule="bookStores" max_count="2"/>
+			<prefab rule="groceryStores" max_count="2"/>
+		</prefab_rule>
+		
+		<prefab_rule name="ruralSmall">
+			<prefab rule="gasStations" min_count="1" max_count="1" prob="20"/>
+			<prefab rule="abandoned_houses"/>
+		</prefab_rule>
+		
+		<prefab_rule name="ruralLarge">
+			<prefab rule="gasStations" min_count="1" max_count="1"/>
+			<prefab name="utility_waterworks_01" max_count="1"/>
+			<prefab rule="factories" max_count="2"/>
+			<prefab name="school_01" max_count="1"/>
 		</prefab_rule>
 		
 		<prefab_rule name="townBuildings">
@@ -409,6 +439,7 @@
 		<prefab_rule name="factories">
 			<prefab name="factory_lg_01" />
 			<prefab name="factory_lg_02" />
+			<prefab name="utility_waterworks_01" />
 		</prefab_rule>
 		
 		<prefab_rule name="rural">
@@ -496,33 +527,19 @@
 	</prefab_rules>
 	
 	<biome_spawn_rules>
-		<biome_spawn_rule name="desert">
-			<elevation_range value="0, 20" />
-		</biome_spawn_rule>	
-		
-		<biome_spawn_rule name="plains">
-			<elevation_range value="20, 50" />
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="forest"> 
-			<elevation_range value="50, 80" />
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="pine_forest">
-			<elevation_range value="80, 110" />
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="snow">
-			<elevation_range value="110, 255" />
-		</biome_spawn_rule>
-		
-		<!-- NOT CURRENTLY USED
 		<biome_spawn_rule name="burnt_forest"/>
-		<biome_spawn_rule name="wasteland_hub"/>
+		<biome_spawn_rule name="pine_forest"/>
+		<biome_spawn_rule name="desert"/>
 		<biome_spawn_rule name="wasteland" />
+		<biome_spawn_rule name="forest"/>
+		<biome_spawn_rule name="plains"/>
+
+		<!--
+		<biome_spawn_rule name="snow"/>
+		<biome_spawn_rule name="wasteland" />
+		<biome_spawn_rule name="wasteland_hub"/>
 		<biome_spawn_rule name="radiated"/>
-		<biome_spawn_rule name="water"/>
-		-->
+		<biome_spawn_rule name="water"/>-->
 	</biome_spawn_rules>
 	
 	<hub_layouts>
@@ -531,6 +548,29 @@
 			<street start_point="-64,0" end_point="64,0"/>
 			<lot min_x_y="0, 8" size="60,60" rotation_to_road="2"/>
 			<lot min_x_y="-32, 12" prefab="oldwest_jail" rotation_to_road="2"/>
+		</hub_layout>
+		
+		<hub_layout name="ruralHub01">
+			<township_type value="town"/>
+			<street start_point="-96,0" end_point="96,0"/>
+			<street start_point="0,-96" end_point="0,96"/>
+			<lot min_x_y="8, 8" size="48,48" rotation_to_road="2"/>
+			<lot min_x_y="8, -56" size="48,48" rotation_to_road="0"/>
+			<lot min_x_y="-56, 8" size="48,48" rotation_to_road="1"/>
+			<lot min_x_y="-56, -56" size="48,48" rotation_to_road="3"/>
+		</hub_layout>
+		
+		<hub_layout name="ruralHub02">
+			<township_type value="town"/>
+			
+			<street start_point="-160,0" end_point="160,0"/>
+			<street start_point="0,-160" end_point="0,160"/>
+			
+			<lot min_x_y="7, 7" size="128,128" rotation_to_road="2" align="south_west"/>
+			<lot min_x_y="7, -135" size="128,128" rotation_to_road="0" align="north_west"/>
+			
+			<lot min_x_y="-135, 7" size="128,128" rotation_to_road="3" align="south_east"/>
+			<lot min_x_y="-135, -135" size="128,128" rotation_to_road="1" align="north_east"/>
 		</hub_layout>
 	</hub_layouts>
 </rwgmixer>

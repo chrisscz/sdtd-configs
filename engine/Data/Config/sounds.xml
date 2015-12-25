@@ -1423,6 +1423,24 @@
     <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.0" /> <NoiseScale name="0" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
 	
+	
+	<SoundDataNode name="quest_started"> <AudioSource name="Sounds/AudioSource_Notifications"/>
+    <AudioClip ClipName="Sounds/Misc/quest_started"/>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+
+  <SoundDataNode name="quest_subtask_complete"> <AudioSource name="Sounds/AudioSource_Notifications"/>
+    <AudioClip ClipName="Sounds/Misc/quest_subtask_complete"/>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.0" /> <NoiseScale name="0" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+	
+	
+	<SoundDataNode name="quest_master_complete"> <AudioSource name="Sounds/AudioSource_Notifications"/>
+    <AudioClip ClipName="Sounds/Misc/quest_master_complete"/>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+
+
+	
+	
+	
   <SoundDataNode name="locked"> <AudioSource name="Sounds/AudioSource_Default"/>
     <AudioClip ClipName="Sounds/Misc/locked"/>
     <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
@@ -2276,17 +2294,17 @@
   <SoundDataNode name="minibike_accel_"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_accel_1"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_accel_2"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="2" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="minibike_decel_"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_decel_1"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_decel_2"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="2" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="minibike_empty_"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_empty_1"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_empty_2"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="minibike_horn"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_horn1"/>
@@ -2297,33 +2315,33 @@
   <SoundDataNode name="minibike_idle_lp_"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_idle_lp_1"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_idle_lp_2"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="minibike_impact_"> <AudioSource name="Sounds/AudioSource_Impact"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_impact_1"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_impact_2"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_impact_3"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_impact_4"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="2" /> <MaxEntities name="30" /> <MaxRepeatRate name="1.2" /> </SoundDataNode>
 
   <SoundDataNode name="minibike_run_lp_"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_run_lp_1"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="minibike_shutoff_"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_shutoff_1"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_shutoff_1"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="minibike_start_"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_start_1"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_start_2"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
 
   <SoundDataNode name="minibike_suspension_"> <AudioSource name="Sounds/AudioSource_Impact"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_suspension_1"/>
     <AudioClip ClipName="Sounds/Vehicles/Minibike/minibike_suspension_2"/>
-    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="3" /> <MaxEntities name="30" /> <MaxRepeatRate name="1.0" /> </SoundDataNode>
 
 
 

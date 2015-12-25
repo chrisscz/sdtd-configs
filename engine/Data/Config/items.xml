@@ -2396,8 +2396,9 @@ And for the repair and upgrade actions, each swing for repair or upgrade will gi
     </item>
     <item id="236" name="cornBread">
         <property name="Meshfile" value="Items/Food/cornbread" />
+		<property name="HandMeshfile" value="Items/Food/cornbreadHandPrefab" />
         <property name="Material" value="organic" />
-        <property name="HoldType" value="21" />
+        <property name="HoldType" value="15" />
         <property class="Action1">
             <!-- UseAction -->
             <property name="Class" value="Eat" />
