@@ -159,7 +159,8 @@
 			<prefab rule="pharmacies" max_count="1" prob="0.9"/>
 			<prefab rule="hardwareStores" max_count="1" prob="0.9"/>
 			<prefab rule="bookStores" max_count="1" prob="0.9"/>
-			<prefab rule="groceryStores" max_count="1" prob="0.9"/>	
+			<prefab rule="groceryStores" max_count="1" prob="0.9"/>
+			<prefab rule="banks" max_count="1" prob="0.9"/>
 					
 			<prefab rule="middleClassHousing"/>
 			<prefab rule="countryHousing"/>
@@ -194,26 +195,34 @@
 			<prefab rule="entertainment" max_count="1"/>
 			<prefab rule="apartments" />
 			<prefab rule="gasStations" max_count="1"/>
+			<prefab rule="diners" max_count="1"/>
+			<prefab rule="carlots" max_count="1"/>		
 		</prefab_rule>
 		
 		<prefab_rule name="cityBuildingsRare">
 			<prefab rule="gunStores" max_count="2"/>
-			<prefab rule="pharmacies" max_count="2"/>
+			<prefab rule="pharmacies" max_count="1"/>
 			<prefab rule="hardwareStores" max_count="2"/>
 			<prefab rule="bookStores" max_count="2"/>
 			<prefab rule="groceryStores" max_count="2"/>
+			<prefab rule="banks" max_count="1"/>
+			<prefab rule="settlements" max_count="1"/>					
 		</prefab_rule>
 		
 		<prefab_rule name="ruralSmall">
 			<prefab rule="gasStations" min_count="1" max_count="1" prob="20"/>
+			<prefab rule="diners" max_count="1"/>
 			<prefab rule="abandoned_houses"/>
 		</prefab_rule>
 		
 		<prefab_rule name="ruralLarge">
 			<prefab rule="gasStations" min_count="1" max_count="1"/>
 			<prefab name="utility_waterworks_01" max_count="1"/>
+			<prefab name="utility_electric_co_01" />
 			<prefab rule="factories" max_count="2"/>
 			<prefab name="school_01" max_count="1"/>
+			<prefab rule="diners" max_count="1"/>
+			<prefab rule="carlots" max_count="1"/>
 		</prefab_rule>
 		
 		<prefab_rule name="townBuildings">
@@ -223,6 +232,7 @@
 			<prefab rule="garages" max_count="8" prob="0.1"/>
 			<prefab rule="gunStores" max_count="1"/>
 			<prefab rule="pharmacies" max_count="1"/>
+			<prefab rule="banks" max_count="1"/>
 			<prefab rule="hardwareStores" max_count="1"/>
 			<prefab rule="bookStores" max_count="1"/>
 			<prefab rule="groceryStores" max_count="1"/>
@@ -230,20 +240,19 @@
 			<prefab rule="oldWest" max_count="4"/>
 			<prefab rule="countryHousing" max_count="8"/>
 			<prefab name="bombshelter_lg_01" max_count="1"/>
-			<prefab rule="vacant_lots" prob="0.1"/>
-			
+			<prefab rule="vacant_lots" prob="0.1"/>			
 			<prefab rule="businessBrick" max_count="2"/>
-			<prefab rule="businessTan" max_count="2"/>
-			
+			<prefab rule="businessTan" max_count="2"/>			
 			<prefab rule="gasStations" min_count="1" max_count="1" prob="20"/>
-			
+			<prefab rule="diners" max_count="1"/>
 			<prefab name="water_tower_02" min_count="1" max_count="1"/>
 			<prefab rule="abandoned_houses"/>
 			<prefab rule="lowerClassHousing"/>
 			<prefab rule="middleClassHousing" max_count="2"/>
-			<prefab rule="upperClassHousing" max_count="2"/>
-			
+			<prefab rule="upperClassHousing" max_count="2"/>			
 			<prefab rule="burntHousing"/>
+			<prefab rule="settlements" max_count="1"/>
+			<prefab rule="carlots" max_count="1"/>
 		</prefab_rule>
 
 		<prefab_rule name="countryHousing">
@@ -252,6 +261,8 @@
 			<prefab name="houseranchtan1"/>
 			<prefab name="houseranchtan2"/>
 			<prefab name="houseranchblue1"/>
+			<prefab name="cemetery_01" />
+			<prefab name="cemetery_02" />
 		</prefab_rule>
 
 		<prefab_rule name="burntHousing">
@@ -278,6 +289,7 @@
 			<prefab name="houseblue1"/>
 			<prefab name="housestucco1"/>
 			<prefab name="housestucco2"/>
+			<prefab name="housestucco3"/>
 			<prefab name="housebrick1"/>
 			<prefab name="housewhite1"/>
 			<prefab name="housewhite2"/>
@@ -338,6 +350,7 @@
 			<prefab name="mp_waste_bldg_governer_08" max_count="1"/>
 			<prefab name="police_station1" max_count="1"/>
 			<prefab name="utility_waterworks_01" max_count="1"/>
+			<prefab name="utility_electric_co_01" />
 		</prefab_rule>
 		
 		<prefab_rule name="parking">
@@ -369,6 +382,14 @@
 		<prefab_rule name="groceryStores">
 			<prefab name="store_grocery_lg_01" prob="0.4"/>
 			<prefab name="store_grocery_sm_01" prob="0.6"/>
+		</prefab_rule>
+		
+		<prefab_rule name="banks">
+			<prefab name="store_bank_lg_01" />
+		</prefab_rule>
+		
+		<prefab_rule name="settlements">
+			<prefab name="settlement_01" />
 		</prefab_rule>
 		
 		<prefab_rule name="cityBlocks">
@@ -436,10 +457,21 @@
 			<prefab name="gas_station5"/>
 		</prefab_rule>
 		
+		<prefab_rule name="diners">
+			<prefab name="diner_01"/>
+			<prefab name="diner_02"/>
+		</prefab_rule>
+		
+		<prefab_rule name="carlots">
+			<prefab name="carlot_01"/>
+			<prefab name="carlot_02"/>
+		</prefab_rule>
+		
 		<prefab_rule name="factories">
 			<prefab name="factory_lg_01" />
 			<prefab name="factory_lg_02" />
 			<prefab name="utility_waterworks_01" />
+			<prefab name="utility_electric_co_01" />
 		</prefab_rule>
 		
 		<prefab_rule name="rural">
@@ -447,6 +479,10 @@
 			<prefab name="junkyard_med_01" />
 			<prefab name="snowy_ski_lodge" />
 			<prefab name="sawmill_01_snow" />
+			<prefab name="utility_celltower_01" />
+			<prefab name="utility_celltower_02" />
+			<prefab name="cemetery_01" />
+			<prefab name="cemetery_02" />
 		</prefab_rule>
 		
 		<prefab_rule name="barnsAndSheds">
@@ -503,6 +539,10 @@
 			<prefab name="houseburnt5"/>
 			<prefab name="oldwest_graveyard"/>
 			<prefab name="ranger_station1" />
+			<prefab name="utility_celltower_01" />
+			<prefab name="utility_celltower_02" />
+			<prefab name="cemetery_01" />
+			<prefab name="cemetery_02" />
 		</prefab_rule>
 		
 		<prefab_rule name="abandoned_houses">
@@ -527,10 +567,10 @@
 	</prefab_rules>
 	
 	<biome_spawn_rules>
-		<biome_spawn_rule name="burnt_forest"/>
 		<biome_spawn_rule name="pine_forest"/>
 		<biome_spawn_rule name="desert"/>
 		<biome_spawn_rule name="wasteland" />
+		<biome_spawn_rule name="burnt_forest"/>
 		<biome_spawn_rule name="forest"/>
 		<biome_spawn_rule name="plains"/>
 

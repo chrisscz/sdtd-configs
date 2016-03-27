@@ -2,6 +2,6 @@
 <prefab>
     <property name="CopyAirBlocks" value="False" />
     <property name="AllowTopSoilDecorations" value="False" />
-  <property name="RotationToFaceNorth" value="2" />
-  <property name="AllowedTownships" value="town" />
+    <property name="RotationToFaceNorth" value="2" />
+    <property name="AllowedTownships" value="town" />
 </prefab>

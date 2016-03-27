@@ -50,8 +50,31 @@
 	<property name="OutsideTempShiftWhenIdle" value="0"/>
 
 	<TemperatureHeight height="0" addDegrees="10"/>
+	<TemperatureHeight height="12" addDegrees="8"/>
+	<TemperatureHeight height="24" addDegrees="6"/>
+	<TemperatureHeight height="36" addDegrees="4"/>
+	<TemperatureHeight height="48" addDegrees="2"/>
 	<TemperatureHeight height="60" addDegrees="0"/>
+	<TemperatureHeight height="68" addDegrees="-1"/>
+	<TemperatureHeight height="76" addDegrees="-2"/>
+	<TemperatureHeight height="84" addDegrees="-3"/>
+	<TemperatureHeight height="92" addDegrees="-4"/>
 	<TemperatureHeight height="100" addDegrees="-5"/>
+	<TemperatureHeight height="106" addDegrees="-6"/>
+	<TemperatureHeight height="118" addDegrees="-8"/>
 	<TemperatureHeight height="130" addDegrees="-10"/>
+	<TemperatureHeight height="133" addDegrees="-12"/>
+	<TemperatureHeight height="137" addDegrees="-14"/>
+	<TemperatureHeight height="142" addDegrees="-17"/>
+	<TemperatureHeight height="147" addDegrees="-20"/>
+	<TemperatureHeight height="153" addDegrees="-23"/>
+	<TemperatureHeight height="158" addDegrees="-26"/>
+	<TemperatureHeight height="163" addDegrees="-29"/>
+	<TemperatureHeight height="168" addDegrees="-32"/>
+	<TemperatureHeight height="174" addDegrees="-35"/>
+	<TemperatureHeight height="179" addDegrees="-38"/>
+	<TemperatureHeight height="184" addDegrees="-41"/>
+	<TemperatureHeight height="189" addDegrees="-44"/>
+	<TemperatureHeight height="195" addDegrees="-47"/>
 	<TemperatureHeight height="200" addDegrees="-50"/>
 </weathersurvival>

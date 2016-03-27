@@ -2,7 +2,7 @@
 <prefab>
     <property name="CopyAirBlocks" value="True" />
     <property name="AllowTopSoilDecorations" value="False" />
-    <property name="Zoning" value="Residential" />
+    <property name="Zoning" value="Commercial" />
     <property name="YOffset" value="-1" />
     <property name="RotationToFaceNorth" value="1" />
     <property name="AllowedTownships" value="town,rural" />

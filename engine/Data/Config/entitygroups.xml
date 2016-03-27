@@ -115,9 +115,8 @@
 		<entity name="zombieScreamer" />
 	</entitygroup>
 
-  <entitygroup name="ZombiesCrawlersDogs">
-    <entity name="zombiedog" prob="0.04"/>
-    <entity name="zombieSteveCrawler" prob="0.1"/>
+  <entitygroup name="ZombiesCrawlers">
+    <entity name="zombieSteveCrawler" prob="1"/>
   </entitygroup>
 
   <entitygroup name="ZombiesBurntForest">
