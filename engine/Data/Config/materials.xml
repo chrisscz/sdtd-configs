@@ -354,8 +354,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stepsound" value="stone" />
 	<property name="stability_glue" value="90" />
 	<property name="Mass" type="int" value="15" />
-	<property name="explosionresistance" value=".20" />
-	<property name="MaxDamage" value="3000" />
+	<property name="explosionresistance" value=".25" />
+	<property name="MaxDamage" value="5000" />
 </material>
 
 <!-- has more explosion resistance -->
@@ -457,6 +457,28 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Mass" type="int" value="20" />
 	<property name="explosionresistance" value=".5" />
 	<property name="MaxDamage" value="2500" />
+</material>
+<material id="Msafe_small">
+	<property name="damage_category" value="metal" />
+	<property name="surface_category" value="metal" />
+	<property name="forge_category" value="iron" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="metal" />
+	<property name="stability_glue" value="320" />
+	<property name="Mass" type="int" value="20" />
+	<property name="explosionresistance" value=".5" />
+	<property name="MaxDamage" value="6000" />
+</material>
+<material id="Msafe_large">
+	<property name="damage_category" value="metal" />
+	<property name="surface_category" value="metal" />
+	<property name="forge_category" value="iron" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="metal" />
+	<property name="stability_glue" value="320" />
+	<property name="Mass" type="int" value="20" />
+	<property name="explosionresistance" value=".5" />
+	<property name="MaxDamage" value="10000" />
 </material>
 
 <material id="MmetalCatwalk">
@@ -647,6 +669,15 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Mass" type="int" value="6" />
 	<property name="MaxDamage" value="600" />
 </material>
+<material id="treeWoodMediumBurnt">
+	<property name="damage_category" value="wood" />
+	<property name="surface_category" value="wood" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="wood" />
+	<property name="stability_glue" value="36" />
+	<property name="Mass" type="int" value="6" />
+	<property name="MaxDamage" value="250" />
+</material>
 
 <material id="treeWoodLarge">
 	<property name="damage_category" value="wood" />
@@ -743,7 +774,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stability_glue" value="9" />
 	<property name="fertile_level" value="1" />
 	<property name="Mass" type="int" value="3" />
-	<property name="MaxDamage" value="50" />
+	<property name="MaxDamage" value="10" />
 </material>
 
 <material id="web">

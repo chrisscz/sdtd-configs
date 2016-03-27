@@ -10,19 +10,19 @@
 
 	<!-- Replace the lootForest with one of the following -->
 	<placeholder name="lootForest">
-		<block name="cntTrashPile01" prob="0.1"/>
-		<block name="cntTrashPile02" prob="0.1"/>
-		<block name="cntTrashPile03" prob="0.1"/>
-		<block name="cntTrashPile04" prob="0.1"/>
-		<block name="cntTrashPile05" prob="0.1"/>
-		<block name="cntTrashPile06" prob="0.1"/>
-		<block name="cntTrashPile07" prob="0.1"/>
-		<block name="cntTrashPile08" prob="0.1"/>
-		<block name="cntTrashPile09" prob="0.1"/>
+		<block name="cntTrashPile01" prob="0.06" />
+		<block name="cntTrashPile02" prob="0.06" />
+		<block name="cntTrashPile03" prob="0.06" />
+		<block name="cntTrashPile04" prob="0.06" />
+		<block name="cntTrashPile05" prob="0.06" />
+		<block name="cntTrashPile06" prob="0.06" />
+		<block name="cntTrashPile07" prob="0.06" />
+		<block name="cntTrashPile08" prob="0.06" />
+		<block name="cntTrashPile09" prob="0.06" />
 		<block name="cntTreeStump" prob="0.1"/>
-		<block name="cntBackpack01" prob="0.03"/>
-		<block name="cntBackpack02" prob="0.03"/>
-		<block name="cntBackpack03" prob="0.03"/>
+		<block name="cntBackpack01" prob="0.007" />
+		<block name="cntBackpack02" prob="0.007" />
+		<block name="cntBackpack03" prob="0.007" />
 		<block name="cntDuffle01" prob="0.03"/>
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
@@ -31,18 +31,18 @@
 
 	<!-- Replace the Wasteland with one of the following -->
 	<placeholder name="lootWasteland">
-		<block name="cntTrashPile01" prob="0.1"/>
-		<block name="cntTrashPile02" prob="0.1"/>
-		<block name="cntTrashPile03" prob="0.1"/>
-		<block name="cntTrashPile04" prob="0.1"/>
-		<block name="cntTrashPile05" prob="0.1"/>
-		<block name="cntTrashPile06" prob="0.1"/>
-		<block name="cntTrashPile07" prob="0.1"/>
-		<block name="cntTrashPile08" prob="0.1"/>
-		<block name="cntTrashPile09" prob="0.05"/>
-		<block name="cntBackpack01" prob="0.03"/>
-		<block name="cntBackpack02" prob="0.03"/>
-		<block name="cntBackpack03" prob="0.03"/>
+		<block name="cntTrashPile01" prob="0.06" />
+		<block name="cntTrashPile02" prob="0.06" />
+		<block name="cntTrashPile03" prob="0.06" />
+		<block name="cntTrashPile04" prob="0.06" />
+		<block name="cntTrashPile05" prob="0.06" />
+		<block name="cntTrashPile06" prob="0.06" />
+		<block name="cntTrashPile07" prob="0.06" />
+		<block name="cntTrashPile08" prob="0.06" />
+		<block name="cntTrashPile09" prob="0.06" />
+		<block name="cntBackpack01" prob="0.007" />
+		<block name="cntBackpack02" prob="0.007" />
+		<block name="cntBackpack03" prob="0.007" />
 		<block name="cntDuffle01" prob="0.03"/>
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
@@ -52,18 +52,18 @@
 
 	<!-- Replace the lootDesert with one of the following -->
 	<placeholder name="lootDesert">
-		<block name="cntTrashPile01" prob="0.1"/>
-		<block name="cntTrashPile02" prob="0.1"/>
-		<block name="cntTrashPile03" prob="0.1"/>
-		<block name="cntTrashPile04" prob="0.1"/>
-		<block name="cntTrashPile05" prob="0.1"/>
-		<block name="cntTrashPile06" prob="0.1"/>
-		<block name="cntTrashPile07" prob="0.1"/>
-		<block name="cntTrashPile08" prob="0.1"/>
-		<block name="cntTrashPile09" prob="0.1"/>
-		<block name="cntBackpack01" prob="0.03"/>
-		<block name="cntBackpack02" prob="0.03"/>
-		<block name="cntBackpack03" prob="0.03"/>
+		<block name="cntTrashPile01" prob="0.06" />
+		<block name="cntTrashPile02" prob="0.06" />
+		<block name="cntTrashPile03" prob="0.06" />
+		<block name="cntTrashPile04" prob="0.06" />
+		<block name="cntTrashPile05" prob="0.06" />
+		<block name="cntTrashPile06" prob="0.06" />
+		<block name="cntTrashPile07" prob="0.06" />
+		<block name="cntTrashPile08" prob="0.06" />
+		<block name="cntTrashPile09" prob="0.06" />
+		<block name="cntBackpack01" prob="0.007" />
+		<block name="cntBackpack02" prob="0.007" />
+		<block name="cntBackpack03" prob="0.007" />
 		<block name="cntDuffle01" prob="0.03"/>
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
@@ -72,31 +72,31 @@
 
 	<!-- Replace the lootBurntForest with one of the following -->
 	<placeholder name="lootBurntForest">
-		<block name="cntTrashPile01" prob="0.1"/>
-		<block name="cntTrashPile02" prob="0.1"/>
-		<block name="cntTrashPile03" prob="0.1"/>
-		<block name="cntTrashPile04" prob="0.1"/>
-		<block name="cntTrashPile05" prob="0.1"/>
-		<block name="cntTrashPile06" prob="0.1"/>
-		<block name="cntTrashPile07" prob="0.1"/>
-		<block name="cntTrashPile08" prob="0.1"/>
-		<block name="cntTrashPile09" prob="0.1"/>
+		<block name="cntTrashPile01" prob="0.06" />
+		<block name="cntTrashPile02" prob="0.06" />
+		<block name="cntTrashPile03" prob="0.06" />
+		<block name="cntTrashPile04" prob="0.06" />
+		<block name="cntTrashPile05" prob="0.06" />
+		<block name="cntTrashPile06" prob="0.06" />
+		<block name="cntTrashPile07" prob="0.06" />
+		<block name="cntTrashPile08" prob="0.06" />
+		<block name="cntTrashPile09" prob="0.06" />
 	</placeholder>
 
 	<!-- Replace the lootPlains with one of the following -->
 	<placeholder name="lootPlains">
-		<block name="cntTrashPile01" prob="0.1"/>
-		<block name="cntTrashPile02" prob="0.1"/>
-		<block name="cntTrashPile03" prob="0.1"/>
-		<block name="cntTrashPile04" prob="0.1"/>
-		<block name="cntTrashPile05" prob="0.1"/>
-		<block name="cntTrashPile06" prob="0.1"/>
-		<block name="cntTrashPile07" prob="0.1"/>
-		<block name="cntTrashPile08" prob="0.1"/>
-		<block name="cntTrashPile09" prob="0.1"/>
-		<block name="cntBackpack01" prob="0.03"/>
-		<block name="cntBackpack02" prob="0.03"/>
-		<block name="cntBackpack03" prob="0.03"/>
+		<block name="cntTrashPile01" prob="0.06" />
+		<block name="cntTrashPile02" prob="0.06" />
+		<block name="cntTrashPile03" prob="0.06" />
+		<block name="cntTrashPile04" prob="0.06" />
+		<block name="cntTrashPile05" prob="0.06" />
+		<block name="cntTrashPile06" prob="0.06" />
+		<block name="cntTrashPile07" prob="0.06" />
+		<block name="cntTrashPile08" prob="0.06" />
+		<block name="cntTrashPile09" prob="0.06" />
+		<block name="cntBackpack01" prob="0.007" />
+		<block name="cntBackpack02" prob="0.007" />
+		<block name="cntBackpack03" prob="0.007" />
 		<block name="cntDuffle01" prob="0.03"/>
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
@@ -105,15 +105,15 @@
 
 	<!-- Replace the lootHouse with one of the following -->
 	<placeholder name="lootHouse">
-		<block name="cntTrashPile01"/>
-		<block name="cntTrashPile02"/>
-		<block name="cntTrashPile03"/>
-		<block name="cntTrashPile04"/>
-		<block name="cntTrashPile05"/>
-		<block name="cntTrashPile06"/>
-		<block name="cntTrashPile07"/>
-		<block name="cntTrashPile08"/>
-		<block name="cntTrashPile09"/>
+		<block name="cntTrashPile01" prob="0.06" />
+		<block name="cntTrashPile02" prob="0.06" />
+		<block name="cntTrashPile03" prob="0.06" />
+		<block name="cntTrashPile04" prob="0.06" />
+		<block name="cntTrashPile05" prob="0.06" />
+		<block name="cntTrashPile06" prob="0.06" />
+		<block name="cntTrashPile07" prob="0.06" />
+		<block name="cntTrashPile08" prob="0.06" />
+		<block name="cntTrashPile09" prob="0.06" />
 		<block name="cntChest01"/>
 		<block name="cntCardboardBox"/>
 		<block name="cntBin"/>
@@ -129,20 +129,20 @@
 
 	<!-- Replace the lootStreet with one of the following -->
 	<placeholder name="lootStreet">
-		<block name="cntTrashPile01"/>
-		<block name="cntTrashPile02"/>
-		<block name="cntTrashPile03"/>
-		<block name="cntTrashPile04"/>
-		<block name="cntTrashPile05"/>
-		<block name="cntTrashPile06"/>
-		<block name="cntTrashPile07"/>
-		<block name="cntTrashPile08"/>
-		<block name="cntTrashPile09"/>
+		<block name="cntTrashPile01" prob="0.06" />
+		<block name="cntTrashPile02" prob="0.06" />
+		<block name="cntTrashPile03" prob="0.06" />
+		<block name="cntTrashPile04" prob="0.06" />
+		<block name="cntTrashPile05" prob="0.06" />
+		<block name="cntTrashPile06" prob="0.06" />
+		<block name="cntTrashPile07" prob="0.06" />
+		<block name="cntTrashPile08" prob="0.06" />
+		<block name="cntTrashPile09" prob="0.06" />
 		<block name="cntShoppingCart" prob="0.05"/>
 		<block name="shoppingCartEmpty" prob="0.05"/>
-		<block name="cntBackpack01" prob="0.05"/>
-		<block name="cntBackpack02" prob="0.05"/>
-		<block name="cntBackpack03" prob="0.05"/>
+		<block name="cntBackpack01" prob="0.007" />
+		<block name="cntBackpack02" prob="0.007" />
+		<block name="cntBackpack03" prob="0.007" />
 		<block name="cntDuffle01" prob="0.05"/>
 		<block name="cntSportsBag01" prob="0.05"/>
 		<block name="cntSportsBag02" prob="0.05"/>
@@ -153,9 +153,9 @@
 	<placeholder name="lootYard">
 		<block name="cntTrashPile07" prob=".5"/>
 		<block name="cntCardboardBox" prob="0.2"/>
-		<block name="cntBackpack01" prob="0.03"/>
-		<block name="cntBackpack02" prob="0.03"/>
-		<block name="cntBackpack03" prob="0.03"/>
+		<block name="cntBackpack01" prob="0.007" />
+		<block name="cntBackpack02" prob="0.007" />
+		<block name="cntBackpack03" prob="0.007" />
 		<block name="cntDuffle01" prob="0.03"/>
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
@@ -180,9 +180,9 @@
 		<block name="cntGarageStorage" prob=".2"/>
 		<block name="cntTrashPile02" prob=".5"/>
 		<block name="cntCardboardBox" prob="0.2"/>
-		<block name="cntBackpack01" prob="0.03"/>
-		<block name="cntBackpack02" prob="0.03"/>
-		<block name="cntBackpack03" prob="0.03"/>
+		<block name="cntBackpack01" prob="0.007" />
+		<block name="cntBackpack02" prob="0.007" />
+		<block name="cntBackpack03" prob="0.007" />
 		<block name="cntDuffle01" prob="0.03"/>
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
@@ -543,9 +543,7 @@
 </lootgroup>
 
 <lootgroup name="toiletLoot" count="1">
-	<item group="pistol+ammo" count="1" prob="0.05"/>
-	<item name="bottledRiverWater" count="1,2" prob="0.55"/>
-	<item name="turd" count="1,2" prob="0.3"/>
+	<item name="turd" count="1,2" prob="0.3" />
 </lootgroup>
 
 <lootgroup name="shotguns">
@@ -1379,11 +1377,6 @@
 
 <!-- lootcontainer 35 tree hollowed stump, place where people stash things, -->
 <lootcontainer id="35" count="0,2" size="4,3" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" loot_quality_template="baseTemplate">
-	<item group="guns+ammo"/>
-	<item group="sportingGoods" count="1,2" prob="5"/>
-	<item name="foodHoney"/>
-	<item group="cannedfood"/>
-	<item group="medicine"/>
 </lootcontainer>
 
 <!-- lootcontainer 36 suitcase -->

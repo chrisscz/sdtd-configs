@@ -40,10 +40,8 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 	<property class="RepairItems"> <property name="cobblestones" value="6" /> </property>
 	<drop event="Harvest" name="rockSmall" count="13" />
 	<drop event="Destroy" name="rockSmall" count="12" />
-	<drop event="Destroy" name="ironFragment" count="2" />
-	<drop event="Fall" name="rockSmall" count="50" prob=".23" stick_chance="0" />
-	<drop event="Fall" name="ironFragment" count="4" prob=".23" stick_chance="0" />
-	<drop event="Fall" name="destroyedStone" count="1" prob="0.1" stick_chance=".5" />
+	<drop event="Fall" name="rockSmall" count="50" prob=".23"  stick_chance="0" />
+	<drop event="Fall" name="destroyedStone" count="1" prob="0.1"  stick_chance="1" />
 	<!-- Better to have fewer stacks with higher numbers for performance reasons. -->
 	<!-- With a stick chance fallen resources just get buried and fall off the earth. -->
 	<!-- Could maybe do "0.1" stick but it would quickly make the whole endeavor unfun. Gazz -->
@@ -267,7 +265,6 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 	<property name="Texture" value="10" />
 	<property name="DropScale" value="2" />
 	<property name="Map.Color" value="204,177,131" />
-	<property class="RepairItems"><property name="concreteMix" value="5" /></property>
 	<property name="Group" value="Building" />
 	<drop event="Harvest" name="rockSmall" count="13" />
 	<drop event="Destroy" name="rockSmall" count="12" />
@@ -932,12 +929,6 @@ group desc for stuff like metal siding
 	<property name="Texture" value="315" />
 	<property name="IsDeveloper" value="true" />
 	<property class="RepairItems"> <property name="concreteMix" value="10" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="steelMaster" />
-		<property name="Item" value="forgedSteel" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 	<drop event="Harvest" name="rockSmall" count="13" />
 	<drop event="Destroy" name="rockSmall" count="12" />
@@ -995,12 +986,6 @@ group desc for stuff like metal siding
 <block id="138" name="brickMaster">
 	<property name="Extends" value="brickNoUpgradeMaster" />
 	<property name="IsDeveloper" value="true" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="concreteMaster" />
-		<property name="Item" value="concreteMix" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<property name="EconomicValue" value="8" />
 	<property name="EconomicBundleSize" value="20" />
 </block>
@@ -1013,12 +998,6 @@ group desc for stuff like metal siding
 	<property name="Texture" value="171" />
 	<property name="IsDeveloper" value="true" />
 	<property class="RepairItems"> <property name="crushedSand" value="7" /> <property name="clayLump" value="5" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="concreteMaster" />
-		<property name="Item" value="concreteMix" />
-		<property name="ItemCount" value="7" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<drop event="Harvest" name="crushedSand" count="4" prob=".6" />
 	<drop event="Harvest" name="clayLump" count="6" prob=".6" />
 	<drop event="Harvest" name="rockSmall" count="1" prob=".6" />
@@ -1054,12 +1033,6 @@ group desc for stuff like metal siding
 	<property name="Texture" value="352" />
 	<property name="IsDeveloper" value="true" />
 	<property class="RepairItems"> <property name="scrapIron" value="40" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="concreteMaster" />
-		<property name="Item" value="concreteMix" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<drop event="Harvest" name="scrapIron" count="10" />
 	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
@@ -1264,7 +1237,6 @@ group desc for stuff like metal siding
 <block id="154" name="rWoodMetalWedge">
 	<property name="Extends" value="rWoodMetalMaster" />
 	<property name="Shape" value="Wedged60Full" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedge" /> </property>
 	<property name="DowngradeBlock" value="rWoodWedge" />
 </block>
 
@@ -1272,7 +1244,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="scrapIronFrameMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="CanPickup" value="true" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedge" /> </property>
 </block>
 
 <block id="156" name="solidScrapIronFrameWedge">
@@ -1291,15 +1262,12 @@ group desc for stuff like metal siding
 <block id="158" name="rScrapIronWedge">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="Wedged60Full" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedge" /> </property>
 	<property name="DowngradeBlock" value="scrapIronWedge" />
 </block>
 
 <block id="159" name="rConcreteWedge">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Wedged60Full" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelWedge" /> </property>
-	<property name="DowngradeBlock" value="concreteWedge" />
 </block>
 
 <block id="160" name="pouredConcreteCNRRamp">
@@ -1321,16 +1289,12 @@ group desc for stuff like metal siding
 <block id="162" name="rConcreteCNRRamp">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="WedgedCorner" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRRamp" /> </property>
-	<property name="DowngradeBlock" value="concreteCNRRamp" />
 </block>
 
 <block id="163" name="steelWedge">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelWedge" /> </property>
-	<property name="DowngradeBlock" value="rConcreteWedge" />
 </block>
 
 <block id="164" name="woodPlate">
@@ -1362,7 +1326,6 @@ group desc for stuff like metal siding
 <block id="168" name="rScrapIronPlate">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="Plate" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePlate" /> </property>
 	<property name="DowngradeBlock" value="scrapIronPlate" />
 	<property name="Group" value="Tools/Traps,Building" />
 </block>
@@ -1370,16 +1333,12 @@ group desc for stuff like metal siding
 <block id="169" name="rConcretePlate">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Plate" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPlate" /> </property>
-	<property name="DowngradeBlock" value="concretePlate" />
 </block>
 
 <block id="170" name="steelCNRRamp">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="WedgedCorner" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelCNRRamp" /> </property>
-	<property name="DowngradeBlock" value="rConcreteCNRRamp" />
 </block>
 
 <block id="171" name="pouredConcreteEighth">
@@ -1393,16 +1352,12 @@ group desc for stuff like metal siding
 <block id="172" name="rConcreteEighth">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Eighth" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelEighth" /> </property>
-	<property name="DowngradeBlock" value="concreteEighth" />
 </block>
 
 <block id="173" name="steelPlate">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelPlate" /> </property>
-	<property name="DowngradeBlock" value="rConcretePlate" />
 </block>
 
 <block id="174" name="woodSupport">
@@ -1439,7 +1394,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteSupport" /> </property>
 	<property name="DowngradeBlock" value="scrapIronSupport" />
 </block>
 
@@ -1447,7 +1401,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelSupport" /> </property>
 	<property name="DowngradeBlock" value="concreteSupport" />
 </block>
 
@@ -1455,8 +1408,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Eighth" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelEighth" /> </property>
-	<property name="DowngradeBlock" value="rConcreteEighth" />
 </block>
 
 <block id="181" name="pouredConcreteHalf">
@@ -1470,24 +1421,18 @@ group desc for stuff like metal siding
 <block id="182" name="rConcreteHalf">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Half" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelHalf" /> </property>
-	<property name="DowngradeBlock" value="concreteHalf" />
 </block>
 
 <block id="183" name="steelSupport">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelSupport" /> </property>
-	<property name="DowngradeBlock" value="rConcreteSupport" />
 </block>
 
 <block id="184" name="steelHalf">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelHalf" /> </property>
-	<property name="DowngradeBlock" value="rConcreteHalf" />
 </block>
 
 <block id="185" name="pouredConcretePole">
@@ -1509,16 +1454,12 @@ group desc for stuff like metal siding
 <block id="187" name="rConcretePyramid">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Pyramid" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPyramid" /> </property>
-	<property name="DowngradeBlock" value="concretePyramid" />
 </block>
 
 <block id="188" name="steelPyramid">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Pyramid" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelPyramid" /> </property>
-	<property name="DowngradeBlock" value="rConcretePyramid" />
 </block>
 
 <block id="189" name="woodPillar100">
@@ -1539,7 +1480,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePillar100" /> </property>
 	<property name="DowngradeBlock" value="scrapIronPillar100" />
 </block>
 
@@ -1568,32 +1508,24 @@ group desc for stuff like metal siding
 <block id="194" name="rConcreteQuarter">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Quarter" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelQuarter" /> </property>
-	<property name="DowngradeBlock" value="concreteQuarter" />
 </block>
 
 <block id="195" name="rConcretePillar100">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPillar100" /> </property>
-	<property name="DowngradeBlock" value="concretePillar100" />
 </block>
 
 <block id="196" name="steelPillar100">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelPillar100" /> </property>
-	<property name="DowngradeBlock" value="rConcretePillar100" />
 </block>
 
 <block id="197" name="steelQuarter">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Quarter" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelQuarter" /> </property>
-	<property name="DowngradeBlock" value="rConcreteQuarter" />
 </block>
 
 <block id="198" name="pouredConcreteStairs25">
@@ -1609,7 +1541,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairs25" /> </property>
 	<property name="DowngradeBlock" value="concreteStairs25" />
 </block>
 
@@ -1643,8 +1574,6 @@ group desc for stuff like metal siding
 
 <block id="204" name="rConcreteBlock">
 	<property name="Extends" value="rConcreteMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelBlock" /> </property>
-	<property name="DowngradeBlock" value="concreteBlock" />
 </block>
 
 <block id="205" name="pouredConcreteWedgeTip">
@@ -1658,22 +1587,17 @@ group desc for stuff like metal siding
 <block id="206" name="rConcreteWedgeTip">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Wedged60Tip" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelWedgeTip" /> </property>
-	<property name="DowngradeBlock" value="concreteWedgeTip" />
 </block>
 
 <block id="207" name="steelWedgeTip">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelWedgeTip" /> </property>
-	<property name="DowngradeBlock" value="rConcreteWedgeTip" />
 </block>
 
 <block id="208" name="brickRamp">
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 </block>
 
 <block id="209" name="pouredConcretePlate">
@@ -1686,7 +1610,6 @@ group desc for stuff like metal siding
 
 <block id="210" name="brickBlock">
 	<property name="Extends" value="brickMaster" />
-	<property class="UpgradeBlock">	<property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="211" name="concreteBlock">
@@ -1730,7 +1653,6 @@ group desc for stuff like metal siding
 <block id="217" name="rScrapIronCNRInside">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRInside" /> </property>
 	<property name="DowngradeBlock" value="scrapIronCNRInside" />
 </block>
 
@@ -1860,7 +1782,6 @@ group desc for stuff like metal siding
 <block id="236" name="rScrapIronCNRFull">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRFull" /> </property>
 	<property name="DowngradeBlock" value="scrapIronCNRFull" />
 </block>
 
@@ -1885,7 +1806,6 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="scrapFrameGroupDesc"/>
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilledVerticalUV" /> <property name="Place" value="TowardsPlacerInverted" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteStairs25" /> </property>
 	<property name="DowngradeBlock" value="scrapIronStairs25" />
 </block>
 
@@ -1914,7 +1834,6 @@ group desc for stuff like metal siding
 <block id="243" name="rScrapIronRamp">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 	<property name="DowngradeBlock" value="scrapIronRamp" />
 </block>
 
@@ -1959,15 +1878,12 @@ group desc for stuff like metal siding
 <block id="249" name="rConcreteRamp">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelRamp" /> </property>
 	<property name="DowngradeBlock" value="concreteRamp" />
 </block>
 
 <block id="250" name="rConcreteCNRFull">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRFull" /> </property>
-	<property name="DowngradeBlock" value="concreteCNRFull" />
 </block>
 
 <block id="251" name="concreteSupport">
@@ -1997,8 +1913,6 @@ group desc for stuff like metal siding
 <block id="254" name="rConcreteCNRInside">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRInside" /> </property>
-	<property name="DowngradeBlock" value="concreteCNRInside" />
 </block>
 
 <block id="255" name="pouredConcretePillar50">
@@ -2013,8 +1927,6 @@ group desc for stuff like metal siding
 <block id="256" name="steelCNRFull">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelCNRFull" /> </property>
-	<property name="DowngradeBlock" value="rConcreteCNRFull" />
 </block>
 
 <block id="257" name="plantedBlueberry1">
@@ -2117,9 +2029,8 @@ group desc for stuff like metal siding
 	<property name="Material" value="wood+wood" />
 	<property name="Texture" value="284" />
 	<property name="FuelValue" value="160" />
-	<property class="RepairItems"> <property name="wood" value="20" /> </property>
-	<property name="DowngradeBlock" value="cntStorageHealthInsecure" />
 	<drop event="Destroy" count="0" />
+	<property name="DowngradeBlock" value="cntStorageHealthInsecure" />
 	<property name="Group" value="Building" />
 	<property name="EconomicValue" value="6" />
 </block>
@@ -2143,7 +2054,6 @@ group desc for stuff like metal siding
 <block id="271" name="brickPaintedIndustrialTileBlock">
 	<property name="Extends" value="brickMaster" />
 	<property name="Texture" value="332,332,332,319,332,332" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="272" name="concreteCNRInside">
@@ -2174,7 +2084,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="brickMaster" />
 	<property name="CustomIcon" value="brickPaintedIndustrialTileBlock" />
 	<property name="Texture" value="332" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="276" name="treeSnowyGrassDiagonal">
@@ -2230,8 +2139,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPillar50" /> </property>
-	<property name="DowngradeBlock" value="concretePillar50" />
 </block>
 
 <block id="283" name="panelingBurntRamp">
@@ -2342,8 +2249,6 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelPillar50" /> </property>
-	<property name="DowngradeBlock" value="rConcretePillar50" />
 </block>
 
 <block id="297" name="rock01">
@@ -2709,7 +2614,6 @@ group desc for stuff like metal siding
 	<property name="Shape" value="BillboardSingleOnWall" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="46" />
 	<property class="RepairItems"> <property name="forgedIron" value="10" /> </property>
-	<property name="DowngradeBlock" value="scrapIronSheet" />
 	<drop event="Destroy" name="scrapIron" count="15,50" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 </block>
@@ -2717,7 +2621,6 @@ group desc for stuff like metal siding
 <block id="334" name="adobeWhitePyramid">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Pyramid" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePyramid" /> </property>
 </block>
 
 <block id="335" name="cntTrash_can01">
@@ -2782,7 +2685,6 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacer" />
 	<property name="LootList" value="10" />
-	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 </block>
@@ -3153,7 +3055,6 @@ group desc for stuff like metal siding
 <block id="376" name="brickCNRFull">
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRFull" /> </property>
 </block>
 
 <block id="377" name="concretePillar100">
@@ -3207,12 +3108,10 @@ group desc for stuff like metal siding
 <block id="382" name="brickCNRInside">
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRInside" /> </property>
 </block>
 
 <block id="383" name="tileFloor5Block">
 	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 	<property name="Texture" value="9" />
 </block>
 
@@ -3281,18 +3180,15 @@ group desc for stuff like metal siding
 <block id="390" name="brickCNRRamp">
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="WedgedCorner" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRRamp" /> </property>
 </block>
 
 <block id="391" name="tileIndustrialDecayedBrickBlock">
 	<property name="Extends" value="brickMaster" />
 	<property name="Texture" value="299,299,319,299,299,299" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="392" name="tileIndustrialPlate">
 	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhitePlate" /> </property>
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="319" />
 </block>
@@ -3335,7 +3231,6 @@ group desc for stuff like metal siding
 <block id="397" name="brickPlate">
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="Plate" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePlate" /> </property>
 </block>
 
 <block id="398" name="lootMP">
@@ -3360,7 +3255,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="329,8,8,8,8,8" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteHalf" /> </property>
 </block>
 
 <block id="402" name="metalTrussingSheet">
@@ -3370,7 +3264,6 @@ group desc for stuff like metal siding
 	<property name="Texture" value="310" />
 	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
 	<property class="RepairItems"> <property name="forgedIron" value="10" /> </property>
-	<property name="DowngradeBlock" value="scrapIronGrateSheet" />
 	<drop event="Destroy" name="scrapIron" count="15,50" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 </block>
@@ -3472,8 +3365,6 @@ group desc for stuff like metal siding
 
 <block id="414" name="steelBlock">
 	<property name="Extends" value="steelMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelBlock" /> </property>
-	<property name="DowngradeBlock" value="rConcreteBlock" />
 </block>
 
 <block id="415" name="corrugatedMetalCNRFull">
@@ -3522,7 +3413,7 @@ group desc for stuff like metal siding
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodLogSpike2" />
 		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
+		<property name="ItemCount" value="20" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
@@ -3553,12 +3444,6 @@ group desc for stuff like metal siding
 	<property name="Texture" value="357" />
 	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
 	<property class="RepairItems"> <property name="scrapIron" value="40" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="metalTrussingSheet" />
-		<property name="Item" value="forgedIron" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 	<drop event="Destroy" name="scrapIron" count="15" prob=".7" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
@@ -4358,7 +4243,6 @@ kind of free
 	<property name="MultiBlockDim" value="2,1,1" />
 	<property name="LootList" value="6" />
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
-	<property class="RepairItems"> <property name="wood" value="15" /> </property>
 	<drop event="Destroy" name="wood" count="6" prob="1" />
 	<property name="EconomicValue" value="15" />
 	<property name="EconomicBundleSize" value="20" />
@@ -4824,8 +4708,8 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<property name="MultiBlockDim" value="1,19,1" />
 	<property name="BigDecorationRadius" value="2" />
- 	<drop event="Harvest" name="wood" count="235" />
-	<drop event="Destroy" name="wood" count="115" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="1"/>
 </block>
 
@@ -4836,8 +4720,8 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<property name="MultiBlockDim" value="1,24,1" />
 	<property name="BigDecorationRadius" value="3" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
 </block>
 
@@ -4848,8 +4732,8 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<property name="MultiBlockDim" value="1,27,1" />
 	<property name="BigDecorationRadius" value="3" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
 </block>
 
@@ -4860,8 +4744,8 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<property name="MultiBlockDim" value="1,28,1" />
 	<property name="BigDecorationRadius" value="4" />
-	<drop event="Harvest" name="wood" count="500" />
-	<drop event="Destroy" name="wood" count="250" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
 </block>
 
@@ -4872,8 +4756,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,21,1" />
 	<property name="BigDecorationRadius" value="3" />
 	<property name="ModelOffset" value="0,-0.3,0" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 </block>
 
 <block id="566" name="treeBirch10m">
@@ -4907,8 +4791,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,13,1" />
 	<property name="BigDecorationRadius" value="4" />
 	<property name="ParticleOnDeath" value="treeGib_birch" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 </block>
 
 <block id="569" name="treeDeadShrub">
@@ -4943,8 +4827,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,7,1" />
 	<property name="BigDecorationRadius" value="3" />
 	<property name="ParticleOnDeath" value="treeGib_birch_small" />
-	<drop event="Harvest" name="wood" count="235" />
-	<drop event="Destroy" name="wood" count="115" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="1"/>
 </block>
 
@@ -4963,8 +4847,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,7,1" />
 	<property name="BigDecorationRadius" value="4" />
 	<property name="ParticleOnDeath" value="treeGib_birch" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
 </block>
 
@@ -4976,8 +4860,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,10,1" />
 	<property name="BigDecorationRadius" value="5" />
 	<property name="ParticleOnDeath" value="treeGib_birch" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
 </block>
 
@@ -4989,8 +4873,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,6,1" />
 	<property name="BigDecorationRadius" value="6" />
 	<property name="ParticleOnDeath" value="treeGib_birch" />
-	<drop event="Harvest" name="wood" count="500" />
-	<drop event="Destroy" name="wood" count="250" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
 </block>
 
@@ -5009,8 +4893,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,3,1" />
 	<property name="BigDecorationRadius" value="3" />
 	<property name="ParticleOnDeath" value="treeGib_burnt_small" />
-	<drop event="Harvest" name="wood" count="100" />
-	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="500" prob="1" />
 </block>
 
 <block id="578" name="treeBurntPine02">
@@ -5020,8 +4904,8 @@ kind of free
 	<property name="ModelOffset" value=".7,-1,-.7" />
 	<property name="MultiBlockDim" value="1,5,1" />
 	<property name="BigDecorationRadius" value="4" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="500" prob="1" />
 </block>
 
 <block id="579" name="treeBurntPine03">
@@ -5031,8 +4915,8 @@ kind of free
 	<property name="ModelOffset" value="-.5,-1.3,-.5" />
 	<property name="MultiBlockDim" value="2,9,2" />
 	<property name="BigDecorationRadius" value="4" />
-	<drop event="Harvest" name="wood" count="500" />
-	<drop event="Destroy" name="wood" count="250" prob="4" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="500" prob="1" />
 </block>
 
 <block id="580" name="steelCNRRoundTop">
@@ -5049,8 +4933,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,4,1" />
 	<property name="BigDecorationRadius" value="2" />
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-	<drop event="Harvest" name="wood" count="100" />
-	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="350" prob="1" />
 </block>
 
 <block id="582" name="treeDeadTree02"> <!-- almost a shrub -->
@@ -5059,8 +4943,8 @@ kind of free
 	<property name="Model" value="Entities/Trees/Haunted_Shrub_WastelandPrefab" />
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-	<drop event="Harvest" name="wood" count="100" />
-	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="350" prob="1" />
 </block>
 
 <block id="583" name="brickDecayedBroke1Block">
@@ -5069,7 +4953,6 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/brick_decayed_broke_1" param1="main_mesh" />
 	<property name="Map.Color" value="94,84,75" />
-	<property class="UpgradeBlock">	<property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="584" name="brickDecayedBroke2Block">
@@ -5100,8 +4983,8 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<property name="MultiBlockDim" value="1,12,1" />
 	<property name="BigDecorationRadius" value="2" />
-	<drop event="Harvest" name="wood" count="235" />
-	<drop event="Destroy" name="wood" count="115" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
 </block>
 
@@ -5127,8 +5010,8 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<property name="MultiBlockDim" value="1,19,1" />
 	<property name="BigDecorationRadius" value="2" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
 </block>
 
@@ -5139,8 +5022,8 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<property name="MultiBlockDim" value="1,28,1" />
 	<property name="BigDecorationRadius" value="2" />
-	<drop event="Harvest" name="wood" count="500" />
-	<drop event="Destroy" name="wood" count="250" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
 </block>
 
@@ -5172,7 +5055,6 @@ kind of free
 
 <block id="593" name="concreteDestroyed1">
 	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/concrete_destroyed_1" param1="main_mesh" />
@@ -5223,7 +5105,6 @@ kind of free
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/tanbrick_broke_1" param1="main_mesh" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="603" name="tanBrickDecayedBroke2">
@@ -5253,7 +5134,6 @@ kind of free
 
 <block id="608" name="concreteTrim2Broke1">
 	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/concrete_trim2_broke1" param1="main_mesh" />
@@ -5280,10 +5160,6 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/white_siding_wood_panel_burnt1" param1="main_mesh" />
 	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="solidWoodFrameBlock" />
-		<property name="ItemCount" value="3" />
-	</property>
 	<drop event="Destroy" name="coal" count="3" prob=".35"/>
 </block>
 
@@ -5473,12 +5349,7 @@ kind of free
 	<property name="MultiBlockDim" value="3,2,3" />
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<drop event="Harvest" name="rockSmall" count="22" prob="1" />
-	<drop event="Harvest" name="ironFragment" count="10" prob="1" />
 	<drop event="Destroy" name="rockSmall" count="11" prob="1" />
-	<drop event="Destroy" name="ironFragment" count="5" prob=".33" />
-	<drop event="Destroy" name="coal" count="10" prob=".33" />
-	<drop event="Destroy" name="potassiumNitratePowder" count="10" prob=".33" />
-	<drop event="Destroy" name="scrapLead" count="10" prob=".33" />
 	<property name="DowngradeBlock" value="rockResourceBroke1" />
 </block>
 
@@ -5503,7 +5374,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="secureReinforcedDoorWooden" />
 		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
+		<property name="ItemCount" value="20" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
@@ -5526,7 +5397,6 @@ kind of free
 
 <block id="634" name="blueDrywallBlock">
 	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 	<property name="Texture" value="436" />
 </block>
 
@@ -5638,12 +5508,6 @@ kind of free
 	<property name="OpenSound" value="UseActions/open_door_wood" />
 	<property name="CloseSound" value="UseActions/close_door_wood" />
 	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="ironDoor1_v1" />
-		<property name="Item" value="forgedIron" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="5" />
-	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 	<property name="DowngradeBlock" value="secureReinforcedDoorWooden" />
 	<drop event="Harvest" name="scrapIron" count="8" prob="1" />
@@ -5738,7 +5602,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug" />
 		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
+		<property name="ItemCount" value="5" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
@@ -5757,7 +5621,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug" />
 		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
+		<property name="ItemCount" value="5" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
@@ -5853,7 +5717,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug" />
 		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
+		<property name="ItemCount" value="5" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
@@ -5968,8 +5832,8 @@ kind of free
 	<property name="BigDecorationRadius" value="3" />
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine16m" />
 	<property name="PlantGrowing.FertileLevel" value="3" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
 </block>
 
@@ -5985,8 +5849,8 @@ kind of free
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine19m" />
 	<property name="PlantGrowing.GrowthRate" value="1" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
-	<drop event="Harvest" name="wood" count="500" />
-	<drop event="Destroy" name="wood" count="250" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
 </block>
 
@@ -5995,8 +5859,8 @@ kind of free
 	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="treeMountainPine20m" />
 	<property name="PlantGrowing.FertileLevel" value="15" />
-	<drop event="Harvest" name="wood" count="550" />
-	<drop event="Destroy" name="wood" count="250" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
 </block>
 
@@ -6040,8 +5904,8 @@ kind of free
 	<property name="BigDecorationRadius" value="3" />
 	<property name="PlantGrowing.Next" value="treePlantedMaple15m" />
 	<property name="ParticleOnDeath" value="treeGib_birch_small" />
-	<drop event="Harvest" name="wood" count="235" />
-	<drop event="Destroy" name="wood" count="115" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
 </block>
 
@@ -6056,8 +5920,8 @@ kind of free
 	<property name="PlantGrowing.Next" value="treePlantedMaple17m" />
 	<property name="PlantGrowing.FertileLevel" value="3" />
 	<property name="ParticleOnDeath" value="treeGib_birch" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
 </block>
 
@@ -6074,21 +5938,19 @@ kind of free
 	<property name="PlantGrowing.Next" value="treePlantedMaple17mPlus" />
 	<property name="PlantGrowing.GrowthRate" value="1" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
-	<drop event="Harvest" name="wood" count="500" />
-	<drop event="Destroy" name="wood" count="250" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
 </block>
 
 <block id="685" name="adobeWhiteBlock">
 	<property name="Extends" value="adobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="686" name="clayRoofBlock">
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Texture" value="170" />
 	<property name="DescriptionKey" value="clayRoofGroupDesc"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
 
 <block id="687" name="clayRoofRamp">
@@ -6096,7 +5958,6 @@ kind of free
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="170" />
 	<property name="DescriptionKey" value="clayRoofGroupDesc"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteRamp" /> </property>
 </block>
 
 <block id="688" name="clayRoofCNRFull">
@@ -6104,20 +5965,17 @@ kind of free
 	<property name="Shape" value="WedgedCornerFull" />
 	<property name="Texture" value="170" />
 	<property name="DescriptionKey" value="clayRoofGroupDesc"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteCNRFull" /> </property>
 </block>
 
 <block id="689" name="adobeWhitePole">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Pole" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePole" /> </property>
 </block>
 
 <block id="690" name="adobePeachPole">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Pole" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePole" /> </property>
 </block>
 
 <block id="691" name="adobePeachPillar100">
@@ -6125,47 +5983,40 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePillar100" /> </property>
 </block>
 
 <block id="692" name="adobeWhiteDrywallBlock">
 	<property name="Extends" value="adobeMaster" />
 	<property name="CustomIcon" value="adobeWhiteBlock" />
 	<property name="Texture" value="171,171,171,173,171,171" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="693" name="adobeWhiteDrywallBaseboardBlock">
 	<property name="Extends" value="adobeMaster" />
 	<property name="CustomIcon" value="adobeWhiteBlock" />
 	<property name="Texture" value="171,171,171,174,171,171" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="694" name="adobePeachDrywallBlock">
 	<property name="Extends" value="adobeMaster" />
 	<property name="CustomIcon" value="adobePeachBlock" />
 	<property name="Texture" value="169,169,169,173,169,169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="695" name="adobePeachDrywallBaseboardBlock">
 	<property name="Extends" value="adobeMaster" />
 	<property name="CustomIcon" value="adobePeachBlock" />
 	<property name="Texture" value="169,169,169,174,169,169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="696" name="cremeDrywallBlock">
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Texture" value="173" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
 
 <block id="697" name="cremeDrywallBaseboardBlock">
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Texture" value="174" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
 
 <block id="698" name="tileFloor5Stairs25">
@@ -6173,7 +6024,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="9" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs25" /> </property>
 </block>
 
 <block id="699" name="adobeWhitePillar100">
@@ -6181,7 +6031,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
 	<property name="Texture" value="171" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePillar100" /> </property>
 </block>
 
 <block id="700" name="asphaltDrywallBlock">
@@ -6251,10 +6100,6 @@ kind of free
 	<property name="Material" value="metal" />
 	<property name="Texture" value="380" />
 	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="scrapIronLogSpike4" />
-		<property name="ItemCount" value="40" />
-	</property>
 	<property name="DowngradeBlock" value="rWoodLogSpike2" />
 	<drop event="Destroy" name="scrapIron" count="8" prob="1" />
 </block>
@@ -6284,7 +6129,6 @@ kind of free
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePillar50" /> </property>
 </block>
 
 <block id="709" name="cabinetOldFillerBlock">
@@ -6390,7 +6234,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="340" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs25" /> </property>
 </block>
 
 <block id="725" name="cntBookStoreBookcase">
@@ -6429,13 +6272,11 @@ kind of free
 	<property name="Shape" value="WedgedInnerFull" />
 	<property name="Texture" value="170" />
 	<property name="DescriptionKey" value="clayRoofGroupDesc"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteCNRInside" /> </property>
 </block>
 
 <block id="731" name="cremeDrywallBaseboard2SidesBlock">
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Texture" value="173,173,173,173,174,174" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
 
 <block id="732" name="treePlantedMaple17mPlus">
@@ -6450,26 +6291,22 @@ kind of free
 
 <block id="733" name="rScrapIronBlock">
 	<property name="Extends" value="rScrapIronMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 	<property name="DowngradeBlock" value="scrapIronBlock" />
 </block>
 
 <block id="734" name="adobeWhiteCNRRamp">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="WedgedCorner" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRRamp" /> </property>
 </block>
 
 <block id="735" name="adobeWhiteCNRFull">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRFull" /> </property>
 </block>
 
 <block id="736" name="adobeWhiteCNRInside">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRInside" /> </property>
 </block>
 
 <block id="737" name="cntBookcase">
@@ -6489,26 +6326,22 @@ kind of free
 <block id="738" name="adobeWhitePlate">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Plate" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePlate" /> </property>
 </block>
 
 <block id="739" name="adobeWhiteWedge">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged60Full" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedge" /> </property>
 </block>
 
 <block id="740" name="adobeWhiteWedgeTip">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged60Tip" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedgeTip" /> </property>
 </block>
 
 <block id="741" name="adobePeachRamp">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 </block>
 
 <block id="742" name="adobePeachPillar50">
@@ -6516,49 +6349,42 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePillar50" /> </property>
 </block>
 
 <block id="743" name="adobePeachCNRRamp">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="WedgedCorner" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRRamp" /> </property>
 </block>
 
 <block id="744" name="adobePeachCNRFull">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRFull" /> </property>
 </block>
 
 <block id="745" name="adobePeachCNRInside">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRInside" /> </property>
 </block>
 
 <block id="746" name="adobePeachPlate">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePlate" /> </property>
 </block>
 
 <block id="747" name="adobePeachWedge">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedge" /> </property>
 </block>
 
 <block id="748" name="adobePeachWedgeTip">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedgeTip" /> </property>
 </block>
 
 <block id="749" name="metalReinforcedWoodDrawBridge">
@@ -6868,7 +6694,6 @@ kind of free
 
 <block id="785" name="cobblestoneBlock">
 	<property name="Extends" value="cobblestoneMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="786" name="garageDoor1CTRPlate">
@@ -7116,7 +6941,6 @@ kind of free
 
 <block id="822" name="dropCeilingRedWoodTrimBlock">
 	<property name="Extends" value="redWoodMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodBlock" /> </property>
 	<property name="Texture" value="361,342,214,214,214,214" />
 </block>
 
@@ -7206,7 +7030,6 @@ kind of free
 <block id="831" name="tanStuccoBlock">
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Texture" value="245" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
 
 <block id="832" name="tanStuccoPlasterBaseboardBlock">
@@ -7244,7 +7067,6 @@ kind of free
 	<property name="Extends" value="cobblestoneMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteStairs25" /> </property>
 </block>
 
 <block id="837" name="rug01Block">
@@ -7337,46 +7159,39 @@ kind of free
 <block id="845" name="adobeTanBlock">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="168" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 <block id="846" name="adobeTanRamp">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="168" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 </block>
 
 <block id="847" name="adobePeachBlock">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="169" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="848" name="adobeWhiteTrimRamp">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="172" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 </block>
 
 <block id="849" name="adobeWhiteRamp">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 </block>
 
 <block id="850" name="adobeWhiteTrimCNRFull">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
 	<property name="Texture" value="172" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRFull" /> </property>
 </block>
 
 <block id="851" name="adobeWhiteTrimCNRInside">
 	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property name="Texture" value="172" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRInside" /> </property>
 </block>
 
 <block id="852" name="forestFlower">
@@ -7483,8 +7298,8 @@ kind of free
 	<property name="BigDecorationRadius" value="2" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="CanPlayersSpawnOn" value="false" />
-	<drop event="Harvest" name="wood" count="100" />
-	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 </block>
 
 <block id="864" name="treeGreenBrownGrassDiagonal">
@@ -7547,13 +7362,12 @@ kind of free
 	<property name="Collide" value="melee" />
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
-	<drop event="Destroy" name="wood" count="1,3" />
+	<drop event="Destroy" name="wood" count="1" prob="1" />
 </block>
 
 <block id="872" name="sidewalkBlock">
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Texture" value="329" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
 
 <block id="873" name="lootForest">
@@ -7862,7 +7676,6 @@ kind of free
 <block id="908" name="tileFloor4Block">
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Texture" value="361" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
 
 <block id="909" name="treePlantedGrass">
@@ -8004,6 +7817,8 @@ kind of free
 	<property name="Extends" value="metalNoUpgradeMaster" />
 	<property name="Shape" value="WedgedBackFaces" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="312" />
+	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 </block>
 
 <block id="930" name="ventDuctRamp">
@@ -8139,7 +7954,6 @@ kind of free
 <block id="949" name="brickPaversBlock">
 	<property name="Extends" value="brickMaster" />
 	<property name="Texture" value="247" />
-	<property class="UpgradeBlock">	<property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="950" name="flagstoneDrywallBaseboardBlock">
@@ -8202,7 +8016,6 @@ kind of free
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="11,8,8,8,8,8" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteHalf" /> </property>
 </block>
 
 <block id="962" name="graveStone1Half">
@@ -8219,21 +8032,18 @@ kind of free
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="10,10,8,8,8,8" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteHalf" /> </property>
 </block>
 
 <block id="964" name="metalAsphaltHalf">
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="10,10,282,282,282,282" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteHalf" /> </property>
 </block>
 
 <block id="965" name="brickMetalHalf">
 	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="194,299,299,299,299,299" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteHalf" /> </property>
 </block>
 
 <block id="966" name="dotsGreenShinglesRampDuplicate1"> <!-- not a duplicate - rename -->
@@ -8447,7 +8257,6 @@ kind of free
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="226,226,226,226,226,226" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteRamp" /> </property>
 	<property name="DescriptionKey" value="flagstoneGroupDesc"/>
 </block>
 
@@ -8644,8 +8453,6 @@ kind of free
 <block id="1036" name="shinglesAsphaltTanWedge">
 	<property name="Extends" value="woodMaster" />
 	<property name="Shape" value="Wedged60Full" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodWedge" /> </property>
-	<property name="DowngradeBlock" value="solidWoodFrameWedge" />
 	<property name="Texture" value="229,54,77,77,77,77" />
 </block>
 
@@ -8677,7 +8484,6 @@ kind of free
 <block id="1042" name="cobblestoneRamp">
 	<property name="Extends" value="cobblestoneMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 </block>
 
 <block id="1043" name="brickDecayedTanRamp">
@@ -8882,7 +8688,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="247" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteStairs25" /> </property>
 </block>
 
 <block id="1072" name="concreteStairs25">
@@ -8897,7 +8702,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="361" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs25" /> </property>
 </block>
 
 <block id="1074" name="cntCabinetOldBottom">
@@ -9281,7 +9085,6 @@ kind of free
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="Texture" value="329,8,8,8,8,8" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteWedge" /> </property>
 </block>
 	<!-- 1 Free -->
 
@@ -9289,7 +9092,6 @@ kind of free
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="Texture" value="10" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteWedge" /> </property>
 </block>
 	<!-- 3 Free -->
 
@@ -9303,7 +9105,6 @@ kind of free
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="11" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteWedge" /> </property>
 </block>
 
 <block id="1137" name="barnWoodWedgeTip">
@@ -9317,7 +9118,6 @@ kind of free
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="10" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteWedgeTip" /> </property>
 </block>
 
 <block id="1139" name="woodWedgeTip">
@@ -9431,13 +9231,6 @@ kind of free
 	<property name="Mesh" value="transparent" />
 	<property name="Texture" value="285" />
 	<property name="DescriptionKey" value="glassGroupDesc"/>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
 	<property name="EconomicValue" value="10" />
 </block>
@@ -9677,14 +9470,6 @@ kind of free
 	<property name="Material" value="wood" />
 	<property name="Shape" value="PlateCentered" />
 	<property name="Texture" value="302" />
-	<property class="RepairItems"> <property name="wood" value="10" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="WindowPlug01" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -9736,14 +9521,6 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/window03_broke1" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacer" />
-	<property name="DowngradeBlock" value="window03Frame" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -9754,13 +9531,6 @@ kind of free
 	<property name="Model" value="Buildings/window03_broke2" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacer" />
 	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -9796,13 +9566,6 @@ kind of free
 	<property name="Shape" value="PlateCentered" />
 	<property name="Texture" value="410,410,413,410,413,410" />
 	<property name="DescriptionKey" value="glassGroupDesc"/>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	<drop event="Destroy" count="0" />
 	<property name="EconomicValue" value="6" />
 </block>
@@ -9841,13 +9604,6 @@ kind of free
 	<property name="Model" value="Buildings/window04_frame" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacer" />
 	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -9860,13 +9616,6 @@ kind of free
 	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
 	<drop event="Destroy" count="0" />
 	<property name="DowngradeBlock" value="window04Frame" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 </block>
 
 <block id="1213" name="doorFrameWhite1">
@@ -10143,13 +9892,6 @@ kind of free
 <block id="1250" name="ironDoor1_v3">
 	<property name="Extends" value="ironDoor1_v1" />
 	<property name="Model" value="Entities/Doors/steel_door_1_v3Prefab" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="vaultDoor01" />
-		<property name="Item" value="forgedSteel" />
-		<property name="ItemCount" value="12" />
-		<property name="UpgradeHitCount" value="6" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 	<property name="DowngradeBlock" value="ironDoor1_v2" />
 </block>
 
@@ -10708,7 +10450,6 @@ kind of free
 <block id="1328" name="orangeDrywallBlock">
 	<property name="Extends" value="stoneToAdobeMaster" />
 	<property name="Texture" value="430" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
 
 <block id="1329" name="brickModernOrangeDrywallBlock">
@@ -10894,7 +10635,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="226" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteStairs25" /> </property>
 	<property name="DescriptionKey" value="flagstoneGroupDesc"/>
 </block>
 
@@ -10905,6 +10645,7 @@ kind of free
 
 <block id="1354" name="logCabinRamp">
 	<property name="Extends" value="woodRamp" />
+	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="43" />
 </block>
 
@@ -11082,7 +10823,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug01" />
 		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
+		<property name="ItemCount" value="5" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
@@ -11094,7 +10835,6 @@ kind of free
 	<property name="Model" value="WindowPlug01" />
 	<property name="Texture" value="23" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="WindowPlug02" /> </property>
-	<property name="DowngradeBlock" value="plainWoodWindowPlug" />
 </block>
 
 <block id="1379" name="WindowPlug02">
@@ -11113,7 +10853,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug04" />
 		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="20" />
+		<property name="ItemCount" value="5" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
@@ -11310,14 +11050,6 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/window03_wood_broke1" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacer" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
-	<property name="DowngradeBlock" value="window03WoodFrame" />
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -11328,13 +11060,6 @@ kind of free
 	<property name="Model" value="Buildings/window03_wood_broke2" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacer" />
 	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="plainWoodWindowPlug" />
-		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -11362,7 +11087,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug" />
 		<property name="Item" value="wood" />
-		<property name="ItemCount" value="10" />
+		<property name="ItemCount" value="5" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
@@ -11451,16 +11176,12 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="355,356,356,356,356,356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelStairs25" /> </property>
-	<property name="DowngradeBlock" value="rConcreteStairs25" />
 </block>
 
 <block id="1425" name="steelRamp">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelRamp" /> </property>
-	<property name="DowngradeBlock" value="rConcreteRamp" />
 </block>
 
 <block id="1426" name="cntDeskSafeInsecure">
@@ -11801,6 +11522,8 @@ kind of free
 	<property name="Model" value="Entities/Vehicles/car03_blue_dmg0_Prefab" />
 	<property name="MultiBlockDim" value="2,2,6" />
 	<property name="ShowModelOnFall" value="false" />
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.2" tool_category="Disassemble" />
+	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
 	<drop event="Harvest" name="leather" count="5" prob=".5"/>
 	<drop event="Harvest" name="scrapIron" count="20" prob="0.5" />
 	<drop event="Destroy" name="scrapIron" count="10" prob="1" />
@@ -11832,8 +11555,6 @@ kind of free
 	<property name="Model" value="Entities/Vehicles/car03_blue_dmg1_Prefab" />
 	<property name="MultiBlockDim" value="2,2,6" />
 	<property name="ShowModelOnFall" value="false" />
-	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble" />
-	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
 	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="cloth" count="5" />
@@ -11869,8 +11590,6 @@ kind of free
 	<property name="MultiBlockDim" value="2,2,6" />
 	<property name="ShowModelOnFall" value="false" />
 	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="gasCan" count="170" prob="0.3" />
-	<drop event="Harvest" name="gasCan" count="80" prob="0.6375" tool_category="Disassemble" /> <!-- together 100 avg -->
 	<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="20" prob="1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="2" prob=".05" tool_category="Disassemble" />
@@ -11978,12 +11697,6 @@ kind of free
 	<property name="Model" value="Entities/Doors/scrap_hatch_v3Prefab" />
 	<property name="OpenSound" value="UseActions/open_hatch_scrap" />
 	<property name="CloseSound" value="UseActions/close_hatch_scrap" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="vaultHatch_v1" />
-		<property name="Item" value="forgedSteel" />
-		<property name="ItemCount" value="12" />
-		<property name="UpgradeHitCount" value="6" />
-	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
 	<property name="DowngradeBlock" value="scrapHatch_v2" />
 </block>
@@ -12184,8 +11897,6 @@ kind of free
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelCNRInside" /> </property>
-	<property name="DowngradeBlock" value="rConcreteCNRInside" />
 </block>
 	<!-- 3 Free -->
 
@@ -12335,12 +12046,6 @@ kind of free
 	<property name="Shape" value="PlateCentered" />
 	<property name="Texture" value="352" />
 	<property class="RepairItems"> <property name="scrapIron" value="40" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="pouredConcreteCTRPlate" />
-		<property name="Item" value="concreteMix" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_concrete" />
 	<property name="DowngradeBlock" value="scrapIronWindowPlug05CTRPlate" />
 	<drop event="Destroy" count="0" />
@@ -12349,8 +12054,6 @@ kind of free
 <block id="1532" name="rConcreteCTRPlate">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="PlateCentered" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCTRPlate" /> </property>
-	<property name="DowngradeBlock" value="concreteCTRPlate" />
 </block>
 	<!-- 3 Free -->
 
@@ -12358,8 +12061,6 @@ kind of free
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="PlateCentered" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelCTRPlate" /> </property>
-	<property name="DowngradeBlock" value="rConcreteCTRPlate" />
 </block>
 
 <block id="1537" name="rWoodPole">
@@ -12386,23 +12087,18 @@ kind of free
 <block id="1540" name="rScrapIronPole">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="Pole" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePole" /> </property>
 	<property name="DowngradeBlock" value="scrapIronPole" />
 </block>
 
 <block id="1541" name="rConcretePole">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Pole" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPole" /> </property>
-	<property name="DowngradeBlock" value="concretePole" />
 </block>
 
 <block id="1542" name="steelPole">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Pole" />
 	<property name="Texture" value="356" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelPole" /> </property>
-	<property name="DowngradeBlock" value="rConcretePole" />
 </block>
 
 <block id="1543" name="corrugatedDecayedBrickGable">
@@ -12606,8 +12302,8 @@ kind of free
 	-->
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="Group" value="Basics,Building" />
-	<property class="RepairItems"> <property name="yuccaFibers" value="10" /> </property>
-	<drop event="Destroy" name="yuccaFibers" count="1,3" />
+	<property class="RepairItems"> <property name="cloth" value="10" /> </property>
+	<drop event="Destroy" name="cloth" count="3,10" />
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="10" />
 </block>
@@ -12689,8 +12385,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,12,1" />
 	<property name="BigDecorationRadius" value="2" />
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine16m" />
-	<drop event="Harvest" name="wood" count="235" />
-	<drop event="Destroy" name="wood" count="115" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
 </block>
 
@@ -12704,8 +12400,8 @@ kind of free
 	<property name="BigDecorationRadius" value="2" />
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine19m" />
 	<property name="PlantGrowing.FertileLevel" value="3" />
-	<drop event="Harvest" name="wood" count="365" />
-	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="300" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
 </block>
 
@@ -12721,8 +12417,8 @@ kind of free
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine19mPlus" />
 	<property name="PlantGrowing.GrowthRate" value="1" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
-	<drop event="Harvest" name="wood" count="500" />
-	<drop event="Destroy" name="wood" count="250" prob="1" />
+	<drop event="Harvest" name="wood" count="10" />
+	<drop event="Destroy" name="wood" count="600" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
 </block>
 
@@ -12958,14 +12654,7 @@ kind of free
 	<property name="Extends" value="metalNoUpgradeMaster" />
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="435" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="rScrapIronPlate" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="40" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
-	<property name="DowngradeBlock" value="rWoodMetalPlate" />
 </block>
 
 <block id="1600" name="greenMetalWall01Sheet2">

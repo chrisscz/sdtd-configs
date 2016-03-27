@@ -392,7 +392,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="barbedFence" count="1">
 	<ingredient name="scrapIron" count="8"/>
-	<ingredient name="wood" count="20"/>
+	<ingredient name="forgedIron" count="2"/>
+	<ingredient name="wood" count="4"/>
 </recipe>
 
 <recipe name="barbedWireSheet" count="1">
@@ -420,13 +421,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="bedroll" count="1">
-	<ingredient name="yuccaFibers" count="20"/>
+	<ingredient name="cloth" count="40"/>
 </recipe>
 
 <recipe name="bellows" count="1">
 	<ingredient name="wood" count="8"/>
-	<ingredient name="animalHide" count="20"/>
-	<ingredient name="shortMetalPipe" count="1"/>
+	<ingredient name="animalHide" count="24"/>
+	<ingredient name="shortMetalPipe" count="3"/>
 </recipe>
 
 <recipe name="bellows" count="1">
@@ -442,10 +443,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="animalFat" count="1"/>
 </recipe>
 
-<recipe name="blueberryPie" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="blueberries" count="1"/>
-	<ingredient name="egg" count="1"/>
-	<ingredient name="cornMeal" count="1"/>
+<recipe name="blueberryPie" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="blueberries" count="20"/>
+	<ingredient name="egg" count="5"/>
+	<ingredient name="cornMeal" count="5"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
@@ -762,6 +763,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="cntDeskSafe" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="10"/>
+	<ingredient name="forgedIron" count="5"/>
+	<ingredient name="forgedSteel" count="10"/>
 	<ingredient name="spring" count="2"/>
 	<ingredient name="mechanicalParts" count="3"/>
 </recipe>
@@ -780,16 +783,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="cntFridge" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="10"/>
-	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="shortMetalPipe" count="10"/>
 	<ingredient name="electricParts" count="8"/>
 	<ingredient name="electronicParts" count="2"/>
 </recipe>
 
 <recipe name="cntFridgeBottom" count="1" craft_area="workbench">
-	<ingredient name="forgedIron" count="4"/>
+	<ingredient name="forgedIron" count="50"/>
 	<ingredient name="shortMetalPipe" count="2"/>
-	<ingredient name="electricParts" count="4"/>
-	<ingredient name="electronicParts" count="1"/>
+	<ingredient name="electricParts" count="8"/>
+	<ingredient name="electronicParts" count="2"/>
 </recipe>
 
 <recipe name="cntFridgeTop" count="1" craft_area="workbench">
@@ -951,33 +954,33 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cement" count="1"/>
 </recipe>
 
-<recipe name="concreteBlock" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteBlock" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteArrowSlitHalf" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteArrowSlitHalf" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteCNRFull" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteCNRFull" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteCNRInside" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteCNRInside" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteCNRRamp" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteCNRRamp" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteCTRPlate" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteCTRPlate" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteEighth" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteEighth" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
 <recipe name="concreteHalf" count="1">
 	<ingredient name="concreteMix" count="10"/>
@@ -987,49 +990,49 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="concreteMix" count="10"/>
 </recipe>
 
-<recipe name="concretePillar50" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concretePillar50" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concretePlate" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concretePlate" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concretePole" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concretePole" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concretePyramid" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concretePyramid" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteQuarter" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteQuarter" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteRamp" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteRamp" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteStairs25" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteStairs25" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteTrim2Block" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteTrim2Block" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteWedge" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteWedge" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteWedgeTip" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteWedgeTip" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
-<recipe name="concreteCNRRound" count="1">
-	<ingredient name="concreteMix" count="10"/>
-</recipe>
+<!--<recipe name="concreteCNRRound" count="1">-->
+	<!--<ingredient name="concreteMix" count="10"/>-->
+<!--</recipe>-->
 
 <recipe name="concreteCNRRoundTop" count="1">
 	<ingredient name="concreteMix" count="10"/>
@@ -1073,9 +1076,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="crossbow" count="1">
 	<ingredient name="forgedIron" count="10"/>
-	<ingredient name="leather" count="2"/>
+	<ingredient name="leather" count="5"/>
+	<ingredient name="yuccaFibers" count="20"/>
 	<ingredient name="glue" count="2"/>
 	<ingredient name="ductTape" count="1"/>
+	<ingredient name="cloth" count="10"/>
 	<ingredient name="wood" count="15"/>
 </recipe>
 
@@ -1196,7 +1201,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rockSmall" count="50"/>
 	<ingredient name="clayLump" count="50"/>
 	<ingredient name="bellows" count="1"/>
-	<ingredient name="shortMetalPipe" count="1"/>
+	<ingredient name="shortMetalPipe" count="10"/>
 </recipe>
 
 <recipe name="forgedIron" count="1" craft_area="forge" material_based="true">
@@ -2036,7 +2041,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="scrapIronLogSpike4" count="1">
-	<ingredient name="scrapIron" count="40"/>
+	<ingredient name="wood" count="30"/>
+	<ingredient name="scrapIron" count="20"/>
 </recipe>
 
 <recipe name="scrapIronStairs25" count="1">
@@ -2088,7 +2094,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="secureDoorWooden" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="shortMetalPipe" count="1">
@@ -2165,12 +2171,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="1"/>
 </recipe>
 
-<recipe name="stone" count="1" craft_area="cementMixer">
-	<ingredient name="crushedSand" count="10"/>
-	<ingredient name="rockSmall" count="18"/>
-	<ingredient name="cement" count="4"/>
-</recipe>
-
 <recipe name="stoneAxe" count="1">
 	<ingredient name="rockSmall" count="5"/>
 	<ingredient name="yuccaFibers" count="2"/>
@@ -2205,7 +2205,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="trapSpikesNew" count="1">
-	<ingredient name="wood" count="100"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="treePlant02" count="1">
@@ -2277,23 +2277,23 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="woodFrameBlock" count="1">
-	<ingredient name="wood" count="5"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodFrameCNRFull" count="1">
-	<ingredient name="wood" count="5"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodFrameCNRInside" count="1">
-	<ingredient name="wood" count="5"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodFrameRamp" count="1">
-	<ingredient name="wood" count="5"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodFrameWedge" count="1">
-	<ingredient name="wood" count="5"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodLogPillar100" count="1">
@@ -2301,19 +2301,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="woodLogSpike1" count="1">
-	<ingredient name="wood" count="20"/>
+	<ingredient name="wood" count="30"/>
 </recipe>
 
 <recipe name="woodPillar100" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodPlate" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodPole" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodShinglesBlock" count="1">
@@ -2325,11 +2325,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="woodShinglesGable" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodShinglesPyramid" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodShinglesRamp" count="1">
@@ -2337,21 +2337,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="woodStairs25" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodSupport" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodTable" count="1">
 	<ingredient name="nail" count="10"/>
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodenBow" count="1">
-	<ingredient name="wood" count="12"/>
-	<ingredient name="yuccaFibers" count="3"/>
+	<ingredient name="yuccaFibers" count="20"/>
+	<ingredient name="cloth" count="20"/>
+	<ingredient name="wood" count="20"/>
 </recipe>
 
 <recipe name="woodArrowSlitHalf" count="1">

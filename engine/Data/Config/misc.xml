@@ -84,6 +84,7 @@
         <smell name="mediumSmell" range="5" strength="2" speed="5" duration="10" belt_range="15" belt_strength="2" heat_map_strength="0.01" heat_map_time="120" />
         <smell name="largeSmell" range="10" strength="3" speed="10" duration="10" belt_range="30" belt_strength="3" heat_map_strength="0.02" heat_map_time="120" />
         <smell name="exLargeSmell" range="20" strength="4" speed="15" duration="15" belt_range="60" belt_strength="4" heat_map_strength="0.4" heat_map_time="120" />
+        <smell name="ulLargeSmell" range="30" strength="4" speed="20" duration="20" belt_range="90" belt_strength="4" heat_map_strength="0.6" heat_map_time="120" />
         <smell name="fart" range="15" strength="5" speed="15" duration="10" belt_range="10" belt_strength="5" />
     </smell>	
 	

@@ -396,13 +396,16 @@
 	<crafting_skill name="Weapon Smithing" icon="weapon_smithing" description_key="weaponSmithingDesc" title_key="weaponSmithing" group="weapons">
 		<!-- Recipe locking example <recipe name="clubWood" unlock_level="1"/> -->
 		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="1,10" value="6.00,3.00"/>
+			<multiply skill_level="10,20" value="2.99,1.00"/>
+			<multiply skill_level="20,30" value="0.99,0.70"/>
+			<multiply skill_level="30,40" value="0.69,0.53"/>
+			<multiply skill_level="40,50" value="0.53,0.47"/>
+			<multiply skill_level="50,60" value="0.47,0.42"/>
+			<multiply skill_level="60,70" value="0.42,0.37"/>
+			<multiply skill_level="70,80" value="0.37,0.33"/>
+			<multiply skill_level="80,90" value="0.33,0.29"/>
+			<multiply skill_level="90,100" value="0.29,0.25"/>
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -414,11 +417,11 @@
 			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="1,10" value="7.00,5.70"/>
+			<multiply skill_level="10,20" value="5.70,3.61"/>
+			<multiply skill_level="20,30" value="3.61,2.54"/>
+			<multiply skill_level="30,40" value="2.54,1.48"/>
+			<multiply skill_level="40,50" value="1.48,0.43"/>
 			<multiply skill_level="50,60" value="0.43,0.39"/>
 			<multiply skill_level="60,70" value="0.39,0.35"/>
 			<multiply skill_level="70,80" value="0.35,0.31"/>
@@ -438,24 +441,27 @@
 			<add skill_level="90,100" value="48,50"/>
 		</effect>
 		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" /> <!-- =100 points at QL 600 -->
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
+			<multiply skill_level="1,5" value="3.67,3.000" /> <!-- =100 points at QL 600 -->
+			<multiply skill_level="5,11" value="3.000,2.283" />
+			<multiply skill_level="11,19" value="2.283,1.509" />
+			<multiply skill_level="19,32" value="1.509,1.000" />
+			<multiply skill_level="32,49" value="1.000,.668" />
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" /> <!-- =10 points at QL 600 -->
 		</effect>
 	</crafting_skill>
 	<crafting_skill name="Tool Smithing" icon="tool_smithing" description_key="toolSmithingDesc" title_key="toolSmithing" group="tools">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="1,10" value="6.00,3.00"/>
+			<multiply skill_level="10,20" value="2.99,1.00"/>
+			<multiply skill_level="20,30" value="0.99,0.70"/>
+			<multiply skill_level="30,40" value="0.69,0.53"/>
+			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="50,60" value="0.43,0.39"/>
+			<multiply skill_level="60,70" value="0.39,0.35"/>
+			<multiply skill_level="70,80" value="0.35,0.31"/>
+			<multiply skill_level="80,90" value="0.31,0.28"/>
+			<multiply skill_level="90,100" value="0.28,0.25"/>
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -467,11 +473,11 @@
 			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="1,10" value="7.00,5.70"/>
+			<multiply skill_level="10,20" value="5.70,3.61"/>
+			<multiply skill_level="20,30" value="3.61,2.54"/>
+			<multiply skill_level="30,40" value="2.54,1.48"/>
+			<multiply skill_level="40,50" value="1.48,0.43"/>
 			<multiply skill_level="50,60" value="0.43,0.39"/>
 			<multiply skill_level="60,70" value="0.39,0.35"/>
 			<multiply skill_level="70,80" value="0.35,0.31"/>
@@ -491,24 +497,27 @@
 			<add skill_level="90,100" value="48,50"/>
 		</effect>
 		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
+			<multiply skill_level="1,5" value="3.67,3.000" /> <!-- =100 points at QL 600 -->
+			<multiply skill_level="5,11" value="3.000,2.283" />
+			<multiply skill_level="11,19" value="2.283,1.509" />
+			<multiply skill_level="19,32" value="1.509,1.000" />
+			<multiply skill_level="32,49" value="1.000,.668" />
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
 	<crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="firearms">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="1,10" value="6.00,3.00"/>
+			<multiply skill_level="10,20" value="2.99,1.00"/>
+			<multiply skill_level="20,30" value="0.99,0.70"/>
+			<multiply skill_level="30,40" value="0.69,0.53"/>
+			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="50,60" value="0.43,0.39"/>
+			<multiply skill_level="60,70" value="0.39,0.35"/>
+			<multiply skill_level="70,80" value="0.35,0.31"/>
+			<multiply skill_level="80,90" value="0.31,0.28"/>
+			<multiply skill_level="90,100" value="0.28,0.25"/>
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -520,11 +529,11 @@
 			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="1,10" value="7.00,5.70"/>
+			<multiply skill_level="10,20" value="5.70,3.61"/>
+			<multiply skill_level="20,30" value="3.61,2.54"/>
+			<multiply skill_level="30,40" value="2.54,1.48"/>
+			<multiply skill_level="40,50" value="1.48,0.43"/>
 			<multiply skill_level="50,60" value="0.43,0.39"/>
 			<multiply skill_level="60,70" value="0.39,0.35"/>
 			<multiply skill_level="70,80" value="0.35,0.31"/>
@@ -594,13 +603,16 @@
 	</perk>
 	<crafting_skill name="Science" icon="science" description_key="scienceDesc" title_key="science" group="crafting">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="1,10" value="6.00,3.00"/>
+			<multiply skill_level="10,20" value="2.99,1.00"/>
+			<multiply skill_level="20,30" value="0.99,0.70"/>
+			<multiply skill_level="30,40" value="0.69,0.53"/>
+			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="50,60" value="0.43,0.39"/>
+			<multiply skill_level="60,70" value="0.39,0.35"/>
+			<multiply skill_level="70,80" value="0.35,0.31"/>
+			<multiply skill_level="80,90" value="0.31,0.28"/>
+			<multiply skill_level="90,100" value="0.28,0.25"/>
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -612,11 +624,11 @@
 			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="1,10" value="7.00,5.70"/>
+			<multiply skill_level="10,20" value="5.70,3.61"/>
+			<multiply skill_level="20,30" value="3.61,2.54"/>
+			<multiply skill_level="30,40" value="2.54,1.48"/>
+			<multiply skill_level="40,50" value="1.48,0.43"/>
 			<multiply skill_level="50,60" value="0.43,0.39"/>
 			<multiply skill_level="60,70" value="0.39,0.35"/>
 			<multiply skill_level="70,80" value="0.35,0.31"/>
@@ -636,24 +648,27 @@
 			<add skill_level="90,100" value="48,50"/>
 		</effect>
 		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
+			<multiply skill_level="1,5" value="3.67,3.000" /> <!-- =100 points at QL 600 -->
+			<multiply skill_level="5,11" value="3.000,2.283" />
+			<multiply skill_level="11,19" value="2.283,1.509" />
+			<multiply skill_level="19,32" value="1.509,1.000" />
+			<multiply skill_level="32,49" value="1.000,.668" />
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
 	<crafting_skill name="Tailoring" icon="tailoring" description_key="tailoringDesc" title_key="tailoring" group="clothing">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="1,10" value="6.00,3.00"/>
+			<multiply skill_level="10,20" value="2.99,1.00"/>
+			<multiply skill_level="20,30" value="0.99,0.70"/>
+			<multiply skill_level="30,40" value="0.69,0.53"/>
+			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="50,60" value="0.43,0.39"/>
+			<multiply skill_level="60,70" value="0.39,0.35"/>
+			<multiply skill_level="70,80" value="0.35,0.31"/>
+			<multiply skill_level="80,90" value="0.31,0.28"/>
+			<multiply skill_level="90,100" value="0.28,0.25"/>
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -665,11 +680,11 @@
 			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="1,10" value="7.00,5.70"/>
+			<multiply skill_level="10,20" value="5.70,3.61"/>
+			<multiply skill_level="20,30" value="3.61,2.54"/>
+			<multiply skill_level="30,40" value="2.54,1.48"/>
+			<multiply skill_level="40,50" value="1.48,0.43"/>
 			<multiply skill_level="50,60" value="0.43,0.39"/>
 			<multiply skill_level="60,70" value="0.39,0.35"/>
 			<multiply skill_level="70,80" value="0.35,0.31"/>
@@ -689,24 +704,27 @@
 			<add skill_level="90,100" value="48,50"/>
 		</effect>
 		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
+			<multiply skill_level="1,5" value="3.67,3.000" /> <!-- =100 points at QL 600 -->
+			<multiply skill_level="5,11" value="3.000,2.283" />
+			<multiply skill_level="11,19" value="2.283,1.509" />
+			<multiply skill_level="19,32" value="1.509,1.000" />
+			<multiply skill_level="32,49" value="1.000,.668" />
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
 	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="1,10" value="6.00,3.00"/>
+			<multiply skill_level="10,20" value="2.99,1.00"/>
+			<multiply skill_level="20,30" value="0.99,0.70"/>
+			<multiply skill_level="30,40" value="0.69,0.53"/>
+			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="50,60" value="0.43,0.39"/>
+			<multiply skill_level="60,70" value="0.39,0.35"/>
+			<multiply skill_level="70,80" value="0.35,0.31"/>
+			<multiply skill_level="80,90" value="0.31,0.28"/>
+			<multiply skill_level="90,100" value="0.28,0.25"/>
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -718,11 +736,11 @@
 			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="1,10" value="7.00,5.70"/>
+			<multiply skill_level="10,20" value="5.70,3.61"/>
+			<multiply skill_level="20,30" value="3.61,2.54"/>
+			<multiply skill_level="30,40" value="2.54,1.48"/>
+			<multiply skill_level="40,50" value="1.48,0.43"/>
 			<multiply skill_level="50,60" value="0.43,0.39"/>
 			<multiply skill_level="60,70" value="0.39,0.35"/>
 			<multiply skill_level="70,80" value="0.35,0.31"/>
@@ -742,11 +760,11 @@
 			<add skill_level="90,100" value="48,50"/>
 		</effect>
 		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
+			<multiply skill_level="1,5" value="3.67,3.000" /> <!-- =100 points at QL 600 -->
+			<multiply skill_level="5,11" value="3.000,2.283" />
+			<multiply skill_level="11,19" value="2.283,1.509" />
+			<multiply skill_level="19,32" value="1.509,1.000" />
+			<multiply skill_level="32,49" value="1.000,.668" />
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
@@ -758,13 +776,16 @@
 
 	<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="1,10" value="6.00,3.00"/>
+			<multiply skill_level="10,20" value="2.99,1.00"/>
+			<multiply skill_level="20,30" value="0.99,0.70"/>
+			<multiply skill_level="30,40" value="0.69,0.53"/>
+			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="50,60" value="0.43,0.39"/>
+			<multiply skill_level="60,70" value="0.39,0.35"/>
+			<multiply skill_level="70,80" value="0.35,0.31"/>
+			<multiply skill_level="80,90" value="0.31,0.28"/>
+			<multiply skill_level="90,100" value="0.28,0.25"/>
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -776,11 +797,11 @@
 			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="1,10" value="7.00,5.70"/>
+			<multiply skill_level="10,20" value="5.70,3.61"/>
+			<multiply skill_level="20,30" value="3.61,2.54"/>
+			<multiply skill_level="30,40" value="2.54,1.48"/>
+			<multiply skill_level="40,50" value="1.48,0.43"/>
 			<multiply skill_level="50,60" value="0.43,0.39"/>
 			<multiply skill_level="60,70" value="0.39,0.35"/>
 			<multiply skill_level="70,80" value="0.35,0.31"/>
@@ -800,24 +821,27 @@
 			<add skill_level="90,100" value="48,50"/>
 		</effect>
 		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
+			<multiply skill_level="1,5" value="3.67,3.000" /> <!-- =100 points at QL 600 -->
+			<multiply skill_level="5,11" value="3.000,2.283" />
+			<multiply skill_level="11,19" value="2.283,1.509" />
+			<multiply skill_level="19,32" value="1.509,1.000" />
+			<multiply skill_level="32,49" value="1.000,.668" />
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
 	<crafting_skill name="Miscellaneous Crafting" exp_to_level="300" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,5" value="1,.931" />
-			<multiply skill_level="5,11" value=".931,.871" />
-			<multiply skill_level="11,19" value=".871,.813" />
-			<multiply skill_level="19,32" value=".813,.741" />
-			<multiply skill_level="32,49" value=".741,.667" />
-			<multiply skill_level="49,70" value=".667,.591" />
-			<multiply skill_level="70,100" value=".591,.5" />
+			<multiply skill_level="1,10" value="6.00,3.00"/>
+			<multiply skill_level="10,20" value="2.99,1.00"/>
+			<multiply skill_level="20,30" value="0.99,0.70"/>
+			<multiply skill_level="30,40" value="0.69,0.53"/>
+			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="50,60" value="0.43,0.39"/>
+			<multiply skill_level="60,70" value="0.39,0.35"/>
+			<multiply skill_level="70,80" value="0.35,0.31"/>
+			<multiply skill_level="80,90" value="0.31,0.28"/>
+			<multiply skill_level="90,100" value="0.28,0.25"/>
 		</effect>
 		<effect name="CraftingQuality">
 			<setvalue skill_level="1,5" value="1,69" />
@@ -829,11 +853,11 @@
 			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
+			<multiply skill_level="1,10" value="7.00,5.70"/>
+			<multiply skill_level="10,20" value="5.70,3.61"/>
+			<multiply skill_level="20,30" value="3.61,2.54"/>
+			<multiply skill_level="30,40" value="2.54,1.48"/>
+			<multiply skill_level="40,50" value="1.48,0.43"/>
 			<multiply skill_level="50,60" value="0.43,0.39"/>
 			<multiply skill_level="60,70" value="0.39,0.35"/>
 			<multiply skill_level="70,80" value="0.35,0.31"/>
@@ -853,11 +877,11 @@
 			<add skill_level="90,100" value="48,50"/>
 		</effect>
 		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
+			<multiply skill_level="1,5" value="3.67,3.000" /> <!-- =100 points at QL 600 -->
+			<multiply skill_level="5,11" value="3.000,2.283" />
+			<multiply skill_level="11,19" value="2.283,1.509" />
+			<multiply skill_level="19,32" value="1.509,1.000" />
+			<multiply skill_level="32,49" value="1.000,.668" />
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>

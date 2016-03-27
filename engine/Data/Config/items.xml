@@ -317,6 +317,8 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.1" />
 		<property name="Sound_start" value="swoosh" />
 		<property name="Stamina_usage" value="5" />
+		<property name="Buff" value="bleeding" />
+		<property name="Buff_chance" value=".8" />
 		<property name="DamageBonus.head" value="5" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.leaves" value="25" />
@@ -356,6 +358,8 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.1" />
 		<property name="Sound_start" value="swoosh" />
 		<property name="Stamina_usage" value="7" />
+		<property name="Buff" value="bleeding" />
+		<property name="Buff_chance" value=".99" />
 		<property name="DamageBonus.wood" value="3" />
 		<property name="DamageBonus.head" value="5" />
 		<property name="DamageBonus.glass" value="25" />
@@ -950,8 +954,8 @@ Mesh files no longer used:
 		<property name="Gain_sickness" value="15" />
 		<property name="Condition_raycast_block" value="826,1472"/>
 		<property name="Sound_start" value="UseActions/player_drinking" />
-		<property name="Buff" value="dysentery" />
-		<property name="Buff_chance" value="0.5" />
+		<property name="Buff" value="dysentery,infection" />
+		<property name="Buff_chance" value="0.5,0.05" />
 	</property>
 	<property class="Attributes">
 		<property name="DismembermentBaseChance" value="0,0"/>
@@ -2408,6 +2412,7 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="5" />
 	<property name="Group" value="Resources" />
+	<property name="Smell" value="ulLargeSmell" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="ThrowAway" />
 		<property name="Delay" value="1.2" />
@@ -5606,9 +5611,6 @@ which does not exist, yet. -->
 		<property name="Class" value="UseOther" />
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="5" />
-		<property name="Gain_food" value="5" />
-		<property name="Gain_water" value="5" />
 		<property name="Sound_start" value="UseActions/player_blooddraw" />
 	</property>
 	<property class="Action1">
@@ -5792,7 +5794,7 @@ which does not exist, yet. -->
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Gain_stamina" value="0" />
-		<property name="Gain_health" value="-10" />
+		<property name="Gain_health" value="-170" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 		<property name="Buff" value="internalBleeding" />
 	</property>
@@ -5809,14 +5811,11 @@ which does not exist, yet. -->
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="0" />
 		<property name="Gain_food" value="5" />
 		<property name="Buff" value="eatFood_4_Trigger" />
-		<property name="Gain_water" value="0" />
-		<property name="Gain_stamina" value="40" />
+		<property name="Gain_water" value="-20" />
 		<property name="Gain_wellness" value="0.4" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
-		<property name="Debuff" value="infection" />
 		<property name="Create_item" value="emptyJar" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
@@ -6034,7 +6033,7 @@ which does not exist, yet. -->
 	<property name="Extends" value="canHam" />
 	<property name="Meshfile" value="Items/Food/can_salmonPrefab" />
 	<property class="Action1">
-		<property name="Gain_food" value="5" />
+		<property name="Gain_food" value="15" />
 		<property name="Buff" value="eatFood_3_Trigger" />
 	</property>
 </item>
@@ -6087,11 +6086,11 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="3" />
+		<property name="Gain_food" value="20" />
+		<property name="Gain_water" value="-20" />
 		<property name="Buff" value="eatFood_2_Trigger" />
-		<property name="Gain_water" value="0" />
 		<property name="Gain_stamina" value="2" />
-		<property name="Gain_wellness" value="0.08" />
+		<property name="Gain_wellness" value="0.18" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
 	</property>
@@ -6131,10 +6130,10 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="5" />
+		<property name="Gain_food" value="10" />
+		<property name="Gain_water" value="-5" />
+		<property name="Gain_wellness" value="0.15" />
 		<property name="Buff" value="eatFood_3_Trigger" />
-		<property name="Gain_water" value="0" />
-		<property name="Gain_wellness" value="0.4" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
 	</property>
@@ -6156,10 +6155,10 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="10" />
+		<property name="Gain_food" value="20" />
+		<property name="Gain_water" value="-20" />
 		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger" />
 		<property name="Buff_chance" value="0.5,1" />
-		<property name="Gain_water" value="0" />
 		<property name="Gain_sickness" value="30" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
@@ -6181,7 +6180,8 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="15" />
+		<property name="Gain_food" value="20" />
+		<property name="Gain_water" value="-10" />
 		<property name="Buff" value="foodPoisoning,eatFood_4_Trigger" />
 		<property name="Buff_chance" value="0.5,1" />
 		<property name="Sound_start" value="UseActions/player_eating" />
@@ -6200,11 +6200,11 @@ which does not exist, yet. -->
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="10" />
+		<property name="Gain_health" value="2" />
+		<property name="Gain_food" value="40" />
+		<property name="Gain_water" value="-40" />
 		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger" />
 		<property name="Buff_chance" value="0.5,1" />
-		<property name="Gain_water" value="0" />
 		<property name="Gain_stamina" value="0" />
 		<property name="Gain_sickness" value="30" />
 		<property name="Sound_start" value="UseActions/player_eating" />
@@ -6225,16 +6225,17 @@ which does not exist, yet. -->
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="10" />
+		<property name="Gain_health" value="5" />
+		<property name="Gain_food" value="15" />
+		<property name="Gain_water" value="-15" />
 		<property name="Buff" value="foodPoisoning" />
-		<property name="Gain_water" value="-5" />
 		<property name="Gain_stamina" value="-20" />
 		<property name="Gain_sickness" value="30" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 	<property name="CraftingIngredientExp" value="0" />
 	<property name="CraftingIngredientTime" value="95" />
+	<property name="Smell" value="ulLargeSmell" />
 	<property name="Group" value="Food/Cooking" />
 </item>
 
@@ -6250,13 +6251,13 @@ which does not exist, yet. -->
 		<property name="Delay" value="2.1" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="10" />
+		<property name="Gain_food" value="40" />
+		<property name="Gain_water" value="-40" />
+		<property name="Gain_wellness" value="0.1" />
 		<property name="Buff" value="eatFood_9_Trigger" />
-		<property name="Gain_water" value="-5" />
-		<property name="Gain_wellness" value="0.8" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
-	<property name="Smell" value="largeSmell" />
+	<property name="Smell" value="ulLargeSmell" />
 	<property name="Group" value="Food/Cooking" />
 </item>
 
@@ -6272,10 +6273,10 @@ which does not exist, yet. -->
 		<property name="Delay" value="2.1" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="10" />
+		<property name="Gain_food" value="40" />
+		<property name="Gain_water" value="-40" />
+		<property name="Gain_wellness" value="0.5" />
 		<property name="Buff" value="eatFood_9_Trigger" />
-		<property name="Gain_water" value="-2" />
-		<property name="Gain_wellness" value="0.8" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 	<property name="Smell" value="mediumSmell" />
@@ -6294,10 +6295,10 @@ which does not exist, yet. -->
 		<property name="Delay" value="2.1" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="10" />
+		<property name="Gain_food" value="40" />
+		<property name="Gain_water" value="-20" />
+		<property name="Gain_wellness" value="0.5" />
 		<property name="Buff" value="eatFood_9_Trigger" />
-		<property name="Gain_water" value="0" />
-		<property name="Gain_wellness" value="0.8" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
 	</property>
@@ -6316,15 +6317,15 @@ which does not exist, yet. -->
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="20" />
-		<property name="Gain_water" value="0" />
-		<property name="Gain_wellness" value="1.6" />
+		<property name="Gain_health" value="5" />
+		<property name="Gain_food" value="30" />
+		<property name="Gain_water" value="20" />
+		<property name="Gain_wellness" value="0.8" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
 		<property name="Buff" value="stewWarming,eatFood_26_Trigger" />
 	</property>
-	<property name="Smell" value="exLargeSmell" />
+	<property name="Smell" value="largeSmell" />
 	<property name="Group" value="Food/Cooking" />
 </item>
 
@@ -6367,7 +6368,7 @@ which does not exist, yet. -->
 		<property name="Gain_health" value="0" />
 		<property name="Gain_food" value="1" />
 		<property name="Buff" value="eatFood_1_Trigger" />
-		<property name="Gain_water" value="1" />
+		<property name="Gain_water" value="0" />
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
@@ -6386,10 +6387,10 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="3" />
+		<property name="Gain_food" value="10" />
+		<property name="Gain_water" value="-5" />
 		<property name="Buff" value="foodPoisoning,eatFood_1_Trigger" />
 		<property name="Buff_chance" value="0.4,1" />
-		<property name="Gain_water" value="0" />
 		<property name="Gain_stamina" value="-8" />
 		<property name="Gain_sickness" value="30" />
 		<property name="Sound_start" value="UseActions/player_eating" />
@@ -6408,11 +6409,11 @@ which does not exist, yet. -->
 		<property name="Delay" value="2.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="4" />
+		<property name="Gain_food" value="10" />
+		<property name="Gain_water" value="-5" />
 		<property name="Buff" value="eatFood_3_Trigger" />
-		<property name="Gain_water" value="0" />
 		<property name="Gain_stamina" value="0" />
-		<property name="Gain_wellness" value="0.32" />
+		<property name="Gain_wellness" value="0.1" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
 	</property>
@@ -6430,13 +6431,14 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="10" />
+		<property name="Gain_food" value="40" />
+		<property name="Gain_water" value="-20" />
+		<property name="Gain_wellness" value="2" />
 		<property name="Buff" value="eatFood_9_Trigger" />
-		<property name="Gain_water" value="0" />
-		<property name="Gain_wellness" value="0.8" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
 	</property>
+	<property name="Smell" value="smallSmell" />
 	<property name="Group" value="Food/Cooking" />
 </item>
 
@@ -6452,12 +6454,13 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="4" />
+		<property name="Gain_food" value="10" />
+		<property name="Gain_water" value="-10" />
 		<property name="Buff" value="eatFood_2_Trigger" />
-		<property name="Gain_water" value="0" />
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
+	<property name="Smell" value="smallSmell" />
 	<property name="Group" value="Food/Cooking" />
 </item>
 
@@ -6472,10 +6475,11 @@ which does not exist, yet. -->
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="2.1" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="15" />
+		<property name="Gain_health" value="3" />
+		<property name="Gain_food" value="30" />
+		<property name="Gain_water" value="-30" />
+		<property name="Gain_wellness" value="0.5" />
 		<property name="Buff" value="eatFood_15_Trigger" />
-		<property name="Gain_wellness" value="1" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 	<property name="Smell" value="largeSmell" />
@@ -6516,14 +6520,15 @@ which does not exist, yet. -->
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="7" />
-		<property name="Gain_water" value="0" />
-		<property name="Gain_wellness" value="0.1" />
+		<property name="Gain_health" value="5" />
+		<property name="Gain_food" value="20" />
+		<property name="Gain_water" value="20" />
+		<property name="Gain_wellness" value="0.5" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
 		<property name="Buff" value="stewWarming,eatFood_4_Trigger" />
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar" /> -->
 	</property>
+	<property name="Smell" value="smallSmell" />
 	<property name="Group" value="Food/Cooking" />
 </item>
 
@@ -6544,12 +6549,12 @@ which does not exist, yet. -->
 		<property name="Gain_health" value="0" />
 		<property name="Gain_stamina" value="5" />
 		<property name="Gain_food" value="0" />
-		<property name="Gain_water" value="15" />
+		<property name="Gain_water" value="30" />
 		<property name="Gain_sickness" value="15" />
 		<property name="Gain_wellness" value="-0.1" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
-		<property name="Buff" value="dysentery" />
-		<property name="Buff_chance" value="0.5" />
+		<property name="Buff" value="dysentery,infection" />
+		<property name="Buff_chance" value="0.5,0.05" />
 		<property name="Debuff" value="burningSmall,burning" />
 		<property name="Create_item" value="canEmpty" />
 	</property>
@@ -6594,14 +6599,14 @@ which does not exist, yet. -->
 		<property name="Delay" value="1" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_health" value="0" />
-		<property name="Gain_stamina" value="5" />
+		<property name="Gain_stamina" value="20" />
 		<property name="Gain_food" value="0" />
-		<property name="Gain_water" value="15" />
+		<property name="Gain_water" value="20" />
 		<property name="Gain_sickness" value="15" />
 		<property name="Gain_wellness" value="-0.1" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
-		<property name="Buff" value="dysentery" />
-		<property name="Buff_chance" value="0.5" />
+		<property name="Buff" value="dysentery,infection" />
+		<property name="Buff_chance" value="0.5,0.05" />
 		<property name="Debuff" value="burningSmall,burning" />
 		<property name="Create_item" value="emptyJar" />
 	</property>
@@ -6623,7 +6628,7 @@ which does not exist, yet. -->
 		<property name="Gain_health" value="0" />
 		<property name="Gain_stamina" value="20" />
 		<property name="Gain_food" value="0" />
-		<property name="Gain_water" value="20" />
+		<property name="Gain_water" value="30" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
 		<property name="Debuff" value="burningSmall,burning" />
 		<property name="Create_item" value="emptyJar" />
@@ -6660,7 +6665,7 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_food" value="0" />
-		<property name="Gain_water" value="20" />
+		<property name="Gain_water" value="40" />
 		<property name="Gain_stamina" value="40" />
 		<property name="Gain_wellness" value="0.2" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
@@ -6682,7 +6687,7 @@ which does not exist, yet. -->
 		<property name="Delay" value="1.0" />
 		<property name="Use_time" value="..." />
 		<property name="Gain_food" value="0" />
-		<property name="Gain_water" value="20" />
+		<property name="Gain_water" value="40" />
 		<property name="Gain_stamina" value="40" />
 		<property name="Gain_wellness" value="0.2" />
 		<property name="Sound_start" value="UseActions/player_drinking" />

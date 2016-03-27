@@ -312,8 +312,8 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="2" buff="sprainedLeg" tickrate="2"/>
 </buff>
 	
-<buff id="sprainedLeg" mutex="brokenLeg" type="speedmodifier" duration="2400" actions="debuff(firstAid);debuff(splint)" icon="ui_game_symbol_brokenbone" name_key="sprainedLeg" description_key="sprainedLegDesc" tooltip_key="sprainedLegTooltip" cures="splint">
-	<modify id="0" stat="speedmodifier" mulValue="0.80"/>			
+<buff id="sprainedLeg" mutex="brokenLeg" type="speedmodifier" duration="9000" actions="debuff(firstAid);debuff(splint)" icon="ui_game_symbol_brokenbone" name_key="sprainedLeg" description_key="sprainedLegDesc" tooltip_key="sprainedLegTooltip" cures="splint">
+	<modify id="0" stat="speedmodifier" mulValue="0.80"/>
 </buff>
 
 <buff id="stunned" mutex="stunCooldown,painkillerBuff,Buzzed,Drunk" duration="4" actions="increment(@wellness, -0.5, 0, 0, 1)" onexpired="stunCooldown" type="speedmodifier" icon="ui_game_symbol_stunned" name_key="stunned" description_key="stunnedDesc" tooltip_key="stunnedTooltip">
