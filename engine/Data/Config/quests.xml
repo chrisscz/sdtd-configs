@@ -217,7 +217,7 @@
 		</requirement>
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="Recipe" id="leather" optional="true" />
+		<reward type="SkillPoints" value="1" optional="true" />
 	</quest>
 	
 	
