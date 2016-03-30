@@ -1677,10 +1677,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
 	<property name="Weight" value="5" />
 	<property name="Group" value="Ammo/Weapons" />
-	<property class="Attributes">
-		<property name="GetQualityFromWeapon" value="true" />
-		<property name="EntityDamage" value="0,0" />
-	</property>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
@@ -1691,10 +1687,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
 	<property name="Weight" value="5" />
 	<property name="Group" value="Ammo/Weapons" />
-	<property class="Attributes">
-		<property name="GetQualityFromWeapon" value="true" />
-		<property name="EntityDamage" value="0,0" />
-	</property>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
@@ -1715,10 +1707,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
 	<property name="Weight" value="5" />
 	<property name="Group" value="Ammo/Weapons" />
-	<property class="Attributes">
-		<property name="GetQualityFromWeapon" value="true" />
-		<property name="EntityDamage" value="0,0" />
-	</property>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
@@ -4646,10 +4634,10 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 <item id="671" name="brokenGlass">
-	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="Meshfile" value="Items/Misc/brokenGlassPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-	<property name="HoldType" value="45" />
 	<property name="Material" value="glass" />
+	<property name="HoldType" value="23" />
 	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
 	<property name="Weight" value="5" />
 	<property class="Action1">
@@ -7017,7 +7005,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Weight" value="1" />
 	<property name="Group" value="Resources" />
 	<property name="ResourceUnit" value="true" />
-	<property name="MeltTimePerUnit" value="0.5" />
+	<property name="MeltTimePerUnit" value="0.25" />
 	<property name="UserHidden" value="true" />
 	<property name="CraftingIngredientTime" value="0.5" />
 	<property name="IsDeveloper" value="true" />
