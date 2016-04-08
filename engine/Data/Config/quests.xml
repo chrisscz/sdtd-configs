@@ -7,9 +7,20 @@
 	name_key - localization key for the quest used when displayed in the quest list.
 	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
 	description_key = localization key for the description displayed in the description window.
+	offer_key = localization key for the offer window description.
 	icon = icon shown in the quest list and on the tracker.
 	category_key = localization key for the category type (quest,challenge)
 	difficulty = (veryeasy, easy, medium, hard, insane )
+	
+	Alternative settings for custom quest creation:
+	
+	name - quest name without localization.
+	subtitle - sub name without localization.
+	description - description without localization.
+	offer - offer without localization.
+	group_name - quest chain name without localization.
+	category - category type without localization.
+	
 -->
 
 <quests>
@@ -280,59 +291,51 @@
 	<quest id="treasure_taylor" name_key="treasure_taylor" subtitle_key="treasure_taylor_subtitle" description_key="treasure_taylor_offer" icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="treasure" offer_key="treasure_taylor_offer" difficulty="medium">
 		
-		<objective type="TreasureChest" id="treasureChest" value="500-1500" />
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 	
 	<quest id="treasure_nickole" name_key="treasure_nickole" subtitle_key="treasure_nickole_subtitle" description_key="treasure_nickole_offer" icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="treasure" offer_key="treasure_nickole_offer" difficulty="medium">
 		
-		<objective type="TreasureChest" id="treasureChest" value="500-1500" />
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 	
 	<quest id="treasure_stephan" name_key="treasure_stephan" subtitle_key="treasure_stephan_subtitle" description_key="treasure_stephan_offer" icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="treasure" offer_key="treasure_stephan_offer" difficulty="medium">
 		
-		<objective type="TreasureChest" id="treasureChest" value="500-1500" />
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 		
 	<quest id="treasure_jennifer" name_key="treasure_jennifer" subtitle_key="treasure_jennifer_subtitle" description_key="treasure_jennifer_offer" icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="treasure" offer_key="treasure_jennifer_offer" difficulty="medium">
 		
-		<objective type="TreasureChest" id="treasureChest" value="500-1500" />
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 	
 	<quest id="treasure_claude" name_key="treasure_claude" subtitle_key="treasure_claude_subtitle" description_key="treasure_claude_offer" icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="treasure" offer_key="treasure_claude_offer" difficulty="medium">
 		
-		<objective type="TreasureChest" id="treasureChest" value="500-1500" />
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 	
 	<quest id="treasure_sarah" name_key="treasure_sarah" subtitle_key="treasure_sarah_subtitle" description_key="treasure_sarah_offer" icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="treasure" offer_key="treasure_sarah_offer" difficulty="medium">
 		
-		<objective type="TreasureChest" id="treasureChest" value="500-1500" />
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 	
 	<quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
 		
-		<objective type="TreasureChest" id="treasureChest" value="500-1500" />
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
 	
-	<!-- <quest id="intro_oldsurvival4" name_key="Basic Survival 4/7" subtitle_key="Spend Skill Points" icon="ui_game_symbol_skills" category_key="Quest">
-		<objective type="openwindow" id="skills" />
-		<objective type="spendskillpoints" value="2" />
-		
-		<reward type="SkillPoints" value="2" />
-    </quest>
 	
-	
-	<quest id="dc_medicine1" name_key="Leg Breaker" subtitle_key="Break a Leg" icon="ui_game_symbol_medical" repeatable="true" category_key="challenge">
-		<objective type="Buff" id="brokenLeg" />
-		<objective type="Buff" id="splint" />
-		
-		<reward type="skill" id="Medicine" value="1" />
-	</quest> -->
+	<!-- <quest id="customtestquest" name="Prime's Quest" subtitle="Kill some zombies" description="Go out and murder 5 zombies.\n\nDon't let your dreams be dreams." offer="Just click accept...you know you want to.\n\nTest" 
+	icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="medium">
+		<objective type="ZombieKill" value="5" />
+		<reward type="SkillPoints" value="1" />
+	</quest>  -->
 	
 	
 </quests>

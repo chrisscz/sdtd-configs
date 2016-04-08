@@ -647,6 +647,13 @@
   <SoundDataNode name="weapon_unholster"> <AudioSource name="Sounds/AudioSource_Interact"/>
     <AudioClip ClipName="Sounds/Weapons/weapon_unholster"/>
     <LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.01" /> </SoundDataNode>
+  
+    <SoundDataNode name="player_swim"> <AudioSource name="Sounds/AudioSource_Interact"/>
+    <AudioClip ClipName="Sounds/Misc/player_swim1"/>
+    <AudioClip ClipName="Sounds/Misc/player_swim2"/>
+    <AudioClip ClipName="Sounds/Misc/player_swim3"/>
+    <AudioClip ClipName="Sounds/Misc/player_swim4"/>
+    <LocalCrouchVolumeScale name="0.5" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="4" /> <MaxEntities name="30" /> <MaxRepeatRate name="1.5" /> </SoundDataNode>
 
 
   <!--               -->
