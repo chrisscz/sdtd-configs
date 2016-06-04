@@ -178,7 +178,7 @@
     <decoration type="model" name="sign_navezgane_natl_forest" position="-268, 61, 531" rotation="0" />
     <decoration type="model" name="sign_73_south" position="-260, 61, 576" rotation="2" />
     <decoration type="model" name="sign_73_north" position="-236, 61, 642" rotation="0" />
-    <decoration type="model" name="sign_73_north" position="-225, 61, 809" rotation="0" />
+    <decoration type="model" name="sign_73_north" position="-226, 61, 817" rotation="0" />
     <decoration type="model" name="sign_73_north" position="-225, 61, 976" rotation="0" />
     <decoration type="model" name="sign_73_south" position="-241, 61, 847" rotation="2" />
     <decoration type="model" name="sign_73_south" position="-330, 61, 309" rotation="2" />
@@ -982,7 +982,7 @@
     <decoration type="model" name="utility_celltower_01" position="357, 75, 998" rotation="0" />
     <decoration type="model" name="sign_slow" position="443, 61, 996" rotation="0" />
     <decoration type="model" name="sign_speed_25" position="493, 61, 961" rotation="3" />
-    <decoration type="model" name="abandoned_house_01" position="538, 60, 919" rotation="3" />
+    <decoration type="model" name="abandoned_house_01" position="538, 60, 919" rotation="1" />
     <decoration type="model" name="player_start3" position="515, 61, 936" rotation="1" />
     <decoration type="model" name="street_light_01" position="1079, 61, 187" rotation="0" />
     <decoration type="model" name="sign_slow" position="1495, 61, 160" rotation="2" />
@@ -1137,7 +1137,7 @@
     <decoration type="model" name="sign_stop" position="555, 61, -1015" rotation="3" />
     <decoration type="model" name="sign_slow" position="543, 61, -1052" rotation="1" />
     <decoration type="model" name="street_light_01" position="547, 61, -1027" rotation="1" />
-    <decoration type="model" name="sign_speed_35" position="491, 61, -878" rotation="1" />
+    <decoration type="model" name="sign_speed_35" position="485, 61, -878" rotation="0" />
     <decoration type="model" name="sign_speed_35" position="454, 61, -841" rotation="3" />
     <decoration type="model" name="road_railing_long_filled_01" position="1832, 75, 808" rotation="0" />
     <decoration type="model" name="indian_burial_grounds_01" position="1434, 84, -1004" rotation="0" />
