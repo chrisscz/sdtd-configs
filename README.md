@@ -18,7 +18,7 @@ This will be probably very quickly updated by newer 7dtd versions and updated by
 **RECOMMMENDED WORLD SETTINGS:**
 
 *  Random gen in multiplayer or singleplayer
-*  Block durability 500% - not i am not mad, alpha 13.5 came with new changes (stone axe is much more powerfull and the game will be arcade bellow) 500% right now is great ballance to have difference between bare hands and stone axe at level 1 and other better tools..
+*  Block durability 700% - not i am not mad, alpha 13.5 came with new changes (stone axe is much more powerfull and the game will be arcade bellow) 600% right now is great ballance to have difference between bare hands and stone axe at level 1 and other better tools.. You'll dont want to return to 100% if you try to play with this for one day...
 *  Loot abundance 15%
 *  Loot respawn delay: disable (or set to something like 99999 days)
 *  Length of one day: 180 minutes (3 real time hours) everything is perfectly balanced to be so, you'll see..
