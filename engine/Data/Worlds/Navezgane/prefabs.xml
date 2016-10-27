@@ -171,7 +171,7 @@
     <decoration type="model" name="street_davis" position="-508, 61, 541" rotation="3" />
     <decoration type="model" name="sign_260_west_speed_65" position="-634, 61, 579" rotation="3" />
     <decoration type="model" name="sign_260_east_speed_65" position="-745, 61, 583" rotation="1" />
-    <decoration type="model" name="sign_phoenix" position="-926, 61, 630" rotation="2" />
+    <decoration type="model" name="sign_phoenix" position="-926, 61, 630" rotation="3" />
     <decoration type="model" name="sign_260_east_speed_65" position="-841, 61, 606" rotation="1" />
     <decoration type="model" name="sign_73_south" position="-445, 61, -142" rotation="2" />
     <decoration type="model" name="sign_73_south" position="-426, 61, 7" rotation="2" />
@@ -205,7 +205,7 @@
     <decoration type="model" name="sign_speed_45" position="501, 61, -81" rotation="0" />
     <decoration type="model" name="sign_stop" position="317, 61, -488" rotation="1" />
     <decoration type="model" name="sign_stop" position="325, 61, -504" rotation="3" />
-    <decoration type="model" name="sign_speed_45" position="537, 61, -476" rotation="0" />
+    <decoration type="model" name="sign_speed_45" position="537, 61, -476" rotation="2" />
     <decoration type="model" name="sign_ansel_adams_river" position="-224, 61, 1061" rotation="2" />
     <decoration type="model" name="sign_ansel_adams_river" position="659, 61, 806" rotation="0" />
     <decoration type="model" name="sign_ansel_adams_river" position="672, 61, 758" rotation="2" />
@@ -257,7 +257,7 @@
     <decoration type="model" name="sign_spillway_lake" position="-50, 61, 535" rotation="2" />
     <decoration type="model" name="factory_lg_01" position="65, 60, -481" rotation="3" />
     <decoration type="model" name="factory_lg_02" position="-895, 60, -580" rotation="1" />
-    <decoration type="model" name="sign_speed_55" position="-66, 61, -476" rotation="0" />
+    <decoration type="model" name="sign_speed_55" position="-66, 71, -476" rotation="0" />
     <decoration type="model" name="houseranchtan1" position="-273, 60, 900" rotation="3" />
     <decoration type="model" name="houseranchwhite1" position="-273, 60, 962" rotation="3" />
     <decoration type="model" name="houseranchblue1" position="-226, 60, 1009" rotation="1" />
@@ -284,7 +284,6 @@
     <decoration type="model" name="houseburnt2" position="127, 58, 142" rotation="3" />
     <decoration type="model" name="houseranchtan2" position="-275, 75, 1284" rotation="3" />
     <decoration type="model" name="campsite_01" position="844, 54, -790" rotation="0" />
-    <decoration type="model" name="house_trailer_burnt_01" position="291, 60, 79" rotation="2" />
     <decoration type="model" name="house_trailer_blue_01" position="597, 53, -641" rotation="2" />
     <decoration type="model" name="house_trailer_green_01" position="597, 53, -618" rotation="2" />
     <decoration type="model" name="house_trailer_tan_01" position="597, 53, -595" rotation="2" />
@@ -545,13 +544,12 @@
     <decoration type="model" name="sign_speed_25" position="1834, 54, -106" rotation="1" />
     <decoration type="model" name="sign_speed_25" position="1808, 61, -202" rotation="0" />
     <decoration type="model" name="sign_speed_25" position="1443, 61, -683" rotation="2" />
-    <decoration type="model" name="sign_speed_25" position="1548, 61, -676" rotation="0" />
+    <decoration type="model" name="sign_speed_25" position="1545, 66, -673" rotation="0" />
     <decoration type="model" name="sign_stop" position="1623, 61, -671" rotation="2" />
     <decoration type="model" name="sign_speed_25" position="1686, 61, -724" rotation="3" />
     <decoration type="model" name="street_light_02" position="1618, 61, -681" rotation="3" />
     <decoration type="model" name="sign_speed_25" position="1762, 61, -741" rotation="0" />
     <decoration type="model" name="sign_speed_25" position="1873, 61, -758" rotation="2" />
-    <decoration type="model" name="sign_albuquerque" position="1942, 61, -764" rotation="0" />
     <decoration type="model" name="sign_speed_25" position="1715, 61, -625" rotation="2" />
     <decoration type="model" name="sign_speed_25" position="1730, 61, -519" rotation="3" />
     <decoration type="model" name="sign_speed_25" position="1738, 61, -405" rotation="1" />
@@ -611,8 +609,7 @@
     <decoration type="model" name="sign_speed_25" position="1233, 61, -63" rotation="1" />
     <decoration type="model" name="sign_speed_25" position="1294, 61, -135" rotation="2" />
     <decoration type="model" name="sign_slow" position="1382, 61, -135" rotation="0" />
-    <decoration type="model" name="sign_phoenix" position="-855, 76, 1945" rotation="2" />
-    <decoration type="model" name="sign_phoenix" position="-925, 54, 950" rotation="2" />
+    <decoration type="model" name="sign_phoenix" position="-925, 54, 935" rotation="2" />
     <decoration type="model" name="sign_speed_35" position="-744, 76, 1876" rotation="1" />
     <decoration type="model" name="sign_speed_35" position="-724, 76, 1784" rotation="3" />
     <decoration type="model" name="sign_speed_35" position="-716, 76, 1714" rotation="1" />
@@ -628,7 +625,7 @@
     <decoration type="model" name="sign_speed_45" position="1419, 81, 1615" rotation="2" />
     <decoration type="model" name="sign_speed_45" position="1352, 81, 1624" rotation="0" />
     <decoration type="model" name="sign_speed_45" position="1216, 81, 1660" rotation="1" />
-    <decoration type="model" name="campsite_04" position="1432, 71, 1183" rotation="0" />
+    <decoration type="model" name="campsite_04" position="1451, 71, 1183" rotation="0" />
     <decoration type="model" name="campsite_04" position="177, 76, 1712" rotation="3" />
     <decoration type="model" name="business_red_brick_06" position="-481, 75, 1905" rotation="1" />
     <decoration type="model" name="street_light_02" position="-480, 76, 1922" rotation="3" />
@@ -638,9 +635,6 @@
     <decoration type="model" name="army_camp_01" position="1471, 69, 16" rotation="0" />
     <decoration type="model" name="campsite_04" position="1648, 58, -905" rotation="1" />
     <decoration type="model" name="player_start3" position="-64, 61, -4" rotation="3" />
-    <decoration type="model" name="player_start4" position="1882, 61, 4" rotation="3" />
-    <decoration type="model" name="player_start5" position="186, 58, -883" rotation="2" />
-    <decoration type="model" name="player_start1" position="-823, 61, -904" rotation="3" />
     <decoration type="model" name="player_start2" position="-901, 61, 611" rotation="1" />
     <decoration type="model" name="player_start3" position="-280, 61, 424" rotation="2" />
     <decoration type="model" name="player_start4" position="1912, 76, 810" rotation="3" />
@@ -667,8 +661,8 @@
     <decoration type="model" name="street_light_02" position="667, 76, 1695" rotation="0" />
     <decoration type="model" name="sign_stop" position="658, 76, 1701" rotation="1" />
     <decoration type="model" name="sign_slow" position="633, 76, 1649" rotation="2" />
-    <decoration type="model" name="player_start1" position="655, 76, 1681" rotation="0" />
-    <decoration type="model" name="player_start3" position="653, 76, 1677" rotation="3" />
+    <decoration type="model" name="player_start1" position="652, 76, 1681" rotation="0" />
+    <decoration type="model" name="player_start3" position="648, 76, 1677" rotation="3" />
     <decoration type="model" name="player_start4" position="1603, 61, -685" rotation="3" />
     <decoration type="model" name="player_start5" position="1610, 61, -681" rotation="0" />
     <decoration type="model" name="sign_speed_45" position="1568, 71, 705" rotation="0" />
@@ -814,7 +808,7 @@
     <decoration type="model" name="campsite_07a" position="381, 61, -850" rotation="0" />
     <decoration type="model" name="campsite_07a" position="662, 54, -94" rotation="2" />
     <decoration type="model" name="campsite_06a" position="1494, 71, -316" rotation="0" />
-    <decoration type="model" name="school_01" position="-359, 75, 1700" rotation="2" />
+    <decoration type="model" name="school_01" position="-359, 75, 1697" rotation="2" />
     <decoration type="model" name="sign_slow" position="-363, 76, 1769" rotation="2" />
     <decoration type="model" name="sign_slow" position="-236, 76, 1782" rotation="0" />
     <decoration type="model" name="sign_navezgane_natl_forest" position="-89, 76, 1762" rotation="3" />
@@ -823,7 +817,7 @@
     <decoration type="model" name="sign_stop" position="-496, 76, 1770" rotation="0" />
     <decoration type="model" name="sign_speed_35" position="-591, 76, 1782" rotation="0" />
     <decoration type="model" name="sign_speed_35" position="-661, 76, 1777" rotation="2" />
-    <decoration type="model" name="sign_slow" position="-716, 76, 1808" rotation="1" />
+    <decoration type="model" name="sign_slow" position="-717, 76, 1809" rotation="1" />
     <decoration type="model" name="sign_speed_25" position="-739, 75, 1850" rotation="3" />
     <decoration type="model" name="player_start1" position="80, 76, 1721" rotation="3" />
     <decoration type="model" name="player_start2" position="89, 76, 1723" rotation="0" />
@@ -878,12 +872,12 @@
     <decoration type="model" name="abandoned_house_02" position="1197, 60, -590" rotation="0" />
     <decoration type="model" name="abandoned_house_02" position="1319, 60, -132" rotation="0" />
     <decoration type="model" name="player_start6" position="1358, 61, -140" rotation="3" />
-    <decoration type="model" name="abandoned_house_05" position="1839, 60, 13" rotation="0" />
+    <decoration type="model" name="trailer_park_01" position="1839, 60, 13" rotation="0" />
     <decoration type="model" name="abandoned_house_01" position="1426, 60, 131" rotation="2" />
     <decoration type="model" name="abandoned_house_04" position="938, 53, 155" rotation="2" />
     <decoration type="model" name="player_start4" position="967, 54, 182" rotation="3" />
     <decoration type="model" name="abandoned_house_02" position="-35, 60, -16" rotation="2" />
-    <decoration type="model" name="abandoned_house_03" position="171, 57, -918" rotation="1" />
+    <decoration type="model" name="bar_sm_01" position="175, 57, -914" rotation="1" />
     <decoration type="model" name="abandoned_house_05" position="-800, 60, -906" rotation="1" />
     <decoration type="model" name="abandoned_house_02" position="-639, 75, 1403" rotation="0" />
     <decoration type="model" name="player_start5" position="-610, 76, 1384" rotation="0" />
@@ -942,7 +936,7 @@
     <decoration type="model" name="sign_speed_35" position="1647, 76, 1260" rotation="3" />
     <decoration type="model" name="sign_albuquerque" position="1708, 76, 1227" rotation="3" />
     <decoration type="model" name="sign_camp_fish" position="1858, 81, 1455" rotation="0" />
-    <decoration type="model" name="sign_speed_35" position="1819, 76, 807" rotation="2" />
+    <decoration type="model" name="sign_speed_35" position="1801, 76, 807" rotation="2" />
     <decoration type="model" name="sign_speed_25" position="1752, 76, 740" rotation="3" />
     <decoration type="model" name="sign_speed_25" position="1758, 76, 685" rotation="1" />
     <decoration type="model" name="sign_navezgane_natl_forest" position="1750, 61, 608" rotation="0" />
@@ -1000,7 +994,7 @@
     <decoration type="model" name="sign_speed_45" position="667, 61, -347" rotation="0" />
     <decoration type="model" name="sign_speed_25" position="317, 61, -431" rotation="3" />
     <decoration type="model" name="sign_speed_25" position="327, 61, -324" rotation="1" />
-    <decoration type="model" name="sign_speed_25" position="563, 58, 10" rotation="1" />
+    <decoration type="model" name="sign_speed_25" position="561, 58, 5" rotation="1" />
     <decoration type="model" name="sign_speed_25" position="261, 61, 117" rotation="1" />
     <decoration type="model" name="street_light_01" position="191, 61, 137" rotation="2" />
     <decoration type="model" name="abandoned_house_08" position="-13, 55, 265" rotation="0" />
@@ -1013,9 +1007,9 @@
     <decoration type="model" name="sign_camp_fish" position="-91, 61, 602" rotation="0" />
     <decoration type="model" name="sign_camp_fish" position="116, 61, 514" rotation="3" />
     <decoration type="model" name="street_light_02" position="126, 61, 511" rotation="3" />
-    <decoration type="model" name="sign_info_center1" position="204, 81, 410" rotation="1" />
+    <decoration type="model" name="sign_info_center1" position="204, 80, 411" rotation="1" />
     <decoration type="model" name="street_light_02" position="213, 81, 408" rotation="0" />
-    <decoration type="model" name="sign_navezgane_natl_forest" position="-242, 61, 1056" rotation="0" />
+    <decoration type="model" name="sign_navezgane_natl_forest" position="-242, 62, 1047" rotation="0" />
     <decoration type="model" name="sign_navezgane_natl_forest" position="-288, 61, 357" rotation="2" />
     <decoration type="model" name="sign_stop" position="-359, 61, 256" rotation="1" />
     <decoration type="model" name="sign_navezgane_natl_forest" position="-434, 61, 353" rotation="1" />
@@ -1052,7 +1046,7 @@
     <decoration type="model" name="perishton_city_sign_01" position="-1761, 81, 1646" rotation="1" />
     <decoration type="model" name="sign_stop" position="-1749, 81, 1659" rotation="3" />
     <decoration type="model" name="sign_stop" position="-1406, 80, 1790" rotation="2" />
-    <decoration type="model" name="sign_stop" position="-1413, 81, 1771" rotation="3" />
+    <decoration type="model" name="sign_stop" position="-1412, 80, 1771" rotation="3" />
     <decoration type="model" name="perishton_city_sign_01" position="-1774, 81, 1778" rotation="2" />
     <decoration type="model" name="sign_stop" position="-1762, 81, 1777" rotation="0" />
     <decoration type="model" name="perishton_city_sign_01" position="-1761, 81, 1921" rotation="3" />
@@ -1071,7 +1065,7 @@
     <decoration type="model" name="sign_slow" position="-1271, 61, 631" rotation="0" />
     <decoration type="model" name="sign_camp_fish" position="-1270, 61, 622" rotation="2" />
     <decoration type="model" name="sign_stop" position="-1329, 76, 938" rotation="3" />
-    <decoration type="model" name="sign_spillway_lake" position="-1299, 76, 957" rotation="1" />
+    <decoration type="model" name="sign_spillway_lake" position="-1299, 76, 956" rotation="1" />
     <decoration type="model" name="sign_camp_fish" position="-1339, 76, 938" rotation="1" />
     <decoration type="model" name="sign_speed_25" position="-1271, 61, 571" rotation="3" />
     <decoration type="model" name="campsite_07a" position="-1250, 61, 539" rotation="1" />
@@ -1126,10 +1120,9 @@
     <decoration type="model" name="sign_speed_35" position="-1886, 81, 1032" rotation="2" />
     <decoration type="model" name="sign_ansel_adams_river" position="-1263, 61, -504" rotation="1" />
     <decoration type="model" name="sign_ansel_adams_river" position="-1312, 61, -516" rotation="3" />
-    <decoration type="model" name="sign_ansel_adams_river" position="-1148, 63, -1122" rotation="1" />
+    <decoration type="model" name="sign_ansel_adams_river" position="-1150, 62, -1122" rotation="1" />
     <decoration type="model" name="sign_ansel_adams_river" position="-1196, 61, -1130" rotation="3" />
-    <decoration type="model" name="player_start3" position="1712, 66, -1226" rotation="0" />
-    <decoration type="model" name="abandoned_house_03" position="1711, 65, -1202" rotation="1" />
+    <decoration type="model" name="abandoned_house_03" position="1793, 70, -1302" rotation="0" />
     <decoration type="model" name="sign_stop" position="1698, 66, -1163" rotation="0" />
     <decoration type="model" name="street_light_01" position="1699, 66, -1129" rotation="2" />
     <decoration type="model" name="sign_speed_35" position="1713, 66, -1075" rotation="1" />
@@ -1144,8 +1137,7 @@
     <decoration type="model" name="cave_01" position="490, 35, -302" rotation="0" />
     <decoration type="model" name="docks_01" position="-1321, 50, 688" rotation="1" />
     <decoration type="model" name="sign_phoenix" position="-1638, 58, -956" rotation="1" />
-    <decoration type="model" name="player_start5" position="-1620, 71, -901" rotation="0" />
-    <decoration type="model" name="abandoned_house_05" position="-1651, 70, -876" rotation="3" />
+    <decoration type="model" name="bar_theater_01" position="-1665, 70, -887" rotation="3" />
     <decoration type="model" name="cave_02" position="-1471, 47, -750" rotation="0" />
     <decoration type="model" name="diner_02" position="-1904, 75, 634" rotation="3" />
     <decoration type="model" name="sign_slow" position="-1859, 76, 685" rotation="1" />
@@ -1158,7 +1150,7 @@
     <decoration type="model" name="cabin_05_lg" position="-1187, 90, 1533" rotation="0" />
     <decoration type="model" name="cave_03" position="-964, 80, 458" rotation="2" />
     <decoration type="model" name="cave_04" position="979, 50, -1036" rotation="1" />
-    <decoration type="model" name="sign_slow" position="-1051, 76, 957" rotation="0" />
+    <decoration type="model" name="sign_slow" position="-1051, 76, 955" rotation="0" />
     <decoration type="model" name="sign_speed_25" position="-871, 54, 919" rotation="2" />
     <decoration type="model" name="bombshelter_lg_01" position="-1171, 44, -99" rotation="1" />
     <decoration type="model" name="utility_celltower_02" position="-1129, 53, -155" rotation="1" />
@@ -1189,7 +1181,7 @@
     <decoration type="model" name="sign_speed_45" position="-1816, 71, 396" rotation="3" />
     <decoration type="model" name="sign_speed_45" position="-1840, 71, 517" rotation="1" />
     <decoration type="model" name="sign_speed_45" position="-1868, 71, 569" rotation="3" />
-    <decoration type="model" name="sign_slow" position="-1858, 61, 749" rotation="1" />
+    <decoration type="model" name="sign_slow" position="-1858, 61, 751" rotation="1" />
     <decoration type="model" name="sign_slow" position="-1865, 71, 813" rotation="3" />
     <decoration type="model" name="sign_speed_45" position="-1827, 76, 889" rotation="2" />
     <decoration type="model" name="player_start4" position="-1728, 76, 1041" rotation="0" />
@@ -1214,21 +1206,17 @@
     <decoration type="model" name="sign_stop" position="129, 58, -1116" rotation="0" />
     <decoration type="model" name="sign_stop" position="139, 58, -1108" rotation="2" />
     <decoration type="model" name="street_light_01" position="130, 58, -1108" rotation="2" />
-    <decoration type="model" name="sign_phoenix" position="98, 61, -1241" rotation="1" />
     <decoration type="model" name="sign_slow" position="130, 58, -1169" rotation="1" />
     <decoration type="model" name="sign_slow" position="134, 58, -1052" rotation="3" />
-    <decoration type="model" name="sign_speed_25" position="37, 58, -1100" rotation="1" />
+    <decoration type="model" name="sign_speed_25" position="37, 58, -1100" rotation="0" />
     <decoration type="model" name="sign_speed_25" position="-91, 76, -1103" rotation="2" />
     <decoration type="model" name="abandoned_house_02" position="-236, 65, -1131" rotation="0" />
-    <decoration type="model" name="player_start1" position="-207, 66, -1131" rotation="3" />
     <decoration type="model" name="sign_slow" position="-240, 66, -1134" rotation="0" />
-    <decoration type="model" name="sign_slow" position="-306, 67, -1147" rotation="2" />
+    <decoration type="model" name="sign_slow" position="-306, 66, -1144" rotation="2" />
     <decoration type="model" name="sign_stop" position="-438, 71, -1098" rotation="2" />
     <decoration type="model" name="sign_stop" position="-457, 71, -1106" rotation="0" />
     <decoration type="model" name="street_light_01" position="-441, 71, -1107" rotation="0" />
     <decoration type="model" name="street_light_01" position="-455, 71, -1097" rotation="2" />
-    <decoration type="model" name="sign_speed_35" position="-452, 71, -1175" rotation="1" />
-    <decoration type="model" name="sign_phoenix" position="-526, 58, -1252" rotation="2" />
     <decoration type="model" name="cave_02" position="-769, 65, -1043" rotation="0" />
     <decoration type="model" name="cave_03" position="56, 65, 1855" rotation="1" />
     <decoration type="model" name="abandoned_house_03" position="762, 65, -1133" rotation="0" />
@@ -1256,8 +1244,7 @@
     <decoration type="model" name="sign_stop" position="-956, 71, -1058" rotation="2" />
     <decoration type="model" name="street_light_01" position="-968, 71, -1072" rotation="1" />
     <decoration type="model" name="sign_slow" position="-1226, 66, -1130" rotation="2" />
-    <decoration type="model" name="abandoned_house_04" position="-1325, 65, -1123" rotation="0" />
-    <decoration type="model" name="player_start6" position="-1350, 66, -1135" rotation="1" />
+    <decoration type="model" name="skate_park_01" position="-1325, 62, -1123" rotation="0" />
     <decoration type="model" name="sign_phoenix" position="-1370, 66, -1148" rotation="2" />
     <decoration type="model" name="docks_04" position="60, 44, 575" rotation="3" />
     <decoration type="model" name="docks_05" position="54, 50, 646" rotation="0" />
@@ -1284,4 +1271,108 @@
     <decoration type="model" name="sign_albuquerque" position="-1748, 96, 1982" rotation="3" />
     <decoration type="model" name="sign_phoenix" position="-1988, 91, 1790" rotation="2" />
     <decoration type="model" name="road_railing_long_filled_01" position="-1828, 80, 1780" rotation="0" />
+    <decoration type="model" name="football_stadium" position="-405, 75, 1781" rotation="0" />
+    <decoration type="model" name="settlement_trader_01" position="300, 60, 67" rotation="2" />
+    <decoration type="model" name="house_trailer_burnt_01" position="-1705, 53, -535" rotation="1" />
+    <decoration type="model" name="hotel_roadside_02" position="-1267, 56, -559" rotation="2" />
+    <decoration type="model" name="hotel_roadside_01" position="887, 60, -1889" rotation="2" />
+    <decoration type="model" name="hotel_ostrich" position="32, 60, -1673" rotation="2" />
+    <decoration type="model" name="bombshelter_md_01" position="-1359, 49, -505" rotation="0" />
+    <decoration type="model" name="sign_phoenix" position="50, 58, -1962" rotation="1" />
+    <decoration type="model" name="player_start1" position="40, 58, -1942" rotation="0" />
+    <decoration type="model" name="abandoned_house_02" position="3, 57, -1926" rotation="3" />
+    <decoration type="model" name="funeral_home_01" position="-44, 60, -1619" rotation="0" />
+    <decoration type="model" name="sign_stop" position="10, 61, -1630" rotation="3" />
+    <decoration type="model" name="sign_stop" position="2, 61, -1617" rotation="1" />
+    <decoration type="model" name="street_light_01" position="10, 61, -1619" rotation="3" />
+    <decoration type="model" name="bridge_asphalt1" position="-1154, 60, -1659" rotation="0" />
+    <decoration type="model" name="prison_01" position="-1081, 65, -1648" rotation="0" />
+    <decoration type="model" name="sign_slow" position="-1096, 66, -1646" rotation="0" />
+    <decoration type="model" name="sign_slow" position="-1166, 61, -1663" rotation="2" />
+    <decoration type="model" name="abandoned_house_06" position="971, 65, -1550" rotation="3" />
+    <decoration type="model" name="player_start3" position="1000, 66, -1576" rotation="0" />
+    <decoration type="model" name="army_barracks_01" position="415, 60, -1598" rotation="0" />
+    <decoration type="model" name="sign_stop" position="468, 61, -1597" rotation="1" />
+    <decoration type="model" name="sign_stop" position="467, 61, -1609" rotation="0" />
+    <decoration type="model" name="street_light_01" position="480, 61, -1610" rotation="0" />
+    <decoration type="model" name="canyon_gift_shop" position="550, 48, -1883" rotation="0" />
+    <decoration type="model" name="sign_stop" position="742, 66, -1825" rotation="0" />
+    <decoration type="model" name="sign_navezgane_natl_forest" position="735, 66, -1816" rotation="1" />
+    <decoration type="model" name="sign_slow" position="632, 59, -1847" rotation="0" />
+    <decoration type="model" name="settlement_trader_02" position="-1070, 75, 911" rotation="2" />
+    <decoration type="model" name="settlement_trader_03" position="-815, 57, -1327" rotation="3" />
+    <decoration type="model" name="bridge_asphalt_broken" position="597, 64, -1740" rotation="0" />
+    <decoration type="model" name="sign_slow" position="578, 68, -1754" rotation="2" />
+    <decoration type="model" name="player_start3" position="1814, 71, -1341" rotation="0" />
+    <decoration type="model" name="sign_phoenix" position="1822, 71, -1379" rotation="1" />
+    <decoration type="model" name="store_autoparts_01" position="1656, 65, -1108" rotation="3" />
+    <decoration type="model" name="utility_refinery_01" position="-1795, 65, -1376" rotation="3" />
+    <decoration type="model" name="canyon_gift_shop_sign" position="752, 66, -1842" rotation="0" />
+    <decoration type="model" name="installation_red_mesa" position="-605, 30, -1932" rotation="2" />
+    <decoration type="model" name="installation_red_mesa_sign" position="-593, 54, -1884" rotation="3" />
+    <decoration type="model" name="installation_red_mesa_security" position="-607, 53, -1885" rotation="2" />
+    <decoration type="model" name="sign_stop" position="-578, 55, -1850" rotation="3" />
+    <decoration type="model" name="street_light_01" position="-583, 54, -1836" rotation="3" />
+    <decoration type="model" name="sign_speed_25" position="-509, 54, -1836" rotation="0" />
+    <decoration type="model" name="settlement_trader_04" position="1008, 60, -1343" rotation="1" />
+    <decoration type="model" name="settlement_trader_05" position="1407, 63, 1301" rotation="1" />
+    <decoration type="model" name="canyon_cliff_dwellings" position="762, 5, -1444" rotation="0" />
+    <decoration type="model" name="canyon_car_wreck" position="615, 9, -1750" rotation="0" />
+    <decoration type="model" name="sign_stop" position="948, 61, -1846" rotation="3" />
+    <decoration type="model" name="sign_stop" position="940, 61, -1833" rotation="1" />
+    <decoration type="model" name="sign_phoenix" position="943, 61, -1946" rotation="1" />
+    <decoration type="model" name="street_light_01" position="949, 61, -1834" rotation="3" />
+    <decoration type="model" name="sign_speed_25" position="951, 66, -1724" rotation="1" />
+    <decoration type="model" name="sign_speed_25" position="978, 66, -1628" rotation="3" />
+    <decoration type="model" name="sign_stop" position="1315, 61, -1439" rotation="1" />
+    <decoration type="model" name="sign_phoenix" position="1299, 61, -1541" rotation="1" />
+    <decoration type="model" name="sign_speed_35" position="832, 61, -1847" rotation="2" />
+    <decoration type="model" name="sign_slow" position="673, 73, -1731" rotation="0" />
+    <decoration type="model" name="sign_slow" position="563, 67, -1740" rotation="2" />
+    <decoration type="model" name="sign_speed_35" position="480, 61, -1496" rotation="1" />
+    <decoration type="model" name="sign_speed_35" position="475, 75, -1335" rotation="3" />
+    <decoration type="model" name="sign_speed_35" position="540, 66, -1210" rotation="1" />
+    <decoration type="model" name="sign_slow" position="499, 66, -1167" rotation="2" />
+    <decoration type="model" name="street_light_02" position="527, 61, -1158" rotation="2" />
+    <decoration type="model" name="sign_speed_25" position="432, 66, -1159" rotation="0" />
+    <decoration type="model" name="sign_speed_25" position="322, 71, -1167" rotation="2" />
+    <decoration type="model" name="sign_speed_25" position="27, 97, -1384" rotation="3" />
+    <decoration type="model" name="sign_slow" position="11, 61, -1542" rotation="1" />
+    <decoration type="model" name="sign_speed_25" position="-7, 66, -1774" rotation="3" />
+    <decoration type="model" name="sign_speed_25" position="-6, 66, -1850" rotation="1" />
+    <decoration type="model" name="sign_speed_45" position="-121, 65, -1618" rotation="0" />
+    <decoration type="model" name="sign_speed_45" position="-237, 58, -1668" rotation="2" />
+    <decoration type="model" name="sign_speed_45" position="-356, 61, -1770" rotation="0" />
+    <decoration type="model" name="sign_speed_45" position="-447, 61, -1845" rotation="2" />
+    <decoration type="model" name="sign_stop" position="-733, 54, -1835" rotation="2" />
+    <decoration type="model" name="street_light_01" position="-732, 54, -1849" rotation="0" />
+    <decoration type="model" name="sign_phoenix" position="-735, 71, -1948" rotation="1" />
+    <decoration type="model" name="sign_slow" position="-769, 76, -1751" rotation="3" />
+    <decoration type="model" name="sign_stop" position="-750, 76, -1624" rotation="0" />
+    <decoration type="model" name="street_light_01" position="-713, 76, -1608" rotation="1" />
+    <decoration type="model" name="sign_slow" position="-747, 76, -1672" rotation="2" />
+    <decoration type="model" name="sign_speed_25" position="-635, 88, -1469" rotation="1" />
+    <decoration type="model" name="sign_speed_25" position="-552, 105, -1283" rotation="0" />
+    <decoration type="model" name="sign_phoenix" position="-1750, 66, -1399" rotation="1" />
+    <decoration type="model" name="sign_speed_35" position="-1728, 66, -1246" rotation="1" />
+    <decoration type="model" name="sign_speed_35" position="-1685, 58, -1106" rotation="3" />
+    <decoration type="model" name="sign_speed_35" position="-1628, 58, -975" rotation="1" />
+    <decoration type="model" name="sign_speed_35" position="-1683, 61, 1163" rotation="1" />
+    <decoration type="model" name="sign_speed_35" position="-1710, 71, 1245" rotation="3" />
+    <decoration type="model" name="sign_speed_35" position="-1728, 76, 1331" rotation="1" />
+    <decoration type="model" name="sign_speed_35" position="-1762, 76, 1427" rotation="3" />
+    <decoration type="model" name="sign_ansel_adams_river" position="-1748, 61, 1491" rotation="0" />
+    <decoration type="model" name="sign_ansel_adams_river" position="-1762, 61, 1545" rotation="0" />
+    <decoration type="model" name="sign_slow" position="-1473, 58, -1220" rotation="0" />
+    <decoration type="model" name="sign_speed_25" position="-1388, 58, -1178" rotation="2" />
+    <decoration type="model" name="sign_speed_35" position="-1024, 66, -493" rotation="0" />
+    <decoration type="model" name="sign_speed_35" position="-1107, 66, -516" rotation="2" />
+    <decoration type="model" name="sign_speed_25" position="-962, 71, -343" rotation="1" />
+    <decoration type="model" name="sign_speed_25" position="-1070, 76, -219" rotation="1" />
+    <decoration type="model" name="sign_speed_25" position="-1128, 54, -92" rotation="1" />
+    <decoration type="model" name="sign_speed_25" position="-1138, 66, 4" rotation="3" />
+    <decoration type="model" name="sign_speed_25" position="-1172, 61, 107" rotation="1" />
+    <decoration type="model" name="sign_spillway_lake" position="-1255, 71, 178" rotation="2" />
+    <decoration type="model" name="bar_stripclub_01" position="-1855, 70, 102" rotation="3" />
+    <decoration type="model" name="canyon_mine" position="702, 6, -1236" rotation="0" />
 </prefabs>

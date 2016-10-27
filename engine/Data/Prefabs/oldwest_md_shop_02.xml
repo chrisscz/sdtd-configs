@@ -4,10 +4,9 @@
     <property name="AllowTopSoilDecorations" value="False" />
     <property name="Zoning" value="Commercial" />
     <property name="RotationToFaceNorth" value="2" />
-    <property name="AllowedTownships" value="town,rural" />
-    <property name="AllowedBiomes" value="desert" />
+    <property name="AllowedTownships" value="wilderness,rural,town" />
     <property name="Condition" value="Old" />
-    <property name="StaticSpawner.Class" value="SpawnSmall" />
+    <property name="StaticSpawner.Class" value="Zombie_Ghost_Town_Sm_Territorial" />
     <property name="StaticSpawner.Size" value="32,2,32" />
     <property name="StaticSpawner.Trigger" value="64" />
 </prefab>

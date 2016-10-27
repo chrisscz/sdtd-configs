@@ -8,4 +8,5 @@
     <property name="RotationToFaceNorth" value="3" />
     <property name="AllowedTownships" value="city,town" />
     <property name="Condition" value="New" />
+    <property name="TraderArea" value="False" />
 </prefab>

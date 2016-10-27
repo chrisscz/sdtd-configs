@@ -1,5 +1,5 @@
 <MapInfo>
   <property name="Name"		value="::Random Gen World::"/>
 	<property name="Modes"		value="SurvivalSP,SurvivalMP,Creative"/>
-	<property name="Description"	value="Randomly Generated Zombie Apocalypse World with a central city."/>
+	<property name="Description"	value="mmRandomGenSPDesc"/>
 </MapInfo>

@@ -4,7 +4,7 @@
     <property name="AllowTopSoilDecorations" value="False" />
     <property name="Zoning" value="Commercial" />
     <property name="RotationToFaceNorth" value="2" />
-    <property name="AllowedTownships" value="town,rural" />
+    <property name="AllowedTownships" value="wilderness,rural,town" />
     <property name="AllowedBiomes" value="desert" />
     <property name="Condition" value="Old" />
 </prefab>

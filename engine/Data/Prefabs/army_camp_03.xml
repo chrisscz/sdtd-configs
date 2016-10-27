@@ -8,7 +8,7 @@
     <property name="AllowedTownships" value="rural,wilderness" />
     <property name="Age" value="Old" />
     <property name="Condition" value="Normal" />
-    <property name="StaticSpawner.Class" value="SpawnMedium" />
+    <property name="StaticSpawner.Class" value="Zombie_Soldier_Med_Territorial" />
     <property name="StaticSpawner.Size" value="32,2,32" />
     <property name="StaticSpawner.Trigger" value="64" />
 </prefab>
