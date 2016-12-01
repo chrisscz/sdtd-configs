@@ -294,7 +294,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="beaker"/>
 			<item name="antibiotics"/>
 			<item name="bloodDrawKit"/>
-			<item name="firstAidKitSchematic"/>
+			<!--<item name="firstAidKitSchematic"/>-->
 		</trader_item_group>
 
 		<trader_item_group name="medicine" count="1">
@@ -336,6 +336,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="commonBooks" count="1">
+            <item name="emptyJar"/>
+        <!--
 			<item name="crossbowSchematic"/>
 			<item name="huntingKnifeBook"/>
 			<item name="huntingRifleSchematic"/>
@@ -347,11 +349,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="pistolBook"/>
 			<item name="pumpShotgunSchematic"/>
 			<item name="sawedoffPumpShotgunSchematic"/>
-			<item name="wrenchSchematic"/>
+			<item name="wrenchSchematic"/>-->
 		</trader_item_group>
 
 		<trader_item_group name="rareBooks" count="1">
-			<item name="ak47Schematic"/>
+            <item name="emptyJar"/>
+			<!--
+            <item name="ak47Schematic"/>
 			<item name="augerSchematic"/>
 			<item name="chainsawSchematic"/>
 			<item name="clubSpikedSchematic"/>
@@ -372,7 +376,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="smgSchematics"/>
 			<item name="sniperRifleSchematic"/>
 			<item name="theEnforcerMagazine"/>
-			<item name="herbalAntibioticsRecipe" prob="0.5"/>
+			<item name="herbalAntibioticsRecipe" prob="0.5"/>-->
 		</trader_item_group>
 
 		<trader_item_group name="books" count="1">
@@ -412,9 +416,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="ammoSupplies">
-			<item name="bulletCasing" count="8,40"/> <!-- 5 -->
-			<item name="bulletTip" count="20,80"/> <!-- 5 -->
-			<item name="buckshot" count="20,60"/> <!-- 5 -->
+			<item name="bulletCasing" count="5,20"/> <!-- 5 -->
+			<item name="bulletTip" count="20,50"/> <!-- 5 -->
+			<item name="buckshot" count="20,50"/> <!-- 5 -->
 			<item name="gunPowder" count="5,30"/> <!-- 10 -->
 			<item name="paper" count="10,30"/> <!-- 10 -->
 			<item name="ironArrowHead" count="5,25" prob="0.05"/> <!-- 5 -->
@@ -509,11 +513,11 @@ quality_mod: adjusts the price range of all items with a quality level.
 
 		<trader_item_group name="generalResources"> <!-- bundle size -->
 			<item name="wood" count="10,50"/> <!-- 50 -->
-			<item name="yuccaFibers" count="5,40"/> <!-- 50 -->
+			<item name="PlantFibers" count="5,40"/> <!-- 50 -->
 			<item name="crushedSand" count="10,40"/> <!-- 50 -->
-			<item name="scrapIron" count="15,80"/> <!-- 10 -->
-			<item name="forgedIron" count="5,50"/>
-			<item name="forgedSteel" count="5,50"/>
+			<item name="scrapIron" count="15,50"/> <!-- 10 -->
+			<item name="forgedIron" count="5,40"/>
+			<item name="forgedSteel" count="5,40"/>
 			<item name="shortMetalPipe" count="5,20"/>
 			<item name="oilShale" count="20,60"/> <!-- 50 -->
 			<item name="animalHide" count="5,25"/>
@@ -523,18 +527,18 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="scrapLead" count="5,90"/> <!-- 5 -->
 			<item name="cloth" count="5,100"/>
 			<item name="militaryFiber" count="5,20" prob="0.6"/>
-			<item name="coal" count="20,60"/> <!-- 10 -->
-			<item name="potassiumNitratePowder" count="20,60"/> <!-- 10 -->
-			<item name="gunPowder" count="3,30"/> <!-- 10 -->
+			<item name="coal" count="4,30"/> <!-- 10 -->
+			<item name="potassiumNitratePowder" count="4,30"/> <!-- 10 -->
+			<item name="gunPowder" count="1,25"/> <!-- 10 -->
 			<item name="oil" count="3,10"/>
-			<item name="animalFat" count="5,40"/>
+			<item name="animalFat" count="5,30"/>
 			<item name="bucket" prob="0.6"/>
 			<item name="candle" count="5,20"/>
 			<item name="headlight" count="5,20" prob="0.6"/>
 			<item name="ductTape" count="5,20"/>
 			<item name="spring" count="5,20"/>
-			<item name="mechanicalParts" count="1,25" prob=".8"/>
-			<item name="electricParts" count="1,20" prob=".7"/>
+			<item name="mechanicalParts" count="1,12" prob=".8"/>
+			<item name="electricParts" count="1,12" prob=".7"/>
 			<item name="electronicParts" count="1,12" prob=".6"/>
 		</trader_item_group>
 
@@ -560,7 +564,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="hoeIron"/>
 			<item name="clawHammer"/>
 			<item name="wrench" prob="0.8"/>
-			<item name="repairKit" count="1,4"/>
+			<item name="weaponRepairKit" count="1,4"/>
 			<item name="wood" count="50,250"/>
 			<item name="anvil" count="1"/>
 			<item name="calipers" prob="0.6"/>
@@ -571,18 +575,19 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="minibikeParts" count="1">
-			<item name="minibikeWheels"/>
+			<item name="emptyJar"/>
+            <!--<item name="minibikeWheels"/>
 			<item name="minibikeChassis"/>
 			<item name="minibikeSeat"/>
 			<item name="minibikeHandlebars"/>
 			<item name="smallEngine" prob=".3"/>
-			<item name="shoppingBasketItem" prob=".3"/>
+			<item name="shoppingBasketItem" prob=".3"/>-->
 		</trader_item_group>
 
 		<trader_item_group name="workstations" count="1">
-			<item name="forge"/>
-			<item name="workbench"/>
-			<item name="cementMixer"/>
+			<item name="workforge"/>
+			<item name="workworkbench"/>
+			<item name="workcementMixer"/>
 		</trader_item_group>
 
 		<trader_item_group name="decorativeCurtains" count="all">
@@ -637,15 +642,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="shutters1Plate" count="4,15"/>
 		</trader_item_group>
 
-		<trader_item_group name="traderAlways" count="all">
-			<item name="gunPowder" count="1,25"/> <!-- 10 -->
-			<item group="ammo" count="2"/>
-			<item group="ammoSupplies" count="2"/>
-			<item name="potassiumNitratePowder" count="2,5"/> <!-- 10 -->
-		</trader_item_group>
-
 		<trader_item_group name="traderGeneral" count="1">
-			<item name="beerBook" count="1" prob="2"/>
+			<!--<item name="beerBook" count="1" prob="2"/>-->
 			<item name="hopSeed" count="1,5" prob="2"/>
 			<item group="clothes" count="2,4"/>
 			<item group="commonWeaponParts" count="1,3" prob="0.5"/>
@@ -654,13 +652,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="gunsCommon" count="1" prob="0.1"/>
 			<item name="flashlight02"/>
 			<item group="books" count="1,2" prob="0.6"/>
-			<item group="ammo" count="1,3"/>
-			<item group="ammoSupplies" count="1,3"/>
+			<item group="ammo" count="2,5"/>
+			<item group="ammoSupplies" count="2,5"/>
 			<item group="seeds" count="1,4"/>
-			<item group="cannedfood" count="1,2"/>
+			<item group="cannedfood" count="1,3"/>
 			<item group="foodSupplies" count="1,4"/>
 			<item group="preparedFood" count="1,2"/>
-			<item group="preparedDrink" count="1"/>
+			<item group="preparedDrink" count="1,2"/>
 			<item group="constructionSupplies" count="1,3" prob="0.8"/>
 			<item group="rareTools" count="1" prob="0.2"/>
 			<item group="rareMedicine" count="1" prob="0.2"/>
@@ -690,7 +688,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="asphalt"/>
 			<item name="asphaltBlock"/>
 			<item name="auger"/>
-			<item name="augerSchematic"/>
+			<!--<item name="augerSchematic"/>-->
 			<item name="aviatorGoggles"/>
 			<item name="awningRedBlock"/>
 			<item name="baconAndEggs"/>
@@ -742,17 +740,17 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="candyTin"/>
 			<item name="carBattery"/>
 			<item name="cement"/>
-			<item name="cementMixer"/>
+			<item name="workcementMixer"/>
 			<item name="chainLink"/>
 			<item name="chainsaw"/>
-			<item name="chainsawSchematic"/>
+			<!--<item name="chainsawSchematic"/>-->
 			<item name="chair04"/>
 			<item name="challengeQuestMaster"/>
 			<item name="charredMeat"/>
 			<item name="cigar"/>
 			<item name="cigarette"/>
 			<item name="clawHammer"/>
-			<item name="clawHammerSchematic"/>
+			<!--<item name="clawHammerSchematic"/>-->
 			<item name="clayLump"/>
 			<item name="clayRoofBlock"/>
 			<item name="cloth"/>
@@ -762,7 +760,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="clubBarbed"/>
 			<item name="clubIron"/>
 			<item name="clubSpiked"/>
-			<item name="clubSpikedSchematic"/>
+			<!--<item name="clubSpikedSchematic"/>-->
 			<item name="clubWood"/>
 			<item name="cntCabinet"/>
 			<item name="cntCabinetTop"/>
@@ -813,7 +811,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="cottonSeed"/>
 			<item name="cowboyHat"/>
 			<item name="crossbow"/>
-			<item name="crossbowSchematic"/>
+			<!--<item name="crossbowSchematic"/>-->
 			<item name="crushedSand"/>
 			<item name="denimPants"/>
 			<item name="doorKnob"/>
@@ -823,7 +821,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="eggboiled"/>
 			<item name="emptyJar"/>
 			<item name="explodingCrossbowBolt"/>
-			<item name="explodingCrossbowBoltSchematic"/>
+			<!--<item name="explodingCrossbowBoltSchematic"/>-->
 			<item name="feather"/>
 			<item name="femur"/>
 			<item name="fenceWoodSheet"/>
@@ -832,21 +830,21 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="fireaxeSteel"/>
 			<item name="firstAidBandage"/>
 			<item name="firstAidKit"/>
-			<item name="firstAidKitSchematic"/>
+			<!--<item name="firstAidKitSchematic"/>-->
 			<item name="fishingWeight"/>
 			<item name="flagstoneBlock"/>
 			<item name="flagstoneStairs25"/>
 			<item name="flamingArrow"/>
-			<item name="flamingArrowSchematic"/>
+			<!--<item name="flamingArrowSchematic"/>-->
 			<item name="flashlight02"/>
 			<item name="foodHoney"/>
 			<item name="foodYuccaJuice"/>
 			<item name="footballHelmet"/>
-			<item name="forge"/>
+			<item name="workforge"/>
 			<item name="forgedIron"/>
 			<item name="forgedSteel"/>
 			<item name="gasCan"/>
-			<item name="gasCanSchematic"/>
+			<!--<item name="gasCanSchematic"/>-->
 			<item name="gasMask"/>
 			<item name="glassBusinessBlock"/>
 			<item name="glassBusinessCTRSheet"/>
@@ -869,7 +867,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunRocketLauncher"/>
 			<item name="gunSawedOffPumpShotgun"/>
 			<item name="gunSniperRifle"/>
-			<item name="handleBarsSchematic"/>
+			<!--<item name="handleBarsSchematic"/>-->
 			<item name="hayBaleBlock"/>
 			<item name="hazmatBoots"/>
 			<item name="hazmatPants"/>
@@ -884,40 +882,40 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="houseFrontDoor2_v1"/>
 			<item name="hubcap"/>
 			<item name="huntingKnife"/>
-			<item name="huntingKnifeBook"/>
+			<!--<item name="huntingKnifeBook"/>-->
 			<item name="huntingRifleSchematic"/>
 			<item name="ironArrow"/>
 			<item name="ironArrowHead"/>
 			<item name="ironBars"/>
 			<item name="ironBoots"/>
-			<item name="ironBootsSchematic"/>
+			<!--<item name="ironBootsSchematic"/>
 			<item name="ironChestArmor"/>
-			<item name="ironChestArmorSchematic"/>
+			<item name="ironChestArmorSchematic"/>-->
 			<item name="ironCrossbowBolt"/>
 			<item name="ironDoor1_v1"/>
-			<item name="ironGlovesSchematic"/>
+			<!--<item name="ironGlovesSchematic"/>
 			<item name="ironHelmetSchematic"/>
 			<item name="ironLegArmor"/>
-			<item name="ironLegArmorSchematic"/>
+			<item name="ironLegArmorSchematic"/>-->
 			<item name="jacketWhite"/>
-			<item name="keystoneBlock"/>
+			<!--<item name="keystoneBlock"/>-->
 			<item name="ladderMetal"/>
 			<item name="ladderWood"/>
 			<item name="leather"/>
 			<item name="leatherBoots"/>
-			<item name="leatherBootsSchematic"/>
+			<!--<item name="leatherBootsSchematic"/>-->
 			<item name="leatherDuster"/>
 			<item name="leatherDusterBlack"/>
-			<item name="leatherGlovesSchematic"/>
+			<!--<item name="leatherGlovesSchematic"/>-->
 			<item name="leatherHoodBlack"/>
-			<item name="leatherHoodSchematic"/>
+			<!--<item name="leatherHoodSchematic"/>-->
 			<item name="leatherJacket"/>
-			<item name="leatherJacketSchematic"/>
+			<!--<item name="leatherJacketSchematic"/>-->
 			<item name="leatherPants"/>
-			<item name="leatherPantsSchematic"/>
-			<item name="leatherTanning"/>
+			<!--<item name="leatherPantsSchematic"/>
+			<item name="leatherTanning"/>-->
 			<item name="logCabinBlock"/>
-			<item name="macDyverBook"/>
+			<!--<item name="macDyverBook"/>-->
 			<item name="machete"/>
 			<item name="mapleSeed"/>
 			<item name="meatStew"/>
@@ -997,6 +995,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="pipeBomb"/>
 			<item name="pistolBook"/>
 			<item name="plantFiberHat"/>
+			<item name="plantedCorn1"/>
 			<item name="playerSignWood1x1"/>
 			<item name="playerSignWood1x3"/>
 			<item name="playerSignWood2x5"/>
@@ -1027,7 +1026,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="redWoodBlock"/>
 			<item name="redWoodMaster"/>
 			<item name="redWoodTable"/>
-			<item name="repairKit"/>
+			<item name="weaponRepairKit"/>
 			<item name="rockSmall"/>
 			<item name="rocket"/>
 			<item name="rocketCasing"/>
@@ -1036,7 +1035,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="rustyIronTable"/>
 			<item name="sandbagsBlock"/>
 			<item name="sawedoffPumpShotgunSchematic"/>
-			<item name="schematicMaster"/>
 			<item name="scrapBoots"/>
 			<item name="scrapBrass"/>
 			<item name="scrapChestArmor"/>
@@ -1060,7 +1058,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="shortMetalPipe"/>
 			<item name="shotgunShell"/>
 			<item name="shotgunSlug"/>
-			<item name="shotgunSlugSchematic"/>
+			<!--<item name="shotgunSlugSchematic"/>-->
 			<item name="shovelIron"/>
 			<item name="shovelSteel"/>
 			<item name="skirt"/>
@@ -1131,12 +1129,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="woodSupport"/>
 			<item name="woodTable"/>
 			<item name="woodWeakNoUpgradeMaster"/>
-			<item name="workbench"/>
+			<item name="workworkbench"/>
 			<item name="wornBoots"/>
 			<item name="wrench"/>
-			<item name="wrenchSchematic"/>
+			<!--<item name="wrenchSchematic"/>-->
 			<item name="wroughtIronFenceSheet"/>
-			<item name="yuccaFibers"/>
+			<item name="PlantFibers"/>
 			<item name="footballHelmetZU"/>
 			<item name="tshirtZUWhite"/>
 		</trader_item_group>
@@ -1190,12 +1188,11 @@ workstations
 
 	<!-- Trader 1, carries better weapons at higher levels. -->
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
-	<trader_info id="1" min_inventory="40" max_inventory="80" min_items_swapped="20" max_items_swapped="20"
+	<trader_info id="1" min_inventory="26" max_inventory="39" min_items_swapped="13" max_items_swapped="13"
 		reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
-			<item group="traderAlways"/>
 			<item group="traderGeneral" count="4,8"/>
-			<item group="generalResources" count="9,14"/>
+			<item group="generalResources" count="7,11"/>
 			<item group="constructionSupplies" count="2,8"/>
 			<item group="decorativeBlocks" count="2,7"/>
 			<item group="tools" count="0,2"/>
@@ -1243,12 +1240,11 @@ workstations
 
 	<!-- Trader 2, carries better tools and construction material at higher levels. -->
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
-	<trader_info id="2" min_inventory="40" max_inventory="80" min_items_swapped="20" max_items_swapped="20"
+	<trader_info id="2" min_inventory="26" max_inventory="39" min_items_swapped="13" max_items_swapped="13"
 		reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
-			<item group="traderAlways"/>
 			<item group="traderGeneral" count="4,8"/>
-			<item group="generalResources" count="11,17"/>
+			<item group="generalResources" count="8,15"/>
 			<item group="constructionSupplies" count="4,12"/>
 			<item group="decorativeBlocks" count="2,7"/>
 			<item group="tools" count="0,2"/>
@@ -1259,7 +1255,7 @@ workstations
 		<tier_items level="1,25" count="1,3">
 			<item group="gunsCommon" count="1" prob="0.2"/>
 			<item group="constructionSupplies" count="2,3" prob="1"/>
-			<item group="generalResources" count="4,7" prob="1"/>
+			<item group="generalResources" count="3,4" prob="1"/>
 			<item group="tools" count="1,2" prob="1"/>
 			<item group="rareTools" count="1" prob="0.5"/>
 			<item group="ammoSupplies" count="2,3" prob="0.4"/>
@@ -1323,7 +1319,6 @@ workstations
 	<trader_info id="99" min_inventory="50" max_inventory="600" min_items_swapped="13" max_items_swapped="13"
 		reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
-			<item group="traderAlways"/>
 			<item group="traderGeneral" count="4,8"/>
 			<item group="generalResources" count="8,12"/>
 			<item group="constructionSupplies" count="4,12"/>
