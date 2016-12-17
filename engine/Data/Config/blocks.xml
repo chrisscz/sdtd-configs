@@ -879,12 +879,6 @@ group desc for stuff like metal siding
 	<property name="Texture" value="8" />
 	<property name="IsDeveloper" value="true" />
 	<property class="RepairItems"> <property name="cobblestones" value="6" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="adobeMaster" />
-		<property name="Item" value="clayLump" />
-		<property name="ItemCount" value="6" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<drop event="Harvest" name="rockSmall" count="8" />
 	<drop event="Destroy" name="rockSmall" count="8" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
@@ -6761,7 +6755,7 @@ kind of free
 </block>
 
 <block id="794" name="logCabinBlock">
-	<property name="Extends" value="woodBlock" />
+	<property name="Extends" value="woodNoUpgradeMaster" />
 	<property name="Texture" value="43" />
 	<property name="FuelValue" value="160" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
@@ -10644,9 +10638,10 @@ kind of free
 </block>
 
 <block id="1354" name="logCabinRamp">
-	<property name="Extends" value="woodRamp" />
+	<property name="Extends" value="woodNoUpgradeMaster" />
 	<property name="Shape" value="Wedged" /> <property name="Place" value="TowardsPlacer90" />
 	<property name="Texture" value="43" />
+	<property class="UpgradeBlock" />
 </block>
 
 <!-- xxx
